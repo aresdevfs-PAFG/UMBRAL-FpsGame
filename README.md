@@ -1,20 +1,20 @@
 # UMBRAL
 
-FPS de hordas ambientado en el Mictlán. Se juega en el navegador, en primera persona, con geometría 3D y sprites pixelados. Esta distribución funciona completamente en local: recursos, sonido, música, tutorial y resultados.
+A horde-based FPS set in Mictlán. It runs in the browser, combining a first-person perspective with 3D geometry and pixel art sprites. This distribution runs entirely locally, including assets, sound, music, the tutorial, and match records.
 
-## Jugar con XAMPP (Windows)
+## Play with XAMPP (Windows)
 
-1. Abre la carpeta `C:\xampp\docs\umbral`.
-2. Haz doble clic en **Jugar.cmd**.
-3. Entra en **http://127.0.0.1:8091** y pulsa Entrar.
+1. Open the `C:\xampp\docs\umbral` folder.
+2. Double-click **Jugar.cmd**.
+3. Visit **http://127.0.0.1:8091** and start the game.
 
-Mantén abierta la consola mientras juegas. `Ctrl+C` detiene el servidor. No necesitas iniciar Apache ni MySQL. El lanzador usa el PHP incluido en XAMPP; también admite la variable `PHP_BINARY` o un `php` instalado en PATH.
+Keep the console open while playing. Press `Ctrl+C` to stop the server. You do not need to start Apache or MySQL. The launcher uses the PHP installation bundled with XAMPP; it also supports the `PHP_BINARY` environment variable or a `php` executable on PATH.
 
-No hace falta conexión a Internet. El servidor local permite cargar los módulos, imágenes y audio; abrir `index.html` directamente con `file://` no funciona. Si el navegador se abre antes que el servidor, actualiza la página. Si el puerto está ocupado, cierra la instancia anterior o usa otro puerto con los comandos de abajo.
+No Internet connection is required. The local server allows the browser to load modules, images, and audio; opening `index.html` directly through `file://` does not work. If the browser opens before the server is ready, refresh the page. If the port is already in use, close the previous server instance or choose another port using the commands below.
 
-## Desarrollo
+## Development
 
-Con Node.js 22 o posterior, desde esta carpeta:
+With Node.js 22 or later, run these commands from this folder:
 
 ```sh
 npm start
@@ -22,65 +22,65 @@ npm run check
 npm test
 ```
 
-Los scripts usan únicamente módulos de Node. No hace falta `npm install`, un bundler ni descargas. Three.js ya está incluido localmente. Alternativamente:
+These scripts use only built-in Node modules. No `npm install`, bundler, or downloads are required. Three.js is already included locally. Alternatively, run:
 
 ```sh
 php -S 127.0.0.1:8091 -t public tools/router.php
 ```
 
-Para cambiar de puerto con Node en PowerShell: `$env:PORT='8092'; npm start`. Ambos servidores exponen solo `public/` y escuchan en loopback. Para publicar el juego como web estática, la raíz es `public/`.
+To change the Node server port in PowerShell, run: `$env:PORT='8092'; npm start`. Both servers expose only `public/` and listen on the loopback interface. To host the game as a static website, use `public/` as the site root.
 
-## Contenido
+## Features
 
-- Tres arenas aleatorias: Cuenca de Obsidiana, Corona del Viento y Río de las Ánimas.
-- Tutorial de primera visita y acceso posterior desde el menú.
-- Seis armas, llamas con R y macuahuitl con F.
-- Titán de Obsidiana, Desollador del Vendaval y Madre del Ahogo, con pruebas directas desde el menú.
-- Cinco canciones locales, orden aleatorio, pausa de un segundo entre canciones y volumen inicial del 8%.
-- Calidad gráfica automática, control de volumen, pausa y pantalla completa.
-- Historial local de hasta 500 partidas y top 10 por hordas superadas y bajas. Tutorial y pruebas no puntúan.
+- Three randomly selected arenas: Cuenca de Obsidiana, Corona del Viento, and Río de las Ánimas.
+- A tutorial on the first visit, with access from the menu afterward.
+- Six weapons, flames bound to R, and the macuahuitl bound to F.
+- Titán de Obsidiana, Desollador del Vendaval, and Madre del Ahogo, with dedicated practice encounters accessible from the menu.
+- Five local music tracks, shuffled playback, a one-second gap between tracks, and an initial volume of 8%.
+- Automatic graphics quality, volume controls, pause, and fullscreen mode.
+- Local history for up to 500 matches and a top 10 ranked by waves cleared and kills. The tutorial and practice encounters do not count toward scores.
 
-Pruebas directas: `/?demo=titan`, `/?demo=desollador`, `/?demo=madre`.
+Direct practice links: `/?demo=titan`, `/?demo=desollador`, `/?demo=madre`.
 
-## Controles
+## Controls
 
-| Acción | Control |
+| Action | Control |
 | --- | --- |
-| Caminar / mirar | WASD / mouse |
-| Saltar / pausar | Espacio / Escape |
-| Disparo / secundario | Clic izquierdo / derecho |
-| Cuchillo, escopeta, rifle, subfusil, arco, cañón solar | 1–6 |
-| Llamas / macuahuitl | R / F |
-| Sniper del rifle | Mantener clic derecho y disparar con izquierdo |
+| Move / look | WASD / mouse |
+| Jump / pause | Space / Escape |
+| Primary / secondary fire | Left / right mouse button |
+| Knife, shotgun, assault rifle, submachine gun, bow, solar cannon | 1–6 |
+| Flames / macuahuitl | R / F |
+| Rifle sniper mode | Hold the right mouse button to aim and press the left mouse button to fire |
 
-## Estructura
+## Project Structure
 
 ```text
 public/
-  index.html                 Página jugable y HUD
-  assets/js/                 Simulación, gráficos, sonido y guardado local
-  assets/css/                Estilos del juego y de la página
-  assets/img/umbral-demo/    Sprites, fondos y manifiesto de animaciones
-  assets/audio/umbral/       Efectos, enemigos y música
-  assets/vendor/three/      Three.js y su licencia
-design/umbral/              Arte fuente, GIF de referencia y decisiones de diseño
-tests/                      Regresiones de combate, mapas, audio y modo local
-tools/                      Servidores locales y validación de dependencias
-docs/                       Arquitectura y guía de contribución
+  index.html                Playable page and HUD
+  assets/js/                Simulation, graphics, sound, and local persistence
+  assets/css/               Game and page styles
+  assets/img/umbral-demo/    Sprites, backgrounds, and animation manifest
+  assets/audio/umbral/       Effects, enemy sounds, and music
+  assets/vendor/three/      Three.js and its license
+design/umbral/              Source artwork, reference GIFs, and design decisions
+tests/                      Regression tests for combat, maps, audio, and local mode
+tools/                      Local servers and dependency validation
+docs/                       Architecture and contribution guide
 ```
 
-El sprite de cuerpo completo del protagonista está en `design/umbral/player-v1/`; es material de diseño y no reemplaza los brazos de primera persona.
+The protagonist's full-body sprite is in `design/umbral/player-v1/`. It is design material and does not replace the first-person arms.
 
-### Datos locales
+### Local Data
 
-El nombre elegido es una etiqueta local; no hay cuentas ni autenticación. El historial, el nombre y el tutorial se guardan en `localStorage`. Cada navegador y dirección/puerto tienen su propio almacenamiento. Si se borran los datos del sitio, se pierde el historial. Si el navegador bloquea el almacenamiento, el juego continúa y avisa que los resultados duran solo esa sesión. La partida activa no se reanuda tras cerrar: se conservan sus estadísticas guardadas.
+The chosen player name is a local label; there are no accounts or authentication. Match history, the player name, and tutorial preferences are stored in `localStorage`. Each browser and address/port combination has separate storage. Clearing site data deletes the history. If the browser blocks storage, the game continues and reports that results will last only for the current session. An active match cannot be resumed after closing the game; only its saved statistics are retained.
 
-## Próximas implementaciones
+## Future Development
 
-Consulta [Arquitectura](docs/ARQUITECTURA.md) y [Desarrollo](docs/DESARROLLO.md). Las nuevas mecánicas se prueban primero en la simulación; las animaciones y sonidos responden a sus eventos.
+See [Architecture](docs/ARQUITECTURA.md) and [Development](docs/DESARROLLO.md). New mechanics are tested in the simulation first; animations and sounds respond to simulation events.
 
-## Repositorio
+## Repository
 
-Repositorio de destino: https://github.com/aresdevfs-PAFG/UMBRAL-FpsGame
+Project repository: https://github.com/aresdevfs-PAFG/UMBRAL-FpsGame
 
-Esta carpeta es una raíz de proyecto independiente. El historial de Git debe comenzar aquí. Antes de publicar, revisa la licencia de distribución de música y recursos en [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+This folder is an independent project root. Git history should begin here. Before publishing, review the music and asset distribution terms in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

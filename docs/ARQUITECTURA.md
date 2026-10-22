@@ -1,34 +1,34 @@
-# Arquitectura de UMBRAL
+# UMBRAL Architecture
 
-## Capas
+## Layers
 
-1. **Entrada web:** `public/index.html` contiene menú, tutorial, HUD, controles e historial.
-2. **Orquestación:** `umbral-demo.js` arranca recursos, captura entradas, avanza simulación, procesa eventos y dibuja cada frame.
-3. **Simulación:** `umbral-core.mjs` mantiene el estado, daño, armas, poderes, enemigos y hordas. No depende del DOM.
-4. **Mundo:** `umbral-maps.mjs`, `umbral-arena.mjs` y `umbral-traversal.mjs` definen mapas, colisiones, navegación, salto y gravedad.
-5. **Jefes:** `umbral-titan.mjs`, `umbral-desollador.mjs`, `umbral-madre.mjs` y sus módulos auxiliares contienen máquinas de estados de ataques y recuperaciones.
-6. **Presentación:** Three.js dibuja geometría y sprites; Canvas 2D dibuja armas/manos; CSS y SVG muestran el HUD. Los módulos `*-visuals` convierten estados en efectos.
-7. **Audio:** Web Audio mezcla muestras y efectos; `umbral-music.mjs` reproduce un MP3 a la vez con HTML Audio.
-8. **Persistencia local:** `umbral-local-records.mjs` guarda instantáneas de estadísticas por partida. `umbral-tutorial.mjs` guarda preferencias de primera visita. Se pueden sustituir estos adaptadores sin convertir la simulación en código de red.
+1. **Web entry point:** `public/index.html` contains the menu, tutorial, HUD, controls, and match history.
+2. **Orchestration:** `umbral-demo.js` loads assets, captures input, advances the simulation, processes events, and renders each frame.
+3. **Simulation:** `umbral-core.mjs` manages state, damage, weapons, abilities, enemies, and waves. It does not depend on the DOM.
+4. **World:** `umbral-maps.mjs`, `umbral-arena.mjs`, and `umbral-traversal.mjs` define maps, collisions, navigation, jumping, and gravity.
+5. **Bosses:** `umbral-titan.mjs`, `umbral-desollador.mjs`, `umbral-madre.mjs`, and their supporting modules contain state machines for attacks and recovery.
+6. **Presentation:** Three.js renders geometry and sprites; Canvas 2D renders weapons and hands; CSS and SVG display the HUD. The `*-visuals` modules turn states into effects.
+7. **Audio:** Web Audio mixes samples and effects; `umbral-music.mjs` plays one MP3 at a time using HTML Audio.
+8. **Local persistence:** `umbral-local-records.mjs` saves statistics snapshots for each match. `umbral-tutorial.mjs` saves first-visit preferences. These adapters can be replaced without adding networking code to the simulation.
 
-## Ciclo de un frame
+## Frame Lifecycle
 
-`requestAnimationFrame → entrada → step(estado, input, dt) → eventos → audio/efectos → render/HUD`.
+`requestAnimationFrame → input → step(state, input, dt) → events → audio/effects → render/HUD`.
 
-El delta se limita y se subdivide en pasos de hasta 25 ms para reducir problemas de colisión. No es un reloj fijo de 60 Hz. La calidad automática baja resolución y limita efectos. El objetivo es una experiencia fluida; el rendimiento depende de GPU, navegador, resolución y carga.
+The time delta is capped and subdivided into steps of up to 25 ms to reduce collision issues. This is not a fixed 60 Hz timestep. Automatic quality adjustment lowers resolution and limits effects. The goal is smooth gameplay; performance depends on the GPU, browser, resolution, and workload.
 
-El tiempo de la simulación gobierna ataques y cooldowns: al pausar no deben avanzar. Los recursos gráficos y voces de audio se limitan o reutilizan; al cambiar de arena se liberan las instancias anteriores.
+Simulation time governs attacks and cooldowns: they must not advance while paused. Graphics resources and audio voices are limited or reused; previous arena instances are released when switching arenas.
 
-## Recursos
+## Assets
 
-`assets/img/umbral-demo/assets.json` especifica sprites, estados, cuadrículas, duración de frames y anclas. El juego usa atlas PNG; los GIF de `design/` sirven para revisar animaciones. Los recursos de ejecución están en `public/`; el arte fuente y las pruebas quedan fuera del directorio servido.
+`assets/img/umbral-demo/assets.json` specifies sprites, states, grids, frame durations, and anchors. The game uses PNG atlases; the GIFs in `design/` are animation previews. Runtime assets live in `public/`; source artwork and tests stay outside the served directory.
 
-## Modo local
+## Local Mode
 
-La página no necesita API, base de datos, cookies de sesión ni servicios externos. Los dos servidores de `tools/` solo entregan archivos locales. El ranking es un historial personal en el navegador, no una clasificación competitiva verificada. El guardado sustituye la instantánea de una partida por su id para evitar duplicar bajas al pausar, cerrar o morir.
+The page does not require an API, database, session cookies, or external services. The two servers in `tools/` only serve local files. The leaderboard is a personal history stored in the browser, not a verified competitive ranking. Saving replaces a match's snapshot by its ID to avoid counting kills more than once when pausing, closing the page, or dying.
 
-## Límites actuales
+## Current Limitations
 
-- `umbral-demo.js` todavía concentra mucha orquestación; se puede separar por carga de recursos, entradas, HUD y ciclo de render en cambios pequeños.
-- El cliente controla la simulación y sus estadísticas. Un futuro modo competitivo requerirá diseño propio de validación y persistencia.
-- La distribución funciona sin Internet con el servidor local en marcha; no instala una aplicación ni un service worker.
+- `umbral-demo.js` still handles much of the orchestration. Asset loading, input, HUD updates, and the render loop can be extracted in small changes.
+- The client controls the simulation and its statistics. A future competitive mode will require its own validation and persistence design.
+- This distribution works without Internet access while the local server is running; it does not install an application or a service worker.

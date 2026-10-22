@@ -1,0 +1,21 @@
+{
+  "generator": "image_gen (built-in)",
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "id": "acechador",
+      "transparent": true,
+      "prompt": "Generate production game sprite atlas for UMBRAL, 1990s DOOM/Hexen gritty pixel art. EXACT 4 columns and 4 rows evenly spaced, 16 distinct frames, square image, genuine transparent background. NO labels, NO floor shadow, NO panels or grid lines, NO scenery. Each equal square cell contains ONE full body same monster at same scale, fully inside cell, 12% padding all around, feet baseline 88% cell height and centered horizontally. Monster: basalt stalker, monstrous muscular quadruped feline with black angular volcanic armor plates, cracks glowing amber orange, skeletal jaguar-like face with obsidian fangs, long jagged tail, low predatory silhouette. View front three-quarter aimed toward viewer, compatible with camera-facing billboard in FPS, not side-scrolling profile. Readable medium-grey stone edge highlights. ROW1 four consecutive running gait frames. ROW2 four attack frames crouching windup, leaping forward, claws striking, recovery. ROW3 four hurt recoil frames. ROW4 death sequence collapsing shattered stone until final flat rubble corpse. Detailed hand-crafted coarse pixel texture, dark fantasy, same creature design across all cells. Exact uniform registration grid no framing or text."
+    },
+    {
+      "id": "tejedor",
+      "transparent": true,
+      "prompt": "Generate production game sprite atlas for UMBRAL, 1990s DOOM/Hexen gritty pixel art. EXACT 4 columns and 4 rows evenly spaced, 16 distinct frames, square image, genuine transparent background. NO labels, NO floor shadow, NO panels or grid lines, NO scenery. Each equal square cell contains ONE full body same monster at identical scale, fully inside cell, 12% padding all around, feet baseline 88% cell height, horizontally centered. Monster: Ash Weaver, tall thin skeletal sorcerer with FOUR arms, cracked funerary skull mask, pale bone rib exoskeleton framing an ash-black ragged hanging body, tiny orange eyes, ash wisps and subdued silver-blue threads wrapped between hands. Original Mexican underworld creature, ominous bony silhouette; no crown or European wizard hat. Facing viewer slight three-quarter. ROW1 four gently hovering movement poses. ROW2 four attack and channeling poses raising all hands and spreading thread, release of a small violet energy fan. ROW3 four hurt recoil poses with torn threads. ROW4 death sequence bone frame collapsing with ash into low pile. Detailed hand-crafted coarse pixel texture, high silhouette readability, dark fantasy, same creature across all cells. Exact evenly registered uniform grid no framing or text."
+    },
+    {
+      "id": "corona-panorama",
+      "transparent": false,
+      "prompt": "Use the supplied image ONLY as atmospheric reference. Create a production-ready wide 2:1 panoramic distant background for UMBRAL's Corona del Viento, a retro Doom/Hexen first-person game. Full-bleed environment only. No diagram, text, labels, arrows, HUD, playable courtyard or foreground platforms. Towering ancient Mexican funerary stepped temples, floating razor-shaped obsidian monoliths, enormous abyss below, violet mauve eclipse sky, tiny amber window lights, layered distant blue grey volcanic cliffs. Crisp angular silhouettes and painted pixel-textured 1990s fantasy game detail; no blur. Horizon approximately at middle image; lower third distant very dark abyss cliffs, upper half violet sky with large dim eclipsed sun offset toward right. Left and right edges should be similar dark rock/sky for repeating cylindrical backdrop. Expansive distance, subdued saturation to keep combat projectiles legible. No modern buildings, no gothic castle architecture. Asset intended for animated shader clouds and drifting sky particles."
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101011">
+  <meta name="description" content="UMBRAL: combate de hordas en el Mictlán. Tres arenas, seis armas y tres jefes. Juega en local sin conexión.">
+  <title>UMBRAL · Jugar</title>
+  <link rel="icon" href="./assets/img/umbral-demo/ranked/obsidiana-v1.png">
+  <link rel="stylesheet" href="./assets/css/umbral-demo.css">
+  <link rel="stylesheet" href="./assets/css/umbral-offline.css">
+</head>
+<body>
+<main id="umbralDemo" data-asset-root="./assets/img/umbral-demo/" aria-labelledby="umbralPageTitle">
+  <header class="umbral-header">
+    <a class="umbral-back" href="./">UMBRAL <span> / OFFLINE</span></a>
+    <div class="umbral-edition"><span class="umbral-live-dot" aria-hidden="true"></span> <span id="umbralMapName">ARENA ALEATORIA</span> <span class="umbral-build">1.0</span></div>
+  </header>
+
+  <section id="umbralStage" class="umbral-stage" aria-label="Arena de combate en primera persona">
+    <canvas id="umbralScene" tabindex="0" aria-label="Arena UMBRAL. WASD para moverse, Espacio para saltar, sellos cian para ascender, mouse para mirar, clic izquierdo y derecho para atacar. 1–6 cambian de arma; 5 es el Arco del Jaguar. R activa las llamas y F el tajo de macuahuitl. Escape pausa y libera el cursor."></canvas>
+    <canvas id="umbralWeapon" aria-hidden="true"></canvas>
+    <div class="umbral-vignette" aria-hidden="true"></div>
+    <div id="umbralCrosshair" class="umbral-crosshair" aria-hidden="true"><span></span></div>
+
+    <div class="umbral-topline">
+      <div class="umbral-match-info" aria-label="Estadísticas de la partida">
+        <span><span id="umbralWaveLabel">HORDA</span> <strong id="umbralWave">0</strong></span>
+        <span>BAJAS <strong id="umbralKills">0</strong></span>
+        <span id="umbralMobility">ESPACIO · SALTAR</span><span class="umbral-performance"><strong id="umbralFps">—</strong> FPS <small id="umbralQualityLabel">AUTO</small></span><span id="umbralRankedStatus">LOCAL</span>
+      </div>
+      <div class="umbral-tools" aria-label="Opciones de la demo">
+        <label class="umbral-music-volume">Música <input type="range" min="0" max="100" step="1" value="8" data-music-volume aria-label="Volumen de música"><output data-music-level>8%</output></label>
+        <button id="umbralSound" type="button" class="umbral-tool" aria-label="Activar o silenciar efectos" aria-pressed="true">Efectos</button>
+        <button id="umbralFullscreen" type="button" class="umbral-tool" aria-label="Abrir pantalla completa">⛶ <span>Pantalla completa</span></button>
+        <button id="umbralPause" type="button" class="umbral-tool" aria-label="Pausar el juego y liberar el cursor">Ⅱ <span>Pausa</span></button>
+        <button id="umbralTutorialExit" type="button" class="umbral-tool" hidden>¿Listo para jugar?</button>
+      </div>
+    </div>
+
+    <p id="umbralMessage" class="umbral-message" role="status" aria-live="polite"></p>
+    <div id="umbralBoss" class="umbral-boss" role="meter" aria-label="Vida y escudo del Titán de Obsidiana" aria-valuemin="0" aria-valuemax="12500" aria-valuenow="12500" hidden>
+      <div><strong id="umbralBossName">JEFE DE LA ARENA</strong><span id="umbralBossHealth"></span></div>
+      <div class="umbral-boss-bars"><div id="umbralBossShieldBlock"><span>ESCUDO <b id="umbralBossShield"></b></span><div class="umbral-boss-track umbral-boss-shield"><i id="umbralBossShieldMeter"></i></div></div><div><span>VIDA <b id="umbralBossLife"></b></span><div class="umbral-boss-track umbral-boss-life"><i id="umbralBossMeter"></i></div></div></div>
+      <small id="umbralBossState"></small>
+    </div>
+    <div id="umbralVortex" class="umbral-vortex-meter" role="meter" aria-label="Resistencia del vórtice. Dispara al Desollador para liberarte." aria-valuemin="0" aria-valuemax="700" aria-valuenow="700" hidden>
+      <div><strong id="umbralVortexLabel">VÓRTICE · DISPARA PARA LIBERARTE</strong><span id="umbralVortexHealth">700 / 700</span></div>
+      <div class="umbral-vortex-track"><i id="umbralVortexMeter"></i></div>
+    </div>
+    <p id="umbralFinisherPrompt" class="umbral-finisher-prompt" role="status" hidden></p>
+    <span id="umbralTide" class="umbral-tide" hidden></span>
+    <aside id="umbralTutorialGuide" class="umbral-tutorial-guide" aria-label="Guía de entrenamiento" hidden>
+      <span id="umbralTutorialStep" class="umbral-kicker">TUTORIAL · 1 / 5</span>
+      <h2 id="umbralTutorialTitle"></h2>
+      <p id="umbralTutorialCopy"></p>
+      <p id="umbralTutorialChecks" class="umbral-tutorial-checks" role="status" aria-live="polite"></p>
+      <small>Blancos inmóviles · Munición de práctica ilimitada<br><kbd>ESC</kbd> · Ir a la acción o seguir practicando</small>
+    </aside>
+
+    <div id="umbralOverlay" class="umbral-overlay" role="dialog" aria-modal="true" aria-labelledby="umbralOverlayTitle" aria-describedby="umbralOverlayCopy">
+      <div class="umbral-overlay-content">
+        <p class="umbral-kicker">MICTLÁN / TRES ARENAS</p>
+        <h1 id="umbralPageTitle">UMBRAL</h1>
+        <h2 id="umbralOverlayTitle">Cruza. Dispara. Resiste.</h2>
+        <p id="umbralOverlayCopy">Cada partida elige una arena al azar. Empiezas con 5 de vida y 100 de escudo Obsidiana; cruza el umbral para recuperar la vida. El escudo regenera cada vez más lento; desde la horda 7, agotarlo lo bloquea hasta superar la horda. Espacio: saltar. R: quema y remata para conseguir munición. F: ejecuta y recoge la sangre para curarte. Ambos poderes recargan en 8 segundos. 1–6: cambia de arma.</p>
+        <label class="umbral-player-label">Tu nombre <input id="umbralPlayerName" maxlength="32" autocomplete="nickname" placeholder="Jugador" value="Jugador"></label>
+        <div id="umbralOnboarding" class="umbral-overlay-actions" hidden>
+          <button id="umbralExperienceYes" type="button" class="umbral-primary">Sí</button>
+          <button id="umbralExperienceNo" type="button" class="umbral-secondary">No</button>
+        </div>
+        <div class="umbral-overlay-actions">
+          <button id="umbralStart" type="button" class="umbral-primary">Entrar <span aria-hidden="true">↗</span></button>
+          <button id="umbralRestart" type="button" class="umbral-secondary" hidden>Volver a jugar</button>
+          <button id="umbralTutorialButton" type="button" class="umbral-secondary" hidden>Hacer tutorial</button>
+          <button id="umbralTitanDemo" type="button" class="umbral-secondary" disabled>Probar al Titán</button>
+          <button id="umbralMadreDemo" type="button" class="umbral-secondary" disabled>Probar a la Madre del Ahogo</button>
+          <button id="umbralDesolladorDemo" type="button" class="umbral-secondary" disabled>Probar al Desollador</button>
+          <button id="umbralNormalGame" type="button" class="umbral-secondary" hidden>Jugar hordas</button>
+        </div>
+        <p class="umbral-capture-note">El mouse controla la cámara. <kbd>ESC</kbd> pausa y libera el cursor.</p>
+        <label class="umbral-sensitivity" for="umbralSensitivity"><span>Sensibilidad del mouse</span><input id="umbralSensitivity" type="range" min="0.3" max="2.5" step="0.1" value="1"></label>
+        <label class="umbral-music-volume umbral-music-paused">Música de fondo <input type="range" min="0" max="100" step="1" value="8" data-music-volume aria-label="Volumen de música en pausa"><output data-music-level>8%</output></label>
+        <label class="umbral-quality" for="umbralQuality">Calidad gráfica
+          <select id="umbralQuality">
+            <option value="auto">Automática (recomendada)</option>
+            <option value="low">Baja · mayor rendimiento</option>
+            <option value="medium">Media</option>
+            <option value="high">Alta</option>
+          </select>
+        </label>
+      </div>
+      <div class="umbral-overlay-stamp" aria-hidden="true"><span>VI</span> ARMAS<br>II PODERES</div>
+    </div>
+
+    <svg class="umbral-hud-symbols" aria-hidden="true" width="0" height="0" xmlns="http://www.w3.org/2000/svg"><defs>
+      <symbol id="u-flame" viewBox="0 0 48 48"><path d="M27 3c4 13-9 14-4 24 1-7 6-8 9-13 1 9 9 13 7 21-3 15-28 14-30-1-1-7 5-13 7-20 0 7 2 9 4 10C18 14 28 13 27 3Z" fill="currentColor"/><path d="M24 31c-8 8-5 13 1 13 7-1 6-7-1-13Z" fill="#1a1110"/></symbol>
+      <symbol id="u-macuahuitl" viewBox="0 0 48 48"><path d="m12 42 5-12-4-3 3-4-3-4 4-3-2-4 4-3-1-4 7-3 10 5-2 5 2 4-4 3 1 5-5 2-1 5-5-1-5 13Z" fill="currentColor"/><path d="m20 27 8-18" fill="none" stroke="#10201e" stroke-width="3"/></symbol>
+      <symbol id="u-knife" viewBox="0 0 64 24"><path d="m3 18 14-5 2 5L5 23Zm15-5 27-11 16 1-25 15-15 2Z" fill="currentColor"/></symbol>
+      <symbol id="u-shotgun" viewBox="0 0 64 24"><path d="M3 11h16V7h42v4H28v3h33v4H25l-6 5H4l5-7H3Z" fill="currentColor"/></symbol>
+      <symbol id="u-gauss" viewBox="0 0 64 24"><path d="M2 9h12V5h16V2h28v4H35v4h27v4H35v4h23v4H30v-4H14l-3 6H4l3-9H2Z" fill="currentColor"/></symbol>
+      <symbol id="u-smg" viewBox="0 0 64 24"><path d="M2 9h12l5-4h16l13-3-4 6 18-2-8 6H31l-5 10H15l3-10H2Z" fill="currentColor"/></symbol>
+      <symbol id="u-rifle" viewBox="0 0 64 24"><path d="M2 7h12v3h5V5h9V2h16v3H32v3h23v3h7v3H35v5l-6 5-6-2 2-8h-5l-4 8h-6l2-8H2Z" fill="currentColor"/></symbol>
+      <symbol id="u-bow" viewBox="0 0 64 24"><path d="M11 2q27 0 32 10Q38 24 11 22l30-10Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 11h51V7l7 5-7 5v-4H5Z" fill="currentColor"/></symbol>
+      <symbol id="u-vital-frame" viewBox="0 0 180 112"><path d="M1 52h88l47-44 15-2 16-6-7 22-34 32 35 31 7 26-20-9-13-1-46-43H1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m98 51 45-42 17-4-6 14-34 33 35 32 6 19-20-7-43-40" fill="currentColor" opacity=".13"/><path d="m107 47 36-34 11-3-4 8-33 31m-10 13 36 33 11 3-4-10-33-30" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+    </defs></svg>
+    <div class="umbral-hud" aria-label="Estado del jugador">
+      <div class="umbral-powers" aria-label="Poderes especiales">
+        <span id="umbralFlames" class="umbral-power" role="status" aria-live="off" aria-label="R · Poder de llamas">
+          <span class="umbral-power-emblem" aria-hidden="true"><svg class="umbral-power-ring" viewBox="0 0 64 64"><path class="umbral-power-track" d="M32 3 57 17v30L32 61 7 47V17Z"/><path class="umbral-power-progress" pathLength="100" d="M32 3 57 17v30L32 61 7 47V17Z"/></svg><svg class="umbral-power-icon"><use href="#u-flame"/></svg><kbd>R</kbd></span>
+          <b>LLAMAS</b><span id="umbralFlameStatus">LISTAS</span>
+        </span>
+        <span id="umbralMacuahuitl" class="umbral-power" role="status" aria-live="off" aria-label="F · Poder de macuahuitl">
+          <span class="umbral-power-emblem" aria-hidden="true"><svg class="umbral-power-ring" viewBox="0 0 64 64"><path class="umbral-power-track" d="M32 3 57 17v30L32 61 7 47V17Z"/><path class="umbral-power-progress" pathLength="100" d="M32 3 57 17v30L32 61 7 47V17Z"/></svg><svg class="umbral-power-icon"><use href="#u-macuahuitl"/></svg><kbd>F</kbd></span>
+          <b>MACUAHUITL</b><span id="umbralMacuahuitlStatus">LISTO</span>
+        </span>
+      </div>
+      <div class="umbral-vitals">
+        <div id="umbralHealthGauge" class="umbral-vital umbral-health-stat" role="meter" aria-label="Vida" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5">
+          <svg class="umbral-vital-frame" aria-hidden="true"><use href="#u-vital-frame"/></svg>
+          <span class="umbral-vital-label">VIDA</span><strong id="umbralHealth">5</strong><span class="umbral-vital-meter" aria-hidden="true"><i></i></span><small>/ 100</small>
+        </div>
+        <div class="umbral-vitals-gap" aria-hidden="true"></div>
+        <div id="umbralShieldGauge" class="umbral-vital umbral-shield-stat" role="meter" aria-label="Escudo de energía Obsidiana" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+          <svg class="umbral-vital-frame" aria-hidden="true"><use href="#u-vital-frame"/></svg>
+          <span class="umbral-vital-label">OBSIDIANA <small>ESCUDO</small></span><strong id="umbralShield">100</strong><span class="umbral-vital-meter" aria-hidden="true"><i></i></span><small id="umbralShieldStatus">CARGADO</small>
+        </div>
+      </div>
+      <div class="umbral-arsenal" aria-label="Arma seleccionada">
+        <div class="umbral-selected-weapon">
+          <kbd id="umbralWeaponKey" aria-label="Tecla del arma seleccionada">2</kbd>
+          <svg class="umbral-equipped-icon" viewBox="0 0 64 24" aria-hidden="true"><use id="umbralWeaponIcon" href="#u-shotgun"/></svg>
+          <div class="umbral-ammo-stat"><strong id="umbralAmmo">60</strong><small id="umbralAmmoType">MUNICIÓN CHICA</small></div>
+        </div>
+        <div class="umbral-weapon-caption"><strong id="umbralWeaponName">Escopeta de obsidiana</strong><span id="umbralWeaponState">2 SIMPLES / 1 DOBLE</span></div>
+      </div>
+    </div>
+    <div id="umbralError" class="umbral-error" role="alert" hidden></div>
+    <noscript><p class="umbral-error">Activa JavaScript para jugar esta demo.</p></noscript>
+  </section>
+
+  <details class="umbral-diagnostics">
+    <summary>Rendimiento · reporte de prueba</summary>
+    <p id="umbralPerformanceReadout">Entra a la arena para medir el rendimiento.</p>
+    <p>Al pausar se conserva la última medición. Puedes cambiar la calidad desde el menú de pausa.</p>
+    <button id="umbralCopyPerformance" type="button" class="umbral-secondary">Copiar reporte</button>
+    <textarea id="umbralPerformanceReport" aria-label="Reporte de rendimiento para copiar" rows="8" readonly hidden></textarea>
+  </details>
+
+  <section class="umbral-quick-guide" aria-labelledby="umbralGuideTitle">
+    <header><p class="umbral-kicker">GUÍA RÁPIDA</p><h2 id="umbralGuideTitle">Todo al alcance de tu mano.</h2></header>
+    <div class="umbral-quick-movement"><span><kbd>W A S D</kbd> Caminar</span><span><kbd>ESPACIO</kbd> Saltar</span><span><kbd>MOUSE</kbd> Apuntar</span><span><kbd>CLIC IZQ.</kbd> Disparar</span><span><kbd>ESC</kbd> Pausar</span></div>
+    <div class="umbral-quick-weapons" aria-label="Teclas de armas">
+      <div><kbd>1</kbd><strong>Cuchillo</strong><small>Ataque cercano</small></div>
+      <div><kbd>2</kbd><strong>Escopeta</strong><small>Clic der.: disparo doble</small></div>
+      <div><kbd>3</kbd><strong>Rifle de asalto</strong><small>Mantén clic der. + clic izq.: sniper · 0.7 s</small></div>
+      <div><kbd>4</kbd><strong>Subfusil</strong><small>Clic der.: doble fuego</small></div>
+      <div><kbd>5</kbd><strong>Arco del Jaguar</strong><small>Clic der.: explosiva</small></div>
+      <div><kbd>6</kbd><strong>Cañón Solar</strong><small>Clic der.: disparo potente</small></div>
+    </div>
+    <div class="umbral-quick-powers">
+      <article><h3><kbd>R</kbd> Lanzallamas <span>8 s de enfriamiento</span></h3><p>Quema durante 1 s. Los enemigos quemados sueltan munición al morir, aunque los remates con otra arma.</p></article>
+      <article><h3><kbd>F</kbd> Golpe <span>8 s tras acertar con el poder</span></h3><p>Cargado: ejecuta, deja vida y aturde durante 2 s. Desde la horda 3, las variantes de otro color resisten la ejecución; el golpe las daña e interrumpe. Mientras recarga: pulsa F seguido para encadenar izquierda (90), derecha (120) y descendente (180). Continúa antes de 0.8 s tras cada tajo. Fallar no consume el poder. Daña e interrumpe al Titán y al Desollador. Contra la Madre del Ahogo, usa disparos.</p></article>
+      <article><h3><kbd>CLIC DER.</kbd> Subfusil doble <span>7 s de enfriamiento</span></h3><p>Dos armas, fuego automático y munición infinita durante 4 s. Puedes moverte mientras disparas.</p></article>
+    </div>
+  </section>
+
+  <section id="umbralRecords" class="umbral-ranking" aria-labelledby="umbralRecordsTitle">
+    <header class="umbral-ranking-heading"><div><p class="umbral-kicker">HISTORIAL LOCAL</p><h2 id="umbralRecordsTitle">Tus mejores partidas.</h2><p>Top 10 por hordas superadas y bajas. Se guarda en este navegador.</p></div></header>
+    <div class="umbral-rank-personal">
+      <div><span>Partidas guardadas</span><strong id="umbralLocalMatches">0</strong></div>
+      <div><span>Hordas superadas</span><strong id="umbralLocalWaves">0</strong></div>
+      <div><span>Enemigos derrotados</span><strong id="umbralLocalKills">0</strong></div>
+      <div><span>Mejor horda alcanzada</span><strong id="umbralLocalBest">0</strong></div>
+    </div>
+    <p id="umbralLocalSave" role="status">Guardado local disponible.</p>
+    <div class="umbral-ranking-table-wrap"><table class="umbral-ranking-table">
+      <caption>Mejores resultados de las últimas 500 partidas de este navegador</caption>
+      <thead><tr><th>Puesto</th><th>Jugador</th><th>Arena</th><th>Hordas superadas</th><th>Bajas</th></tr></thead><tbody id="umbralLocalRows"></tbody>
+    </table><p id="umbralLocalEmpty">Entra a una arena para registrar tu primera partida.</p></div>
+    <p class="umbral-ranking-note">Tutoriales y pruebas de jefes no puntúan. El historial conserva hasta 500 partidas. Borrar los datos del navegador elimina el historial.</p>
+  </section>
+</main>
+<footer class="offline-footer">UMBRAL · Hecho para resistir.</footer>
+<script type="module" src="./assets/js/umbral-demo.js"></script>
+</body>
+</html>

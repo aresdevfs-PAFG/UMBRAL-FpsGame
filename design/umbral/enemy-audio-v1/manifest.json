@@ -1,0 +1,384 @@
+{
+  "title": "UMBRAL · Voces del inframundo",
+  "created": "2026-10-14",
+  "enemies": [
+    {
+      "id": "macabro",
+      "label": "Macabro Sanguinolento",
+      "clips": [
+        {
+          "id": "macabro-presence",
+          "label": "Presencia · respiración y gruñido",
+          "file": "../../../public/assets/audio/umbral/enemies/macabro-presence.mp3",
+          "duration": 1.906939,
+          "loop": false
+        },
+        {
+          "id": "macabro-attack",
+          "label": "Ataque · desgarro y lanzamiento",
+          "file": "../../../public/assets/audio/umbral/enemies/macabro-attack.mp3",
+          "duration": 1.018776,
+          "loop": false
+        },
+        {
+          "id": "macabro-hurt",
+          "label": "Daño · quejido breve",
+          "file": "../../../public/assets/audio/umbral/enemies/macabro-hurt.mp3",
+          "duration": 0.835918,
+          "loop": false
+        },
+        {
+          "id": "macabro-death",
+          "label": "Muerte · caída y huesos",
+          "file": "../../../public/assets/audio/umbral/enemies/macabro-death.mp3",
+          "duration": 1.567347,
+          "loop": false
+        }
+      ],
+      "preview": "preview-macabro.mp3"
+    },
+    {
+      "id": "devorador",
+      "label": "Devorador de Rostros",
+      "clips": [
+        {
+          "id": "devorador-presence",
+          "label": "Presencia · máscara espectral",
+          "file": "../../../public/assets/audio/umbral/enemies/devorador-presence.mp3",
+          "duration": 2.638367,
+          "loop": true
+        },
+        {
+          "id": "devorador-attack",
+          "label": "Embestida · chillido y mordida",
+          "file": "../../../public/assets/audio/umbral/enemies/devorador-attack.mp3",
+          "duration": 1.149388,
+          "loop": false
+        },
+        {
+          "id": "devorador-hurt",
+          "label": "Daño · máscara agrietada",
+          "file": "../../../public/assets/audio/umbral/enemies/devorador-hurt.mp3",
+          "duration": 0.548571,
+          "loop": false
+        },
+        {
+          "id": "devorador-death",
+          "label": "Muerte · ruptura y explosión",
+          "file": "../../../public/assets/audio/umbral/enemies/devorador-death.mp3",
+          "duration": 1.410612,
+          "loop": false
+        }
+      ],
+      "preview": "preview-devorador.mp3"
+    },
+    {
+      "id": "titan",
+      "label": "Titán de Obsidiana",
+      "clips": [
+        {
+          "id": "titan-arrival",
+          "label": "Aparición · rugido del Titán",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-arrival.mp3",
+          "duration": 2.35102,
+          "loop": false
+        },
+        {
+          "id": "titan-step",
+          "label": "Paso · peso y armadura",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-step.mp3",
+          "duration": 1.149388,
+          "loop": false
+        },
+        {
+          "id": "titan-leap",
+          "label": "Salto · impulso",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-leap.mp3",
+          "duration": 1.123265,
+          "loop": false
+        },
+        {
+          "id": "titan-landing",
+          "label": "Caída · impacto y onda",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-landing.mp3",
+          "duration": 1.671837,
+          "loop": false
+        },
+        {
+          "id": "titan-hurt",
+          "label": "Daño · rugido corto",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-hurt.mp3",
+          "duration": 0.862041,
+          "loop": false
+        },
+        {
+          "id": "titan-rage",
+          "label": "Fase 2 · escudo roto y furia",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-rage.mp3",
+          "duration": 1.828571,
+          "loop": false
+        },
+        {
+          "id": "titan-skulls",
+          "label": "Calaveras · carga y lanzamiento",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-skulls.mp3",
+          "duration": 2.115918,
+          "loop": false
+        },
+        {
+          "id": "titan-summon",
+          "label": "Invocación · llamado de imps",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-summon.mp3",
+          "duration": 2.272653,
+          "loop": false
+        },
+        {
+          "id": "titan-downed",
+          "label": "Vulnerable · agonía y corazón",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-downed.mp3",
+          "duration": 3.526531,
+          "loop": true
+        },
+        {
+          "id": "titan-death",
+          "label": "Muerte · núcleo roto y derrumbe",
+          "file": "../../../public/assets/audio/umbral/enemies/titan-death.mp3",
+          "duration": 2.507755,
+          "loop": false
+        }
+      ],
+      "preview": "preview-titan.mp3"
+    },
+    {
+      "id": "abominacion",
+      "label": "Abominación Ctonia",
+      "clips": [
+        {
+          "id": "abominacion-presence",
+          "label": "Presencia · respiración y burbujeo",
+          "file": "../../../public/assets/audio/umbral/enemies/abominacion-presence.mp3",
+          "duration": 1.854694,
+          "loop": false
+        },
+        {
+          "id": "abominacion-windup",
+          "label": "Preparación · presión de ácido",
+          "file": "../../../public/assets/audio/umbral/enemies/abominacion-windup.mp3",
+          "duration": 0.940408,
+          "loop": false
+        },
+        {
+          "id": "abominacion-attack",
+          "label": "Ataque · ráfaga de ácido",
+          "file": "../../../public/assets/audio/umbral/enemies/abominacion-attack.mp3",
+          "duration": 0.626939,
+          "loop": false
+        },
+        {
+          "id": "abominacion-hurt",
+          "label": "Daño · bramido húmedo",
+          "file": "../../../public/assets/audio/umbral/enemies/abominacion-hurt.mp3",
+          "duration": 0.679184,
+          "loop": false
+        },
+        {
+          "id": "abominacion-death",
+          "label": "Muerte · bramido y derrumbe",
+          "file": "../../../public/assets/audio/umbral/enemies/abominacion-death.mp3",
+          "duration": 2.246531,
+          "loop": false
+        }
+      ],
+      "preview": "preview-abominacion.mp3"
+    },
+    {
+      "id": "centinela",
+      "label": "Centinela de Mictlantecuhtli",
+      "clips": [
+        {
+          "id": "centinela-presence",
+          "label": "Presencia · rugido del Centinela",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-presence.mp3",
+          "duration": 2.403265,
+          "loop": false
+        },
+        {
+          "id": "centinela-windup",
+          "label": "Preparación · rugido de ataque",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-windup.mp3",
+          "duration": 1.17551,
+          "loop": false
+        },
+        {
+          "id": "centinela-attack",
+          "label": "Ataque · esferas de plasma",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-attack.mp3",
+          "duration": 0.705306,
+          "loop": false
+        },
+        {
+          "id": "centinela-slam",
+          "label": "Ataque · mazos y onda",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-slam.mp3",
+          "duration": 0.679184,
+          "loop": false
+        },
+        {
+          "id": "centinela-hurt",
+          "label": "Daño · gruñido furioso",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-hurt.mp3",
+          "duration": 0.705306,
+          "loop": false
+        },
+        {
+          "id": "centinela-death",
+          "label": "Muerte · rugido y colapso",
+          "file": "../../../public/assets/audio/umbral/enemies/centinela-death.mp3",
+          "duration": 2.194286,
+          "loop": false
+        }
+      ],
+      "preview": "preview-centinela.mp3"
+    },
+    {
+      "id": "empalador",
+      "label": "Empalador de Itztepec",
+      "clips": [
+        {
+          "id": "empalador-presence",
+          "label": "Presencia · fragmentos de obsidiana",
+          "file": "../../../public/assets/audio/umbral/enemies/empalador-presence.mp3",
+          "duration": 2.037551,
+          "loop": false
+        },
+        {
+          "id": "empalador-windup",
+          "label": "Preparación · cuchillas contra el suelo",
+          "file": "../../../public/assets/audio/umbral/enemies/empalador-windup.mp3",
+          "duration": 0.705306,
+          "loop": false
+        },
+        {
+          "id": "empalador-attack",
+          "label": "Ataque · estacas de cristal",
+          "file": "../../../public/assets/audio/umbral/enemies/empalador-attack.mp3",
+          "duration": 0.835918,
+          "loop": false
+        },
+        {
+          "id": "empalador-hurt",
+          "label": "Daño · cristal agrietado",
+          "file": "../../../public/assets/audio/umbral/enemies/empalador-hurt.mp3",
+          "duration": 0.600816,
+          "loop": false
+        },
+        {
+          "id": "empalador-death",
+          "label": "Muerte · derrumbe de obsidiana",
+          "file": "../../../public/assets/audio/umbral/enemies/empalador-death.mp3",
+          "duration": 1.358367,
+          "loop": false
+        }
+      ],
+      "preview": "preview-empalador.mp3"
+    },
+    {
+      "id": "tejedor",
+      "label": "Tejedor de Ceniza",
+      "clips": [
+        {
+          "id": "tejedor-presence",
+          "label": "Presencia · aliento de ceniza",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-presence.mp3",
+          "duration": 2.298776,
+          "loop": false
+        },
+        {
+          "id": "tejedor-windup",
+          "label": "Preparación · hilos tensándose",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-windup.mp3",
+          "duration": 0.757551,
+          "loop": false
+        },
+        {
+          "id": "tejedor-attack",
+          "label": "Ataque · abanico de energía",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-attack.mp3",
+          "duration": 0.679184,
+          "loop": false
+        },
+        {
+          "id": "tejedor-channel",
+          "label": "Canalización · tejido protector",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-channel.mp3",
+          "duration": 2.716735,
+          "loop": true
+        },
+        {
+          "id": "tejedor-hurt",
+          "label": "Daño · fibras rotas",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-hurt.mp3",
+          "duration": 0.731429,
+          "loop": false
+        },
+        {
+          "id": "tejedor-death",
+          "label": "Muerte · huesos y ceniza",
+          "file": "../../../public/assets/audio/umbral/enemies/tejedor-death.mp3",
+          "duration": 1.48898,
+          "loop": false
+        }
+      ],
+      "preview": "preview-tejedor.mp3"
+    },
+    {
+      "id": "acechador",
+      "label": "Acechador de Basalto",
+      "clips": [
+        {
+          "id": "acechador-presence",
+          "label": "Presencia · gruñido de basalto",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-presence.mp3",
+          "duration": 2.089796,
+          "loop": false
+        },
+        {
+          "id": "acechador-windup",
+          "label": "Preparación · acecho y tensión",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-windup.mp3",
+          "duration": 0.809796,
+          "loop": false
+        },
+        {
+          "id": "acechador-attack",
+          "label": "Ataque · salto y zarpazo",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-attack.mp3",
+          "duration": 0.679184,
+          "loop": false
+        },
+        {
+          "id": "acechador-landing",
+          "label": "Aterrizaje · garras sobre piedra",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-landing.mp3",
+          "duration": 0.783673,
+          "loop": false
+        },
+        {
+          "id": "acechador-hurt",
+          "label": "Daño · gruñido y placa rota",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-hurt.mp3",
+          "duration": 0.653061,
+          "loop": false
+        },
+        {
+          "id": "acechador-death",
+          "label": "Muerte · caída de basalto",
+          "file": "../../../public/assets/audio/umbral/enemies/acechador-death.mp3",
+          "duration": 1.123265,
+          "loop": false
+        }
+      ],
+      "preview": "preview-acechador.mp3"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "output": "sources/run-source.png",
+  "references": [
+    {
+      "file": "sources/approved-concept.png",
+      "role": "Approved character identity, costume and medical clues"
+    },
+    {
+      "file": "reference:codex-clipboard-249acf67-7afe-455c-8531-4ae7ee3029ab.png",
+      "role": "User-supplied Doom pixel sprite style reference"
+    },
+    {
+      "file": "public/assets/img/umbral-demo/enemies/macabro-move.png",
+      "role": "Existing UMBRAL sprite shading reference"
+    }
+  ],
+  "prompt": "Use case: style-transfer / animated game sprite design.\nAsset: one precisely laid-out transparent sprite sheet containing EIGHT sequential animation frames for a looping run-in-place cycle.\nReference 1 is the approved CHARACTER IDENTITY AND COSTUME. Preserve this young adult man's face, brown skin, messy black hair (uncovered), black torn modern clothing, asymmetrical faceted obsidian shoulder and chest armor, worn bronze fastenings, bronze and turquoise forearm bracers, dark boots. Include the tiny off-white hospital wristband under his left bracer, small forearm gauze dressing and almost invisible ECG adhesive sliver at the collar, represented by just a few subdued pixels. No character name.\nReference 2 is ONLY the old-school Doom PLAYER SPRITE pixel rendering and running-animation inspiration; DO NOT copy its green outfit, helmet, rifle or face.\nReference 3 shows the actual game's sprite shading and palette texture; use its gritty, readable retro pixel treatment, NOT its monster anatomy.\nLayout: landscape 1536 by 1024 canvas, exactly FOUR equal columns by TWO equal rows, eight invisible 384 by 512 cells. ONE full-body sprite centered inside EACH cell. Frames run in reading order, top row 1-4 then bottom row 5-8. Pure alpha transparency throughout the sheet background, no floor shadows, no grid lines, no labels, no text, no scenery. Keep ample empty margin around every figure; no part crosses its cell. Same camera, same slight front-three-quarter view facing a little to the viewer's right, same scale and orientation throughout. Fixed hip center horizontally and stable ground baseline; natural 2-3-pixel head bob, not jumping.\nAnimation: authentic eight distinct phases of a forward run in place. Frame1 right leg forward contact / left leg back; frame2 down and weight transfer; frame3 left leg passing through and right leg support; frame4 left knee lifted forward; frame5 left foot forward contact / right leg back; frame6 down with opposite weight; frame7 right leg passing through; frame8 right knee lifting, naturally returning into frame1. The figure never rotates. Opposed arm swing, subtle torso compression and hair movement. All eight drawings must show visibly different successive leg silhouettes with plausible knees and ankles; coherent anatomy and identical armor/hair across frames.\nEquipment: retain his existing compact jagged obsidian dagger in his RIGHT hand (on the viewer's left), angled safely down/out while running. Left hand empty, just 2 or 3 tiny warm orange ember pixels, not a ball of fire. No gun, no new gear.\nArt: actual hand-authored-looking 1990s dark FPS pixel sprite, chunky deliberate pixel clusters, restrained palette, hard pixel edges, light dithering, strong readable silhouette, rough bronze specular pixels, subtle purple-gray obsidian facets, tiny turquoise accents, brown skin with 4-5 shading tones. It must look like a DOOM-era animated player sprite matching UMBRAL, NOT a smooth illustration, vector, anime, 3D render or miniaturized concept painting. Draw with an apparent native resolution around 100-140 pixels tall per character, enlarged nearest-neighbor to fit cells. Preserve the gritty, young human identity, black hair and approved outfit. Transparent background, no white or checkerboard painted into the image.",
+  "processing": "Grid extraction, uniform nearest-neighbor export, shared GIF palette and loop encoding only. Character artwork authored by imagegen."
+}

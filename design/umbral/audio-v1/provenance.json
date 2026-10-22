@@ -1,0 +1,52 @@
+{
+  "created": "2026-10-12",
+  "generator": "Runway sound effects",
+  "format": "MP3",
+  "notes": "Original generated effects. Playback normalizes peaks and trims leading silence. Existing shotgun samples preserved.",
+  "samples": [
+    {
+      "name": "gauss",
+      "id": "a8c3cc76-f89b-4b70-aa65-9dc759468cbb"
+    },
+    {
+      "name": "rifle",
+      "id": "94f3df30-a6ec-4ac4-8845-8f61238aaa83",
+      "prompt": "Single dry automatic rifle gunshot, sharp mechanical crack and brittle volcanic glass snap, short punchy bass, compact dry tail. Isolated first person game sound, immediate attack, no music or voice."
+    },
+    {
+      "name": "bow-fire",
+      "id": "df779974-d0ca-499c-9ced-fa32f1dd0470",
+      "prompt": "One taut bowstring snapping followed immediately by a swift fiery magical arrow whoosh, crisp string twang and hot rushing air. Powerful dry close sound, no music, no voice, no electronic beeps."
+    },
+    {
+      "name": "bow-void",
+      "id": "6c1b69a9-2495-40fa-9327-3514f738d471",
+      "prompt": "A single magical bow firing a dark energy arrow, sharp bowstring snap with a deep rushing vacuum and crackling violet energy tail. Immediate dry attack, no music or voices, no beeps."
+    },
+    {
+      "name": "explosion",
+      "id": "ae504707-4665-4393-bb27-5033d583c471",
+      "prompt": "One heavy magical explosive impact, deep tight thunderous boom with crunchy stone debris and brief burning energy tail. Isolated game sound, immediate impact, no music or voices."
+    },
+    {
+      "name": "macuahuitl-swing",
+      "id": "db5cec91-552f-4a0c-93db-a51c0c514eb1",
+      "prompt": "One powerful heavy wooden sword swung from right to left, broad fast rushing air with a low blade whistle. Starts immediately and peaks after a quarter second. No impact, no music, no voices."
+    },
+    {
+      "name": "flames",
+      "id": "fa1e695c-fc2b-4cc3-859b-4e79d7505f36",
+      "prompt": "A one second burst of pressurized magical flames from hands: immediate ignition whoosh, fierce dense roaring fire, ends with a quick ember hiss. Dry close perspective, no music, no speech, no beeps."
+    },
+    {
+      "name": "espinario",
+      "id": "cb13af01-707e-4ff3-919f-ddacc86936bc",
+      "prompt": "Single compact pneumatic poison dart SMG shot, wooden clack, compressed air spit, bone needle snap."
+    },
+    {
+      "name": "sniper",
+      "id": "64e9fb05-46db-46a4-b3e3-81abc8ce1624",
+      "prompt": "One single heavy anti-materiel sniper rifle shot, immediate sharp crack, deep bass concussion, metallic receiver slam and brief violet-energy tail. No reload, music or voices."
+    }
+  ]
+}

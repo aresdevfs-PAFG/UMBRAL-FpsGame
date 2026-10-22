@@ -1,0 +1,14 @@
+{
+  "speech": {
+    "text": "[screaming] [strained] ¡AY MI HIJOOOOOO!",
+    "voice": "Grungle",
+    "model": "eleven_v3",
+    "languageCode": "es",
+    "speed": 0.95,
+    "name": "UMBRAL Madre — AY MI HIJOOO desgarrado v5",
+    "rationale": "Reemplazar solo la frase final por AY MI HIJOOO completamente gritada y desgarrada, igual de intensa que el alarido inicial aprobado, que se conservará sin regenerar."
+  },
+  "taskId": "4c1442a4-d21b-4724-bc49-68b69722deaf",
+  "preservedOpening": "sources/madre-presence.mp3",
+  "openingSha256": "E5C63104B859A249E2E16EE82447DAFF60745855CE83E2FE0CD158CCC72F31D5"
+}

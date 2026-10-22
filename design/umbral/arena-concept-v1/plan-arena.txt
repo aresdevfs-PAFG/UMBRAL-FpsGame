@@ -1,0 +1,83 @@
+UMBRAL — CUENCA DE OBSIDIANA
+Propuesta conceptual v1 — 8 de octubre de 2026
+Estado: planificación. No se modifica ni se integra en la demo.
+Alcance: identidad visual, circulación de arena, reglas de hordas y asignación futura de efectos enemigos.
+
+1. DIRECCIÓN
+Fortaleza funeraria ficticia inspirada en iconografía mexica. La referencia aporta monumentalidad, puentes, terrazas y una entrada dominante. La adaptación usa basamentos escalonados, portadas con dinteles, frisos de cráneos, piedra volcánica, estuco ocre erosionado y afloramientos de obsidiana.
+Fachada central con rostro esquelético como referencia visual permanente.
+Suelo ceniza y ocre de valor medio; paredes oscuras; luces ámbar puntuales. Rojo, verde y violeta intensos reservados sobre todo a ataques para facilitar lectura.
+La ilustración expresa volúmenes y atmósfera; no es un plano medido ni una captura de contenido construido.
+Es una reinterpretación fantástica para UMBRAL, no una reconstrucción arqueológica.
+
+2. ESTRUCTURA ESPACIAL
+Huella inicial orientativa: 70 x 60 metros, ajustable en la futura maqueta.
+Tres cotas propuestas: plaza 0 m, terrazas +3 m, puente superior +6 m.
+Circuito A: vuelta completa por la plaza, rodeando altar bajo descentrado y cuatro pilares.
+Circuito B: circuito por terrazas; sus tramos delantero y trasero conectan ambos laterales.
+Cuatro rampas o escaleras amplias conectan A y B. Acceso a puente superior por ambos extremos.
+Dos conexiones transversales por la plaza permiten invertir recorrido.
+Sin salto obligatorio. Las posiciones altas tienen al menos dos salidas.
+Entrada sur: comienza con 5 de vida, umbral restaura exactamente 100 una vez; desemboca en las dos direcciones del circuito. El vestíbulo no debe convertirse en refugio permanente tras entrar.
+Fachada norte: santuario y punto monumental de aparición de enemigos pesados, con ruta ancha hasta plaza.
+Canales laterales de fluido oscuro: riesgo opcional con puentes claros; nunca la única ruta a un recurso esencial.
+
+3. FUNCIÓN DE ZONAS
+Plaza: esquivar, pelear con grupos y cambiar de dirección; escopeta, melé y lanzallamas.
+Terrazas: disparos de precisión; tramos con cobertura interrumpen visibilidad para que ningún balcón domine todo.
+Puente superior: cruce rápido y expuesto, útil para Gauss, con retorno por ambos extremos.
+Laterales bajos: salud y munición distribuidas en lados opuestos.
+Altar central: recurso valioso que requiere exponerse; nunca una posición protegida con todos los suministros.
+Santuario norte: entrada visible para pesados y mini-jefes; sin encerrar al jugador en una única salida.
+
+4. HORDAS
+Ocho entradas candidatas en perímetro; activar grupos alternos según espacio y posición.
+Aparición con aviso visual/sonoro y tiempo para reaccionar, a distancia suficiente y fuera de la visión directa cuando sea posible.
+Si ninguna entrada es justa, aplazar la aparición; no teleportar encima o detrás del jugador a corta distancia.
+No ocupar simultáneamente todas las salidas ni aparecer sobre botiquines.
+Mezclar funciones: Macabros presionan a distancia, Devoradores persiguen, Empaladores obligan a abandonar puntos fijos, Abominaciones ocupan corredores, Centinelas concentran peligro en espacios amplios.
+Los enemigos terrestres deben alcanzar todas las zonas transitables por rampas; no habrá balcones inmunes.
+Orden y reglas comunes entre intentos para la futura comparación de puntajes. Rangos y balance quedan pendientes.
+
+5. EFECTOS ENEMIGOS — ESPECIFICACIÓN PARA INTEGRACIÓN FUTURA
+Macabro -> blood-projectile / gif/fx-blood-projectile.gif.
+Abominación -> acid-projectile / gif/fx-acid-projectile.gif, ráfaga triple.
+Centinela -> plasma-projectile / gif/fx-plasma-projectile.gif; ground-shockwave para golpes al suelo.
+Empalador -> obsidian-spikes / gif/fx-obsidian-spikes.gif; primero aviso en suelo, luego activación.
+Devorador -> embestida del propio cuerpo; humo, destello de anticipación y explosión por definir. El disparo verde provisional actual deberá retirarse cuando se implemente este comportamiento.
+Fuentes existentes: design/umbral/bestiario-v2/manifest.json y sus atlas/gif.
+Reutilizar los fotogramas de los GIF mediante los atlas PNG para controlar animación, movimiento, colisión y pausas. Mantener estética y ritmo originales.
+Sangre y ácido tienen silueta de proyectil con cola; plasma es esfera eléctrica. Forma y ritmo deben diferenciarlos además del color.
+Movimiento por tiempo transcurrido independiente de la frecuencia de los fotogramas del sprite.
+Anclaje central para proyectiles; anclaje al suelo para estacas/ondas. Colisión coherente con núcleo visible, sin contar todo el halo.
+Planear nacimiento, vuelo, impacto y desaparición. Los GIF actuales no proporcionan por sí solos todas las animaciones de impacto.
+Estacas/ondas tienen aviso previo y duración definida; se resuelven en la superficie alcanzada y no atraviesan pisos o puentes.
+Plasma guiado con giro limitado para que esquivarlo sea posible.
+
+6. ELEMENTOS AMBIENTALES
+Braseros: referencia visual; iluminación contenida.
+Pilares y altar: cobertura sólida con bordes claros, sin adornos que traben movimiento.
+Obsidiana: principalmente decorativa fuera de rutas; cualquier zona dañina debe distinguirse del decorado.
+Canales: prototipar sin daño al inicio; activar daño moderado después de validar circulación.
+Trampas futuras: losas con aviso y pulsos alternos, siempre con una ruta segura. Evitar puertas que sellen todas las salidas.
+No añadir aleatoriedad ambiental que perjudique la comparación de partidas.
+
+7. ORDEN FUTURO DE TRABAJO Y VALIDACIÓN
+A. Aprobar silueta, paleta, topología y escala aproximada.
+B. Maqueta de volúmenes simples para comprobar velocidad, anchuras, rampas y escapes.
+C. Implementar superficies con altura, jugador/enemigos en distintos niveles, colisión de puentes, trayectorias y línea de visión vertical.
+D. Integrar efectos ya existentes, avisos e impactos pendientes.
+E. Probar rutas de enemigos y mezcla de hordas; corregir campeo y apariciones injustas.
+F. Aplicar arte final y medir rendimiento con la población y efectos previstos.
+La simulación actual usa piso plano X/Z y altura fija de cámara. Las tres alturas jugables requieren ese trabajo funcional antes de considerarse terminadas.
+Criterios: todos los circuitos continuos; dos salidas por zona de combate; sin saltos obligatorios; recursos repartidos; apariciones con aviso; proyectiles bloqueados por paredes y pisos; legibilidad de ataques con escena llena.
+Pendientes de arte: variaciones de frisos y materiales, umbral final, portales de aparición, impactos de sangre/ácido/plasma, aviso de estacas, humo/explosión del Devorador.
+
+REFERENCIAS VISUALES Y CULTURALES
+Imagen de fortaleza proporcionada por el usuario.
+INAH — La muerte a través de tres esculturas mexicas:
+https://www.inah.gob.mx/images/interactivos/20241030_MuseoADetalle_EscultMexicas/
+INAH — Nuestra sangre, nuestro color. La escultura polícroma de Tenochtitlan:
+https://templomayor.inah.gob.mx/nuestrasangre
+La composición, arquitectura fantástica, peligros, nombre del mapa y topología son decisiones originales de diseño.
+

@@ -1,0 +1,13 @@
+{
+  "sourceSeconds": 1.0,
+  "runtimeSeconds": 0.21,
+  "runtimePeak": 0.8,
+  "previewPeak": 0.22829202770188622,
+  "previewSequence": [
+    "single shot",
+    "normal burst, 70 ms cadence",
+    "dual, 4 s, offset 32 ms"
+  ],
+  "processing": "65 Hz highpass, gentle 240 Hz body, 6.2 kHz rolloff, 210 ms tail with fade",
+  "audioPrompt": "One single realistic compact submachine gun shot, close first-person perspective. Dry sharp gunpowder crack, punchy low-mid pressure thump, very short gritty mechanical bolt transient. Controlled treble, full dense body. Outdoor nearly dry acoustics, brief 180 ms decay then silence. Exactly one shot, no burst, no metallic ringing or hollow clanks, no lasers, no voices, no music. AAA early-2000s military sci-fi shooter feel."
+}

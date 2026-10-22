@@ -1,0 +1,29 @@
+{
+  "generator": "Built-in image_gen; lossless frame packing and GIF export",
+  "assets": [
+    {
+      "effect": "titan-charge-aura",
+      "frames": 8,
+      "atlas": "public/assets/img/umbral-demo/effects/titan-charge-aura.png",
+      "preview": "titan-charge-aura.gif",
+      "runtimeBytes": 706169,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "frameSize": 256
+    },
+    {
+      "effect": "titan-plasma",
+      "frames": 4,
+      "atlas": "public/assets/img/umbral-demo/effects/titan-plasma.png",
+      "preview": "titan-plasma.gif",
+      "runtimeBytes": 160842,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "frameSize": 192
+    }
+  ]
+}

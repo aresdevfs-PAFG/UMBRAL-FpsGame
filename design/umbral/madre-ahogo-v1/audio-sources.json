@@ -1,0 +1,57 @@
+[
+  {
+    "name": "presence",
+    "taskId": "5ff1781b-131b-4a81-bb59-aaddc8e81138",
+    "duration": 2.2,
+    "revision": 4
+  },
+  {
+    "name": "arrival",
+    "taskId": "4d2866bb-bda4-432c-95fb-17775cf18263",
+    "duration": 3
+  },
+  {
+    "name": "windup",
+    "taskId": "2ddf5251-842b-4554-89f4-c64dff5fc379",
+    "duration": 1
+  },
+  {
+    "name": "wave",
+    "taskId": "285e76f6-7d17-43d5-ad66-a32dc2231a0f",
+    "duration": 1.48
+  },
+  {
+    "name": "hands",
+    "taskId": "718ce02e-4abf-4cfc-ac42-6f2d44724a8d",
+    "duration": 1.2
+  },
+  {
+    "name": "darkness",
+    "taskId": "872bbe7b-c4d1-495c-b4f2-40285b54a849",
+    "duration": 3
+  },
+  {
+    "name": "screamer",
+    "taskId": "ec09990b-2967-4daf-9f29-7a4ba5b35618",
+    "duration": 1.2
+  },
+  {
+    "name": "hurt",
+    "taskId": "34964d3a-049e-4900-9ffd-682f63e0009b",
+    "duration": 0.88
+  },
+  {
+    "name": "parry",
+    "taskId": "bf64f637-1961-42be-b678-5780231d1a49",
+    "duration": 1.08
+  },
+  {
+    "name": "death",
+    "taskId": "5ff1781b-131b-4a81-bb59-aaddc8e81138",
+    "duration": 2.2,
+    "revision": 7,
+    "sourceFile": "sources/madre-presence.mp3",
+    "sourceSha256": "E5C63104B859A249E2E16EE82447DAFF60745855CE83E2FE0CD158CCC72F31D5",
+    "spokenWords": false
+  }
+]

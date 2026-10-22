@@ -1,0 +1,640 @@
+{
+  "title": "UMBRAL · Arsenal en primera persona",
+  "version": 1,
+  "status": "art-review-not-gameplay-integrated",
+  "gloryKillsEnabled": false,
+  "notes": [
+    "Fotogramas clave generados con imagegen; requieren ajuste y prueba en el motor.",
+    "Los GIF repiten para revisión; las acciones del visor se reproducen una sola vez.",
+    "El fogonazo está incorporado al sprite. Los proyectiles físicos, impactos, daño y sonidos aún no están implementados.",
+    "No incluye manos de ejecución ni glory kills."
+  ],
+  "weapons": [
+    {
+      "id": "macuahuitl",
+      "name": "Macuahuitl",
+      "ammo": "Sin munición",
+      "primary": "Tajo horizontal",
+      "secondary": "Golpe descendente",
+      "recovery": "Guardia y recuperación",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/macuahuitl-primary.png",
+          "gif": "gif/macuahuitl-primary.gif",
+          "frames": [
+            "frames/macuahuitl-primary-0.png",
+            "frames/macuahuitl-primary-1.png",
+            "frames/macuahuitl-primary-2.png",
+            "frames/macuahuitl-primary-3.png"
+          ],
+          "durationMs": [
+            100,
+            80,
+            90,
+            180
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "melee_contact",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/macuahuitl-secondary.png",
+          "gif": "gif/macuahuitl-secondary.gif",
+          "frames": [
+            "frames/macuahuitl-secondary-0.png",
+            "frames/macuahuitl-secondary-1.png",
+            "frames/macuahuitl-secondary-2.png",
+            "frames/macuahuitl-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "melee_contact",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/macuahuitl-recovery.png",
+          "gif": "gif/macuahuitl-recovery.gif",
+          "frames": [
+            "frames/macuahuitl-recovery-0.png",
+            "frames/macuahuitl-recovery-1.png",
+            "frames/macuahuitl-recovery-2.png",
+            "frames/macuahuitl-recovery-3.png"
+          ],
+          "durationMs": [
+            200,
+            260,
+            260,
+            220
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/macuahuitl-ready.png"
+    },
+    {
+      "id": "escopeta",
+      "name": "Escopeta de obsidiana",
+      "ammo": "Cartuchos de obsidiana",
+      "primary": "Disparo de perdigones",
+      "secondary": "Descarga de ambos cañones",
+      "recovery": "Recarga basculante",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/escopeta-primary.png",
+          "gif": "gif/escopeta-primary.gif",
+          "frames": [
+            "frames/escopeta-primary-0.png",
+            "frames/escopeta-primary-1.png",
+            "frames/escopeta-primary-2.png",
+            "frames/escopeta-primary-3.png"
+          ],
+          "durationMs": [
+            80,
+            60,
+            100,
+            200
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 1,
+              "event": "emit_shot",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/escopeta-secondary.png",
+          "gif": "gif/escopeta-secondary.gif",
+          "frames": [
+            "frames/escopeta-secondary-0.png",
+            "frames/escopeta-secondary-1.png",
+            "frames/escopeta-secondary-2.png",
+            "frames/escopeta-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 1,
+              "event": "emit_shot",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/escopeta-recovery.png",
+          "gif": "gif/escopeta-recovery.gif",
+          "frames": [
+            "frames/escopeta-recovery-0.png",
+            "frames/escopeta-recovery-1.png",
+            "frames/escopeta-recovery-2.png",
+            "frames/escopeta-recovery-3.png"
+          ],
+          "durationMs": [
+            200,
+            260,
+            260,
+            220
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/escopeta-ready.png"
+    },
+    {
+      "id": "canon-solar",
+      "name": "Cañón solar",
+      "ammo": "Celdas solares",
+      "primary": "Pulso solar",
+      "secondary": "Esfera cargada",
+      "recovery": "Ventilación térmica",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/canon-solar-primary.png",
+          "gif": "gif/canon-solar-primary.gif",
+          "frames": [
+            "frames/canon-solar-primary-0.png",
+            "frames/canon-solar-primary-1.png",
+            "frames/canon-solar-primary-2.png",
+            "frames/canon-solar-primary-3.png"
+          ],
+          "durationMs": [
+            80,
+            60,
+            100,
+            200
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 1,
+              "event": "emit_shot",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/canon-solar-secondary.png",
+          "gif": "gif/canon-solar-secondary.gif",
+          "frames": [
+            "frames/canon-solar-secondary-0.png",
+            "frames/canon-solar-secondary-1.png",
+            "frames/canon-solar-secondary-2.png",
+            "frames/canon-solar-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "emit_shot",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/canon-solar-recovery.png",
+          "gif": "gif/canon-solar-recovery.gif",
+          "frames": [
+            "frames/canon-solar-recovery-0.png",
+            "frames/canon-solar-recovery-1.png",
+            "frames/canon-solar-recovery-2.png",
+            "frames/canon-solar-recovery-3.png"
+          ],
+          "durationMs": [
+            200,
+            260,
+            260,
+            220
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/canon-solar-ready.png"
+    },
+    {
+      "id": "clavadora",
+      "name": "Clavadora de Itztepec",
+      "ammo": "Agujas de obsidiana",
+      "primary": "Ráfaga de agujas",
+      "secondary": "Estaca perforante",
+      "recovery": "Cambio de cargador",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/clavadora-primary.png",
+          "gif": "gif/clavadora-primary.gif",
+          "frames": [
+            "frames/clavadora-primary-0.png",
+            "frames/clavadora-primary-1.png",
+            "frames/clavadora-primary-2.png",
+            "frames/clavadora-primary-3.png"
+          ],
+          "durationMs": [
+            80,
+            60,
+            100,
+            200
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 1,
+              "event": "emit_shot",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/clavadora-secondary.png",
+          "gif": "gif/clavadora-secondary.gif",
+          "frames": [
+            "frames/clavadora-secondary-0.png",
+            "frames/clavadora-secondary-1.png",
+            "frames/clavadora-secondary-2.png",
+            "frames/clavadora-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "emit_shot",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/clavadora-recovery.png",
+          "gif": "gif/clavadora-recovery.gif",
+          "frames": [
+            "frames/clavadora-recovery-0.png",
+            "frames/clavadora-recovery-1.png",
+            "frames/clavadora-recovery-2.png",
+            "frames/clavadora-recovery-3.png"
+          ],
+          "durationMs": [
+            200,
+            260,
+            260,
+            220
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/clavadora-ready.png"
+    },
+    {
+      "id": "incensario",
+      "name": "Incensario de guerra",
+      "ammo": "Cargas de copal",
+      "primary": "Granada de brasas",
+      "secondary": "Nube ritual",
+      "recovery": "Recarga del brasero",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/incensario-primary.png",
+          "gif": "gif/incensario-primary.gif",
+          "frames": [
+            "frames/incensario-primary-0.png",
+            "frames/incensario-primary-1.png",
+            "frames/incensario-primary-2.png",
+            "frames/incensario-primary-3.png"
+          ],
+          "durationMs": [
+            80,
+            60,
+            100,
+            200
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 1,
+              "event": "emit_shot",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/incensario-secondary.png",
+          "gif": "gif/incensario-secondary.gif",
+          "frames": [
+            "frames/incensario-secondary-0.png",
+            "frames/incensario-secondary-1.png",
+            "frames/incensario-secondary-2.png",
+            "frames/incensario-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "emit_shot",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/incensario-recovery.png",
+          "gif": "gif/incensario-recovery.gif",
+          "frames": [
+            "frames/incensario-recovery-0.png",
+            "frames/incensario-recovery-1.png",
+            "frames/incensario-recovery-2.png",
+            "frames/incensario-recovery-3.png",
+            "frames/incensario-recovery-4.png"
+          ],
+          "durationMs": [
+            140,
+            230,
+            260,
+            220,
+            180
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/incensario-ready.png"
+    },
+    {
+      "id": "coaiztlactli",
+      "name": "Coaiztlactli",
+      "ammo": "Sin munición",
+      "primary": "Corte rápido",
+      "secondary": "Estocada",
+      "recovery": "Recuperación de guardia",
+      "animations": {
+        "primary": {
+          "atlas": "atlas/coaiztlactli-primary.png",
+          "gif": "gif/coaiztlactli-primary.gif",
+          "frames": [
+            "frames/coaiztlactli-primary-0.png",
+            "frames/coaiztlactli-primary-1.png",
+            "frames/coaiztlactli-primary-2.png",
+            "frames/coaiztlactli-primary-3.png"
+          ],
+          "durationMs": [
+            100,
+            80,
+            90,
+            180
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "melee_contact",
+              "mode": "primary"
+            }
+          ]
+        },
+        "secondary": {
+          "atlas": "atlas/coaiztlactli-secondary.png",
+          "gif": "gif/coaiztlactli-secondary.gif",
+          "frames": [
+            "frames/coaiztlactli-secondary-0.png",
+            "frames/coaiztlactli-secondary-1.png",
+            "frames/coaiztlactli-secondary-2.png",
+            "frames/coaiztlactli-secondary-3.png"
+          ],
+          "durationMs": [
+            160,
+            220,
+            80,
+            260
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": [
+            {
+              "frame": 2,
+              "event": "melee_contact",
+              "mode": "secondary"
+            }
+          ]
+        },
+        "recovery": {
+          "atlas": "atlas/coaiztlactli-recovery.png",
+          "gif": "gif/coaiztlactli-recovery.gif",
+          "frames": [
+            "frames/coaiztlactli-recovery-0.png",
+            "frames/coaiztlactli-recovery-1.png",
+            "frames/coaiztlactli-recovery-2.png",
+            "frames/coaiztlactli-recovery-3.png"
+          ],
+          "durationMs": [
+            200,
+            260,
+            260,
+            220
+          ],
+          "frameSize": [
+            384,
+            384
+          ],
+          "loop": false,
+          "returnTo": "ready",
+          "anchorPx": [
+            192,
+            384
+          ],
+          "proposedEvents": []
+        }
+      },
+      "ready": "frames/coaiztlactli-ready.png"
+    }
+  ]
+}

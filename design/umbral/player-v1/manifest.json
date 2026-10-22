@@ -1,0 +1,45 @@
+{
+  "id": "player",
+  "displayName": "current-player-name",
+  "status": "art-preview",
+  "artSource": "Built-in imagegen; original character and costume from the approved concept",
+  "animations": {
+    "move": {
+      "atlas": "protagonista-movimiento.png",
+      "gif": "protagonista-movimiento.gif",
+      "frames": 8,
+      "columns": 4,
+      "rows": 2,
+      "frameSize": [
+        192,
+        256
+      ],
+      "previewFrameSize": [
+        384,
+        512
+      ],
+      "durations": [
+        100,
+        80,
+        100,
+        80,
+        100,
+        80,
+        100,
+        80
+      ],
+      "loop": true,
+      "facing": "front-three-quarter",
+      "anchorPx": [
+        96,
+        244
+      ],
+      "filter": "nearest"
+    }
+  },
+  "medicalClues": [
+    "left hospital wristband",
+    "small left forearm dressing",
+    "nearly hidden ECG electrode"
+  ]
+}

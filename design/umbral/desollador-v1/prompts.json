@@ -1,0 +1,70 @@
+{
+  "generator": "Built-in image_gen; original Runway sound effects",
+  "art": [
+    {
+      "file": "combat-source.png",
+      "prompt": "Use case: stylized-concept. Production sprite atlas for UMBRAL retro FPS. Reference is the approved Desollador boss design, preserve precisely its elongated horned ivory skull mask, turquoise fan headdress, exposed rib cage, black ragged feather cloak, two long obsidian scythe forearms, cyan eyes. Crisp detailed hand-painted 1990s Doom/Hexen pixel sprites, not smooth painting. All characters face camera, identical proportions and size, foot anchor centered near bottom of every equal cell, full silhouette safely padded. TRUE transparent background, no text, no grid lines, no backdrop, no ground shadow. Square atlas EXACTLY 4 columns by 4 rows, 16 uniformly spaced square cells. Row 1 four sequential hovering idle frames feathers softly billowing, arms down. Row 2 four sequential double scythe air-slash attack frames: arms draw back, arms cross, wide slash with brief cyan edges, recover. Row 3 four dive attack poses: gathering wings upward, leaning aggressively toward camera, tight plunging silhouette scythes forward, crouched recovery after landing. Row 4 four suction poses: arms spread overhead, draw energy inward, hold spiral gesture, feathers whirl. Never merge adjacent cells. Each sprite uses about 80 percent cell height. Consistent black feather details readable.",
+      "source": "reference:exec-2cb9e0c4-d8fe-4c6d-8b3b-4050cb1b9f44.png"
+    },
+    {
+      "file": "reaction-source.png",
+      "prompt": "Use case: stylized-concept. Production sprite atlas for UMBRAL retro FPS. Reference is the approved Desollador boss design, preserve precisely its elongated horned ivory skull mask, turquoise fan headdress, exposed rib cage, black ragged feather cloak, two long obsidian scythe forearms, cyan eyes. Crisp detailed hand-painted 1990s Doom/Hexen pixel sprites, not smooth painting. All characters face camera, identical proportions and size, foot anchor centered near bottom of every equal cell, full silhouette safely padded. TRUE transparent background, no text, no grid lines, no backdrop, no ground shadow. Landscape atlas EXACTLY 4 columns by 2 rows, 8 uniformly spaced square cells. Row 1 four sequential injury flinch frames: hit, recoil sideways, mask fracture glow, recovery, intact silhouette. Row 2 four sequential final death frames: chest splits with cyan light and head thrown back, body unravels into black feathers while skull drops, cloak and bones collapse into a compact pile, final low pile of broken ivory mask and feathers. No resurrection. Consistent scale and baseline across all cells, death progressively shrinks toward bottom baseline. No text.",
+      "source": "reference:exec-8f025c5e-5f5c-48e0-9974-c66576b4bb72.png"
+    },
+    {
+      "file": "effects-source.png",
+      "prompt": "Use case: stylized-concept. UMBRAL original pixel-art magical wind effect sprites for a retro FPS. Landscape atlas EXACTLY 4 columns by 2 rows, eight equal square cells, transparent background. Row1: 4 sequential frames of a lethal crescent air blade, broad horizontal arc of icy cyan-white wind with thin dark feather streaks, brightest sharp leading edge, trailing turquoise wisps, consistent centered size for looping travel animation. Row2: 4 sequential frames of a twisting vortex of cyan wind with a few black feathers and bone fragments, narrow funnel with circular readable open middle, rotating wisps, consistent baseline and centered size. Crisp chunky pixel clusters and limited palette, no smooth gradients, no text, no grid, no background, no characters. Generous transparent padding separating every cell.",
+      "source": "reference:exec-2d08451e-dc4d-447d-984b-4901191603bb.png"
+    }
+  ],
+  "sounds": [
+    {
+      "id": "desollador-presence",
+      "duration": 2.5,
+      "prompt": "Giant skeletal birdlike executioner hovering: low turbulent wind breathing through a hollow bone mask, soft heavy black feathers rustling, occasional bone creak. Restrained eerie presence, organic realistic cinematic creature foley. No words, music, electronic tones or chanting.",
+      "taskId": "e08aeff3-7113-4fd0-be83-778f68d2dda8"
+    },
+    {
+      "id": "desollador-arrival",
+      "duration": 3,
+      "prompt": "A colossal skeletal winged executioner arrives: huge feather cloak unfurls with a powerful gust, hollow resonant bone roar rising then falling. Heavy air pressure, short natural outdoor canyon echo. One clear arrival. No words, music, chanting, lasers or beeps.",
+      "taskId": "0b7efd6c-40d6-45ee-874c-4ec8bcde2b35"
+    },
+    {
+      "id": "desollador-windup",
+      "duration": 1,
+      "prompt": "Giant curved obsidian blades draw back: gritty bone joints creak, heavy feather rustle and rising breathy wind whistle that signals danger. One short clear preparation cue, dry and forceful, no impact yet. No music, words, beeps or metallic ringing.",
+      "taskId": "37e25982-a2ae-49d5-af0a-454c6a80dbae"
+    },
+    {
+      "id": "desollador-attack",
+      "duration": 1.2,
+      "prompt": "Two enormous curved stone scythes slice the air in one powerful crossing swing. Sharp broadband air crack followed by deep rushing wind and feather flutter. Physical brutal original game attack, short clean tail. No gunshots, music, speech or ringing.",
+      "taskId": "b09af3c8-20de-40de-986b-e94dba6009dc"
+    },
+    {
+      "id": "desollador-dive",
+      "duration": 1.4,
+      "prompt": "An enormous feathered creature dives from above with a rapidly descending wind whistle, then one deep stone-crunch impact with bone clacks and heavy feathers. Punchy readable landing, short tail, realistic foley. No music, speech, lasers or repeated hits.",
+      "taskId": "6ef85ee8-8386-46e4-a23d-cb6cfa3a6a3c"
+    },
+    {
+      "id": "desollador-suction",
+      "duration": 3,
+      "prompt": "A forceful spiraling wind vortex pulls inward, dense low rushing air, sharp turbulent gusts, circling heavy feather rustles and subtle bone rattle. Steady seamless loop, strong but no piercing squeal. Original realistic wind magic effect, no words, music or chanting.",
+      "taskId": "01f60941-1cc6-4965-b295-4d4afcac9da7"
+    },
+    {
+      "id": "desollador-hurt",
+      "duration": 0.8,
+      "prompt": "One giant hollow bone creature pain bark, coarse dry raspy exhalation with brittle bone crack and feather shake. Immediate short impact reaction. No words, music, electronic beep, long echo or multiple grunts.",
+      "taskId": "ea61af86-3d4d-4fa0-9516-48611ce82ff6"
+    },
+    {
+      "id": "desollador-death",
+      "duration": 3,
+      "prompt": "Giant skeletal feathered creature collapses: hollow monstrous rasp breaks into a fading gale, bones crack and fall, heavy cloak disintegrates with fluttering feathers. One final death, grounded physical foley with short canyon tail. No words, music or chanting.",
+      "taskId": "4f4f67ed-0aff-4e13-96af-c53a674cd835"
+    }
+  ]
+}

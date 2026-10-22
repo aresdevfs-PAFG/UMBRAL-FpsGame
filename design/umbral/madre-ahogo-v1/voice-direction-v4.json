@@ -1,0 +1,22 @@
+{
+  "speech": {
+    "text": "[high-pitched raspy scream] [strained] ¡AYYYY, MI HIJO!\n[harsh screaming] [strained] ¡DESPIERTAAAAAA!",
+    "voice": "Grungle",
+    "model": "eleven_v3",
+    "languageCode": "es",
+    "speed": 1,
+    "name": "UMBRAL Madre — desgarro black metal v4",
+    "rationale": "Crear la frase con voz rasposa, aguda y desgarradora de black metal según la corrección del usuario, sin sollozos."
+  },
+  "presence": {
+    "promptText": "Solo female black metal vocalist: piercing high-register raspy AAAAAH shriek of absolute agony. Sustained harsh fry scream, ragged abrasive throat texture, fierce breath pressure, explosive onset, intense long vowel, torn exhale. Dry isolated vocal. No words, no sobbing, no clean singing, no low growls, no music, no instruments, no crowd.",
+    "duration": 2.2,
+    "loop": false,
+    "name": "UMBRAL Madre — alarido rasgado black metal v4",
+    "rationale": "Generar el alarido inicial y de presencia como voz extrema aguda rasgada, para combinar con la frase de la Madre."
+  },
+  "tasks": {
+    "speech": "91e93409-a787-4156-a91d-57c8a9a3d504",
+    "presence": "5ff1781b-131b-4a81-bb59-aaddc8e81138"
+  }
+}

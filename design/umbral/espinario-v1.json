@@ -1,0 +1,19 @@
+{
+  "name": "Espinario · Subfusil",
+  "slot": 6,
+  "art": "public/assets/img/umbral-demo/weapons/espinario-sheet-v1.png",
+  "artSource": "ImageGen, generated 2026-10-12; original thorn launcher viewmodel, not a reuse of the retired carbine.",
+  "layout": "2 columns by 2 rows: ready, fire, recoil, recovered",
+  "materials": "Dark carved wood, bone rails, copper bindings and green venom reservoir",
+  "ammo": "thorns",
+  "startingAmmo": 120,
+  "pickupRange": [
+    20,
+    30
+  ],
+  "fireIntervalSeconds": 0.07,
+  "damage": 12,
+  "range": 48,
+  "reload": false,
+  "notes": "Automatic fire while held. Green hitscan trail. Thorns have their own reserve, permanent arena supplies and random drops. Poison-inspired visual design; no damage-over-time status added."
+}

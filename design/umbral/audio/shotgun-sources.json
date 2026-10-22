@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "name": "single",
+      "file": "public/assets/audio/umbral/shotgun-single.mp3",
+      "taskId": "aa87e9b3-a4b6-4490-9862-8144a0f78c1a",
+      "prompt": "Single heavy double-barrel shotgun firing ONE barrel, immediate sharp explosive crack at start, powerful low-frequency chest thump, gritty gunpowder blast, short natural outdoor stone courtyard reflections fading to silence. Close first-person game weapon sound. Realistic cinematic foley, clean isolated effect, no music, no voice, no electronic tones, no extra shots, no reload.",
+      "duration": 1.48
+    },
+    {
+      "name": "double",
+      "file": "public/assets/audio/umbral/shotgun-double.mp3",
+      "taskId": "8bb16dd8-d94c-42fd-bad5-13725580200a",
+      "prompt": "Double-barrel shotgun BOTH barrels fire simultaneously as ONE enormous blast at the very beginning. Thick explosive crack, dense gunpowder roar, deep punchy bass impact and brief gritty stone courtyard echo decaying to silence. Stronger heavier than a single shotgun shot, not two separated shots. Isolated realistic first-person videogame weapon audio. No music, voices, reload or electronic beeps.",
+      "duration": 1.68
+    },
+    {
+      "name": "cycle",
+      "file": "public/assets/audio/umbral/shotgun-cycle.mp3",
+      "taskId": "b4cc5dc9-7789-439d-a5b0-f12e29910c0e",
+      "prompt": "Fast double-barrel shotgun reload mechanism, isolated realistic close dry metal and brass foley, total 1.15 seconds. At 0.1s hinge unlocks and barrels break open with a chunky clack; 0.25s two empty brass shells eject with tiny clinks; 0.5s two fresh shells slide in with two solid clicks; 0.85s barrels snap shut with a weighty steel clunk and latch. No gunshots, voices, music or electronic tones.",
+      "duration": 1.12
+    }
+  ]
+}

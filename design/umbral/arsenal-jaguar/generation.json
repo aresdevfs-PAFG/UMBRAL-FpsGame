@@ -1,0 +1,12 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create a production PNG sprite sheet for UMBRAL, a DOOM 1993 style first-person shooter. Input image is STYLE REFERENCE ONLY for pixel shading, tan human hands, dark cuffs, centered weapon perspective. NEW weapon: Arco del Jaguar, a traditional recurve BOW (not crossbow) of dark carved wood and obsidian, golden jaguar-head grip and small turquoise inlays, taut visible string and flaming arrow. EXACT layout: landscape 1536x1024, three equal columns by two equal rows, six 512x512 cells, transparent background, no grid, labels or text. Each cell contains the SAME bow, same scale and centered perspective, hand grips at same baseline at bottom. Bow held diagonally low in first person, long arrow points away toward screen centre. Each cell's top 30 percent empty, weapon spans lower 70 percent. Row1: [0] ready, flaming arrow nocked and string drawn; [1] release, string springs forward and arrow leaves orange spark trail; [2] right hand placing a fresh arrow on string, bow lowered slightly. Row2: [3] drawing a blazing red-gold explosive arrow; [4] explosive release with compact orange burst at arrow tip; [5] another distinct re-nocking pose. Crisp richly textured retro pixel art, chunky clear pixels, warm realistic hand shading consistent with reference. No scene or enemies. Real transparent alpha, no black matte. Keep every cell completely separate for slicing and identical wrist baseline.",
+  "source": "exec-17c2d0e8-2d0d-4f8d-a209-1da8c6e4260f.png",
+  "outputs": [
+    "public/assets/img/umbral-demo/weapons/arco-jaguar-ready.png",
+    "public/assets/img/umbral-demo/weapons/arco-jaguar-primary.png",
+    "public/assets/img/umbral-demo/weapons/arco-jaguar-secondary.png",
+    "design/umbral/arsenal-jaguar/arco-jaguar-sheet.png"
+  ],
+  "packing": "Six equal 512px source cells, resized with nearest-neighbour to 384px; alpha preserved. Primary poses 1,2,0 and secondary poses 4,5,3; 70/170/80 ms."
+}

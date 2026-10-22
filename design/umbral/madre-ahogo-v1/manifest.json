@@ -1,0 +1,198 @@
+{
+  "enemy": {
+    "name": "La Madre del Ahogo",
+    "states": {
+      "move": {
+        "file": "enemies/madre-move.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "wave": {
+        "file": "enemies/madre-wave.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "hands": {
+        "file": "enemies/madre-hands.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "darkness": {
+        "file": "enemies/madre-darkness.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "rush": {
+        "file": "enemies/madre-rush.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "hurt": {
+        "file": "enemies/madre-hurt.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      },
+      "death": {
+        "file": "enemies/madre-death.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          400,
+          800,
+          3400,
+          1800
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      }
+    }
+  },
+  "effects": {
+    "madre-hands": {
+      "file": "effects/madre-hands.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "madre-wave": {
+      "file": "effects/madre-wave.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "madre-screamer": {
+      "file": "effects/madre-screamer.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": false
+    }
+  },
+  "gameplayUsage": {
+    "design": "design/umbral/map-bosses-v1/design.json — combatDesign",
+    "activeStates": {
+      "submerged": "move; cuerpo recortado al nivel del río, solo cabeza visible",
+      "rising": "rush; ascenso desde el agua durante 0.8 s",
+      "airborne": "move, wave y hands sobre el mismo canal",
+      "drag": "hands; barra de interrupción de 700 puntos",
+      "sinking": "move; descenso durante 0.8 s",
+      "death": "death; despedida ascendente de 6.4 s",
+      "capture": "rush durante 0.45 s y abrazo hands durante 1 s; grito existente, 60 de daño a vida al final y regreso seguro si sobrevive"
+    },
+    "retainedArt": "Los archivos darkness y madre-screamer pertenecen al atlas original conservado. Sus nombres no habilitan la antigua oscuridad ni el contraataque con macuahuitl.",
+    "omens": "Reutilizan la cabeza de move, recortada al agua y con hundimiento de 150 ms al observarla; son apariciones cosméticas anteriores a la horda 10.",
+    "audio": "Muerte: conservar únicamente el grito libre aprobado en madre-death.mp3 v7; ninguna frase hablada.",
+    "screenText": "DESPIERTA, color hueso y letras que se derriten durante la despedida.",
+    "guardians": "Defensa reactiva con cabeza descubierta: cada disparo válido hacia la cabeza activa una calavera que llega desde el agua en 0.09 s y se rompe durante 0.2 s. Reserva de ocho por inmersión, consumida por gatillo y no por perdigón; el noveno tiro válido puede alcanzar la cabeza. Fallos, paredes y enemigos previos no consumen protección. Reutiliza titan-skull/river-soul como efectos transitorios, sin blancos independientes.",
+    "waves": "Cada descarga emite tres oleadas; la central sigue la dirección exacta hacia el jugador.",
+    "captureAudio": "Reutiliza el grito de motherScreamer ya integrado durante el abrazo; no añade frases ni nuevas grabaciones."
+  }
+}

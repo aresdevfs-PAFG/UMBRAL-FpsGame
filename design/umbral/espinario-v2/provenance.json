@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-13",
+  "imageGenerator": "Built-in image_gen",
+  "audioGenerator": "Runway sound effects",
+  "audioTask": "0167e941-a3cb-46d5-90f9-bd99c5a79f16",
+  "reference": "Existing Espinario sprite materials and pixel style; original SMG sound requested with Halo 2 as a tonal reference, no extracted game audio.",
+  "images": [
+    {
+      "file": "public/assets/img/umbral-demo/weapons/espinario-dual-v2.png",
+      "prompt": "Use case: stylized-concept. Production game sprite sheet, true transparent background. Create an ORIGINAL dual-wield first person weapon animation for UMBRAL, a pixel-art Doom-era Mesoamerican dark fantasy shooter.\nReference image: existing single Espinario weapon is a MATERIAL AND PIXEL STYLE reference only. Redesign the view as TWO compact Espinario submachine guns, each held in ONLY ONE HAND. Exactly two hands total. Dark carved wooden receiver, angular bone dorsal thorns, aged copper bands, small green poison chamber, dark frayed sleeves, warm brown skin. Show different visible inner sides and asymmetrical mechanical details, not mirrored copies. Camera is the player's eyes, guns point away towards horizon, barrels slightly converge toward distant center. Left hand at lower left with left gun, right hand lower right with right gun. Large clear gap between weapons for aiming.\nSHEET: exactly 2 columns and 2 rows equal cells, 2048x1152 overall, each cell 1024x576 widescreen. No gutters, borders, labels or background. All four cells share identical weapon scale, grip anatomy, position and perspective. Upper 35 percent of EACH cell completely transparent, center reticle at x50%,y50% unobstructed. Forearms extend to bottom edge of each cell.\nFrame order reading left to right: 1 both guns ready no muzzle flash; 2 left gun firing brief green-white muzzle flash and slight rearward recoil, right gun steady; 3 right gun firing brief green-white muzzle flash and slight rearward recoil, left gun steady; 4 both guns recovering no flash, ejection port action, very slight lower stance.\nGuns fill left and right lower quarters; keep width of central empty corridor at least 22% of cell. Hand-painted chunky readable pixel texture with controlled dithering and strong silhouettes, matching reference. No floating weapons, no extra hands, no third gun, no text, no floor or scenery. Real alpha background."
+    },
+    {
+      "file": "public/assets/img/umbral-demo/weapons/flame-hands-v2.png",
+      "prompt": "Use case: stylized-concept. Create a production sprite sheet with REAL TRANSPARENT ALPHA for a Doom-era pixel-art first person videogame UMBRAL. Reference image is ONLY a style reference for pixel texture, warm brown bare hands, dark worn sleeves and bronze details. No guns in this new image.\nPrimary asset: the player's TWO hands casting fire from their open palms. Anatomically convincing original first-person view, player looking along forearms, hands extended from bottom left and bottom right, foreshortened fingers pointing toward the distant center, palms forward/up, wrists solidly joined to forearms. Bronze angular Mesoamerican bracers with turquoise inlays and frayed charcoal sleeves. Warm firelight on textured skin, orange amber yellow flame jets emerging from palms towards the top center. The central aiming corridor stays EMPTY and transparent.\nSHEET: EXACTLY TWO COLUMNS and TWO ROWS of equal 16:9 frames (2048x1152 overall, 1024x576 per cell). Same scale, anatomy, wrist positions, camera and registration in every cell. No borders, gutters, text, numbers or background. Sleeves end exactly at each cell's bottom edge. All parts stay inside their cell. Upper 20 percent empty transparent.\nReading order: 1 hands raised with small ignition flames from each palm; 2 both palms projecting strong twisting orange flame tongues angled forward, fingers flex slightly; 3 continuing fire, different smooth flame silhouettes curling upward with bright yellow cores, slight wrist recoil; 4 extinguishing, same hands relax slightly, only short orange embers fading.\nKeep hands confined to lower left and lower right sides, empty 25% width center corridor, no face or body. Both hands drawn together in every full-width cell, one right hand and one left hand, total only two hands per frame. Detailed hand-painted chunky pixel texture and dark high contrast silhouette, consistent with provided weapon style, NOT cartoon blocky rectangles, not photorealistic, not vector. Crisp pixels, controlled dithering. No weapons, no scenery, no checkerboard drawn into artwork."
+    },
+    {
+      "file": "public/assets/img/umbral-demo/effects/ritual-flame-v2.png",
+      "prompt": "Production animated FIRE VFX sprite atlas for UMBRAL, transparent RGBA background. Exactly 2 columns x 2 rows, equal 512x512 square cells, complete sheet 1024x1024. Four sequential frames of ONE isolated vertical twisting jet of orange and gold fire. Consistent position, scale, baseline and palette across frames, base centered at x50% y90% in every cell. Flame reaches y8%, maximum width65%. Each flame has amber orange edges, intense yellow core, dark orange pixelated wisps and tiny red embers. Motion: curling left, center, curling right, center with changing tongues. Hand-painted chunky pixel art with controlled dithering and luminous texture, realistic organic fire shape rendered as retro Doom sprites. Not flat vector polygons, not a solid yellow block. Crisp alpha edges with slight transparent orange wisps. NO hands, NO objects, NO text, no labels, no background, no shadows, no checkerboard. Keep each silhouette entirely inside its own cell with transparent 7% margins. Designed to use both as a small floating flame jet and a flame clinging to a burning enemy; a lightweight four-frame loop."
+    }
+  ],
+  "runtimeAudio": "public/assets/audio/umbral/espinario.mp3",
+  "audioPreview": "design/umbral/espinario-v2/preview.mp3",
+  "verification": {
+    "targetedTestsPassed": 40,
+    "browser": "Cuenca arena, authored dual and hand-flame poses verified using loopback-only screenshot fixture; no console errors. Real timing, input cancellation, ammo, fire status and resource disposal covered by targeted tests.",
+    "screenshots": [
+      "tmp/umbral-subfusil-dual-v2.png",
+      "tmp/umbral-llamas-manos-v2.png"
+    ]
+  }
+}

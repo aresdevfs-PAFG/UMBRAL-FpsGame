@@ -1,0 +1,56 @@
+{
+  "effects": [
+    [
+      "presence",
+      2.2,
+      "Solo female black metal vocalist: piercing high-register raspy AAAAAH shriek of absolute agony. Sustained harsh fry scream, ragged abrasive throat texture, fierce breath pressure, explosive onset, intense long vowel, torn exhale. Dry isolated vocal. No words, no sobbing, no clean singing, no low growls, no music, no instruments, no crowd."
+    ],
+    [
+      "arrival",
+      3,
+      "Colossal ghost woman rising from a river, deep reverse water surge, breathy female wail with mournful strained overtone and long wet stone echo. No intelligible words, no music."
+    ],
+    [
+      "windup",
+      1,
+      "Spectral water gathering inward, rising airy female gasp, clear tense attack warning, then short silence. Organic damp cavern, no words, no music."
+    ],
+    [
+      "wave",
+      1.5,
+      "Heavy spectral river wave crashing past listener with sharp splash and tearing air, ominous low impact, realistic watery roar, no music."
+    ],
+    [
+      "hands",
+      1.2,
+      "Two wet skeletal hands bursting through stone and water, brittle cracking fingers and slushy grabbing impact, short spooky airy tail. No music."
+    ],
+    [
+      "darkness",
+      3,
+      "Deep hollow sucking wind extinguishing all light, distant ghostly female breathing and water droplets, tense low organic rumble, seamless ambience loop, no words no music."
+    ],
+    [
+      "screamer",
+      1.2,
+      "A terrifying adult female ghost suddenly screams a raw desperate wordless shriek close to listener, fast breathy onset and raspy decay. Realistic horror creature voice, not electronic, no words no music, no clipping."
+    ],
+    [
+      "hurt",
+      0.9,
+      "Ghost woman recoils with short strained breath and ragged wordless cry, wet fabric and spectral glass cracking. No words, no music."
+    ],
+    [
+      "parry",
+      1.1,
+      "Heavy obsidian wooden blade hits spectral flesh, deep organic thump, shattering ghost-water and sudden rush of air as darkness breaks. No music."
+    ]
+  ],
+  "death": {
+    "sourceFile": "sources/madre-presence.mp3",
+    "spokenWords": false,
+    "revision": 7,
+    "direction": "Únicamente el alarido AAH aprobado, con su efecto sobrenatural. Sin frases ni voces habladas."
+  },
+  "direction": "Conservar únicamente el alarido aprobado, rasposo y agudo, con efecto sobrenatural. La palabra DESPIERTA aparece solo en pantalla y no se pronuncia."
+}

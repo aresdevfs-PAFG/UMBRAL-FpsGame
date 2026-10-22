@@ -1,0 +1,78 @@
+{
+  "title": "Titán de Obsidiana — actualización 2",
+  "implemented": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "deferred": {
+    "step": 6,
+    "description": "Glory kill obligatoria y demo especial pendientes de planificación; por ahora conserva la muerte normal."
+  },
+  "scale": {
+    "heightMultiplier": 1.35,
+    "heightMetres": 6.21,
+    "baseHp": 2400
+  },
+  "attacks": {
+    "cycle": [
+      "7 calaveras",
+      "salto",
+      "invocación de imps",
+      "embestida",
+      "onda terrestre"
+    ],
+    "jump": {
+      "height": 12,
+      "obstacleAlternativeHeight": 18,
+      "flightSeconds": 2.1,
+      "windupSeconds": 1.1,
+      "landingRadius": 3.4,
+      "landingDamage": 32
+    },
+    "skulls": {
+      "count": 7,
+      "upwardLaunch": true,
+      "speed": 19,
+      "homingSecondsEnd": 3.2,
+      "turnRadiansPerSecond": 1.9,
+      "lifetimeSeconds": 6,
+      "damageEach": 12
+    },
+    "recovery": {
+      "trigger": "Vacío o contacto con agua",
+      "riseSeconds": 1.1,
+      "hoverSeconds": 1.15,
+      "diveSeconds": 0.65,
+      "warning": "Círculo morado con destino fijo desde el comienzo; se puede esquivar. Ascenso espectral sin daño para salir de debajo de plataformas."
+    },
+    "summons": {
+      "enemy": "macabro (imp)",
+      "batch": 4,
+      "simultaneousMaximum": 4,
+      "lifetimeMaximum": 24,
+      "warningSeconds": 1.4
+    }
+  },
+  "wave": {
+    "number": 10,
+    "scheduledEnemies": 1,
+    "rule": "Sin enemigos normales; sólo jefe y sus imps invocados. La horda siguiente espera a que no queden enemigos vivos ni invocaciones."
+  },
+  "performance": "Dos atlas nuevos; reutilización de texturas y límites de proyectiles/aliados. Navegación por altura precalculada al cargar el mapa.",
+  "verification": {
+    "javascriptTests": 101,
+    "sqliteChecks": 33,
+    "simulationRates": [
+      20,
+      60,
+      120
+    ],
+    "screenshots": [
+      "tmp/umbral-titan-v2-calaveras.png",
+      "tmp/umbral-titan-v2-salto.png"
+    ]
+  }
+}

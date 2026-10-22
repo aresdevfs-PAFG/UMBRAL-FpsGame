@@ -1,0 +1,25 @@
+html { background: #090b0c; color-scheme: dark; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; }
+button, input, select { font: inherit; }
+#umbralDemo { min-height: 100vh; border-top: 0; }
+#umbralDemo .umbral-header { min-height: 54px; }
+#umbralDemo .umbral-back { color: #f2bc61; font-weight: 700; letter-spacing: .15em; font-size: 15px; }
+#umbralDemo .umbral-back span { font-size: 10px; color: #a69b8c; font-weight: 400; }
+#umbralDemo .umbral-overlay-content { width: 100%; }
+#umbralDemo .umbral-overlay { scrollbar-color: #867354 #151313; }
+#umbralDemo .umbral-player-label { display: flex; gap: 12px; align-items: center; margin: 14px 0; font-size: 12px; color: #b1a596; }
+#umbralDemo .umbral-player-label input { width: 200px; max-width: 65%; background: #0c1112; border: 1px solid #594d3a; color: #f2e8d6; padding: 7px 10px; }
+#umbralDemo .umbral-overlay-actions { flex-wrap: wrap; }
+#umbralDemo #umbralLocalSave { color: #b1a596; font-size: 12px; }
+#umbralDemo .umbral-ranking-table caption { text-align: left; padding: 12px 0; }
+#umbralDemo .umbral-ranking-table td:first-child { white-space: nowrap; }
+#umbralDemo .umbral-ranking-table td img { vertical-align: middle; margin-right: 8px; object-fit: contain; }
+.offline-footer { padding: 24px; text-align: center; font: 11px Consolas, monospace; letter-spacing: .12em; color: #837a70; }
+@media (max-width: 650px) {
+  #umbralDemo .umbral-overlay { padding: 74px 18px 24px; }
+  #umbralDemo .umbral-overlay h1 { margin: 0 0 10px; font-size: 42px; }
+  #umbralDemo .umbral-overlay h2 { font-size: 18px; }
+  #umbralDemo #umbralOverlayCopy { font-size: 12px; line-height: 1.5; }
+  #umbralDemo .umbral-overlay-actions { gap: 8px; margin-bottom: 10px; }
+  #umbralDemo .umbral-overlay-actions button { padding: 10px; font-size: 12px; }
+}

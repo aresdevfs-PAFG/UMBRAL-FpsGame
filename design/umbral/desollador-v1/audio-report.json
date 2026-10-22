@@ -1,0 +1,259 @@
+{
+  "desollador-arrival": {
+    "source": {
+      "duration": 3.0,
+      "peak": 0.719131,
+      "peakDbfs": -2.864,
+      "rms": 0.112742,
+      "rmsDbfs": -18.958,
+      "onset": 0.075624
+    },
+    "master": {
+      "duration": 2.500998,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.118602,
+      "rmsDbfs": -18.518,
+      "onset": 0.004989
+    },
+    "dcRemoved": -0.00101716,
+    "trimStartSeconds": 0.070907,
+    "trimEndSeconds": 0.428095,
+    "gain": 1.085884,
+    "loop": false,
+    "encoded": {
+      "duration": 2.533878,
+      "peak": 0.709137,
+      "peakDbfs": -2.985,
+      "rms": 0.111996,
+      "rmsDbfs": -19.016,
+      "onset": 0.030045
+    }
+  },
+  "desollador-presence": {
+    "source": {
+      "duration": 2.48,
+      "peak": 0.320755,
+      "peakDbfs": -9.877,
+      "rms": 0.044929,
+      "rmsDbfs": -26.95,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 2.237256,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.109934,
+      "rmsDbfs": -19.177,
+      "onset": 9.1e-05
+    },
+    "dcRemoved": -2.1152e-05,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.242744,
+    "gain": 2.352978,
+    "loop": false,
+    "encoded": {
+      "duration": 2.272653,
+      "peak": 0.71228,
+      "peakDbfs": -2.947,
+      "rms": 0.103431,
+      "rmsDbfs": -19.707,
+      "onset": 0.025147
+    }
+  },
+  "desollador-windup": {
+    "source": {
+      "duration": 1.0,
+      "peak": 0.852249,
+      "peakDbfs": -1.389,
+      "rms": 0.068826,
+      "rmsDbfs": -23.245,
+      "onset": 0.008957
+    },
+    "master": {
+      "duration": 0.474082,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.087757,
+      "rmsDbfs": -21.134,
+      "onset": 0.004989
+    },
+    "dcRemoved": 1.6886e-05,
+    "trimStartSeconds": 0.005601,
+    "trimEndSeconds": 0.520317,
+    "gain": 0.878432,
+    "loop": false,
+    "encoded": {
+      "duration": 0.522449,
+      "peak": 0.716553,
+      "peakDbfs": -2.895,
+      "rms": 0.08059,
+      "rmsDbfs": -21.874,
+      "onset": 0.030045
+    }
+  },
+  "desollador-attack": {
+    "source": {
+      "duration": 1.2,
+      "peak": 0.958893,
+      "peakDbfs": -0.365,
+      "rms": 0.15763,
+      "rmsDbfs": -16.047,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 1.2,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.091912,
+      "rmsDbfs": -20.733,
+      "onset": 0.000181
+    },
+    "dcRemoved": -0.001043788,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.0,
+    "gain": 0.85518,
+    "loop": false,
+    "encoded": {
+      "duration": 1.227755,
+      "peak": 0.691132,
+      "peakDbfs": -3.209,
+      "rms": 0.086015,
+      "rmsDbfs": -21.309,
+      "onset": 0.024603
+    }
+  },
+  "desollador-dive": {
+    "source": {
+      "duration": 1.36,
+      "peak": 0.725067,
+      "peakDbfs": -2.792,
+      "rms": 0.083666,
+      "rmsDbfs": -21.549,
+      "onset": 4.5e-05
+    },
+    "master": {
+      "duration": 0.545442,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.136474,
+      "rmsDbfs": -17.299,
+      "onset": 0.000884
+    },
+    "dcRemoved": 0.000304158,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.814558,
+    "gain": 1.033817,
+    "loop": false,
+    "encoded": {
+      "duration": 0.574694,
+      "peak": 0.713593,
+      "peakDbfs": -2.931,
+      "rms": 0.12623,
+      "rmsDbfs": -17.977,
+      "onset": 0.02576
+    }
+  },
+  "desollador-suction": {
+    "source": {
+      "duration": 3.0,
+      "peak": 0.713791,
+      "peakDbfs": -2.929,
+      "rms": 0.169327,
+      "rmsDbfs": -15.425,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 3.0,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.162256,
+      "rmsDbfs": -15.796,
+      "onset": 0.0
+    },
+    "dcRemoved": -9.567e-05,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.0,
+    "gain": 1.111514,
+    "loop": true,
+    "loopSeamStep": 0.002306,
+    "loopBoundaryProcessing": {
+      "applied": false,
+      "threshold": 0.01,
+      "transitionSeconds": 0,
+      "method": "Unión al punto medio con curvas de coseno elevado en ambos extremos",
+      "beforeStep": 0.00230581,
+      "afterStep": 0.00230581
+    },
+    "encoded": {
+      "duration": 3.030204,
+      "peak": 0.726196,
+      "peakDbfs": -2.779,
+      "rms": 0.153494,
+      "rmsDbfs": -16.278,
+      "onset": 0.01542
+    }
+  },
+  "desollador-hurt": {
+    "source": {
+      "duration": 0.8,
+      "peak": 0.983932,
+      "peakDbfs": -0.141,
+      "rms": 0.074438,
+      "rmsDbfs": -22.564,
+      "onset": 0.10068
+    },
+    "master": {
+      "duration": 0.44254,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.068813,
+      "rmsDbfs": -23.247,
+      "onset": 0.004989
+    },
+    "dcRemoved": 0.000305887,
+    "trimStartSeconds": 0.095692,
+    "trimEndSeconds": 0.261769,
+    "gain": 0.761372,
+    "loop": false,
+    "encoded": {
+      "duration": 0.470204,
+      "peak": 0.72168,
+      "peakDbfs": -2.833,
+      "rms": 0.063564,
+      "rmsDbfs": -23.936,
+      "onset": 0.030045
+    }
+  },
+  "desollador-death": {
+    "source": {
+      "duration": 3.0,
+      "peak": 0.873642,
+      "peakDbfs": -1.173,
+      "rms": 0.123991,
+      "rmsDbfs": -18.132,
+      "onset": 0.008934
+    },
+    "master": {
+      "duration": 1.617506,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.135426,
+      "rmsDbfs": -17.366,
+      "onset": 0.004989
+    },
+    "dcRemoved": 0.00040685,
+    "trimStartSeconds": 0.003628,
+    "trimEndSeconds": 1.378866,
+    "gain": 0.959658,
+    "loop": false,
+    "encoded": {
+      "duration": 1.645714,
+      "peak": 0.712494,
+      "peakDbfs": -2.944,
+      "rms": 0.127456,
+      "rmsDbfs": -17.893,
+      "onset": 0.030045
+    }
+  }
+}

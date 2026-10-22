@@ -1,0 +1,230 @@
+{
+  "status": "concept-preview",
+  "animation": "idle-front",
+  "frameSize": [
+    256,
+    256
+  ],
+  "assets": [
+    {
+      "id": "macabro",
+      "name": "Macabro-Sanguinolento",
+      "atlas": "macabro-idle.png",
+      "preview": "macabro-idle.gif",
+      "frameCount": 4,
+      "durationMs": [
+        180,
+        160,
+        220,
+        180
+      ],
+      "anchorPx": [
+        128,
+        240
+      ],
+      "suggestedRelativeHeight": 1.0,
+      "sourceBounds": [
+        [
+          138,
+          41,
+          509,
+          591
+        ],
+        [
+          125,
+          41,
+          499,
+          591
+        ],
+        [
+          108,
+          37,
+          525,
+          591
+        ],
+        [
+          124,
+          37,
+          509,
+          591
+        ]
+      ]
+    },
+    {
+      "id": "devorador",
+      "name": "Devorador de Rostros",
+      "atlas": "devorador-idle.png",
+      "preview": "devorador-idle.gif",
+      "frameCount": 4,
+      "durationMs": [
+        200,
+        180,
+        220,
+        180
+      ],
+      "anchorPx": [
+        128,
+        240
+      ],
+      "suggestedRelativeHeight": 0.7,
+      "sourceBounds": [
+        [
+          140,
+          20,
+          479,
+          610
+        ],
+        [
+          78,
+          20,
+          547,
+          609
+        ],
+        [
+          47,
+          8,
+          592,
+          595
+        ],
+        [
+          138,
+          17,
+          488,
+          603
+        ]
+      ]
+    },
+    {
+      "id": "empalador",
+      "name": "Empalador de Itztepec",
+      "atlas": "empalador-idle.png",
+      "preview": "empalador-idle.gif",
+      "frameCount": 4,
+      "durationMs": [
+        240,
+        200,
+        240,
+        200
+      ],
+      "anchorPx": [
+        128,
+        240
+      ],
+      "suggestedRelativeHeight": 1.4,
+      "sourceBounds": [
+        [
+          205,
+          40,
+          432,
+          592
+        ],
+        [
+          129,
+          36,
+          487,
+          592
+        ],
+        [
+          116,
+          34,
+          523,
+          588
+        ],
+        [
+          195,
+          35,
+          424,
+          585
+        ]
+      ]
+    },
+    {
+      "id": "abominacion",
+      "name": "Abominación Ctonia",
+      "atlas": "abominacion-idle.png",
+      "preview": "abominacion-idle.gif",
+      "frameCount": 4,
+      "durationMs": [
+        280,
+        240,
+        280,
+        240
+      ],
+      "anchorPx": [
+        128,
+        240
+      ],
+      "suggestedRelativeHeight": 1.25,
+      "sourceBounds": [
+        [
+          44,
+          69,
+          583,
+          554
+        ],
+        [
+          44,
+          69,
+          584,
+          554
+        ],
+        [
+          28,
+          68,
+          600,
+          554
+        ],
+        [
+          44,
+          68,
+          584,
+          554
+        ]
+      ]
+    },
+    {
+      "id": "centinela",
+      "name": "Centinela de Mictlantecuhtli",
+      "atlas": "centinela-idle.png",
+      "preview": "centinela-idle.gif",
+      "frameCount": 4,
+      "durationMs": [
+        260,
+        220,
+        260,
+        220
+      ],
+      "anchorPx": [
+        128,
+        240
+      ],
+      "suggestedRelativeHeight": 1.8,
+      "sourceBounds": [
+        [
+          49,
+          13,
+          574,
+          592
+        ],
+        [
+          40,
+          12,
+          572,
+          592
+        ],
+        [
+          35,
+          10,
+          591,
+          590
+        ],
+        [
+          45,
+          9,
+          572,
+          590
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-13",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "public/assets/img/umbral-demo/environment/rio-panorama.png",
+      "reference": "design/umbral/mapas-concepto-v1/03-rio-de-las-animas.png",
+      "prompt": "Create a production ready 2:1 panoramic background texture for UMBRAL, El Río de las Ánimas. Use the attached concept as architectural and color reference only. Output a single uninterrupted wide landscape, no collage, no labels or UI or arrows, no player or creatures, NO playable foreground bridges or large foreground island. Eye level from an arena in the middle of a vast dark river: distant towering stepped Mesoamerican basalt temples on sheer black cliffs, skull friezes, turquoise patina, small amber braziers, dozens of thin white waterfalls flowing into almost black teal water. Mountains and stormy slate teal sky, gloomy but clearly readable architecture. Painterly pixel textured 1990s dark fantasy shooter background, deliberate crisp chunky pixel clusters, restrained detail, no modern photorealistic materials. The horizontal horizon and cliff base at about 40 percent from bottom, bottom third dark river, upper third storm clouds. Balanced seamless-looking left and right edges for cylindrical backdrop. Warm torch lights contrast with cool dark wet stone. Preserve UMBRAL's volcanic gothic Mesoamerican mood. Wide 2048 by 1024 composition. Save one clean background image."
+    },
+    {
+      "file": "public/assets/img/umbral-demo/enemies/titan-atlas.png",
+      "reference": "public/assets/img/umbral-demo/enemies/centinela-move.png",
+      "transparent": true,
+      "prompt": "Production sprite atlas for an ORIGINAL retro dark fantasy FPS monster TITAN DE OBSIDIANA. Reference is ONLY to match chunky detailed 1990s DOOM pixel sprite rendering, do not copy reference character. A gigantic muscular pale corpse in jagged black obsidian plate armor, fractured ivory skull mask, huge angular obsidian cannon replacing right forearm, amber incandescent exposed chest core. Turquoise tiny stone inlays. Menacing bulky silhouette, no wings. Full body facing viewer at slight three quarter angle. TRUE TRANSPARENT background. Exact uniform 4 columns by 4 rows grid, 16 equally sized square cells, no labels, no text, no borders, no additional objects. Each frame centered with consistent scale and foot baseline near bottom of cell; all body parts inside own cell. ROW 1: four walking frames. ROW 2: four attack frames, cannon charging, cannon firing violet energy, raising fist, slamming fist. ROW 3: four enraged walking/hurt frames with broken breastplate and brighter exposed amber core. ROW 4: four death collapse frames from kneeling to crumbling obsidian corpse. Pixelated blood allowed. Generous transparent margins between cells. Square 2048x2048 sprite sheet. Preserve crisp pixel clusters and consistent character anatomy across every frame."
+    }
+  ],
+  "balance": {
+    "bossWave": 10,
+    "recurrence": "once per run, on any combat map",
+    "health": 2400,
+    "phaseTwo": 0.5,
+    "exposedChestMultiplier": 1.65,
+    "chargedMacuahuitlDamage": 250,
+    "chargedMacuahuitlStunSeconds": 2,
+    "floodCycleSeconds": 36,
+    "warningSeconds": 4,
+    "floodDamagePerSecond": 8
+  },
+  "implementation": "Four jump seals, elevated dry loop and central island, two low banks with four escape ramps. The titan replaces one of the 26 wave-10 slots; the rest of the wave must also be defeated. Sprite atlas animated in GPU, panorama and river animated with time uniforms."
+}

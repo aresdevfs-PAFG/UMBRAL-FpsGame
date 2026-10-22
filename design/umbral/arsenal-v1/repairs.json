@@ -1,0 +1,6 @@
+{
+  "macuahuitl": {
+    "source": "reference:exec-82f0a8a0-5230-44a0-a3d0-cf8fcee90b00.png",
+    "prompt": "Use case: identity-preserve. Reference is the MACUAHUITL first-person animation sprite sheet. Redraw the same weapon and medium brown hands with charcoal cuffs, gritty pixel art, 4columns x3rows, 12 equal square viewport cells. Fix clipping: SHRINK every viewmodel to 65percent of cell size, leaving huge transparent gutters on all sides, especially the right edge of frame2. All obsidian blades and knuckles must be fully drawn, no blade cutoffs, no neighboring cell overlaps. Actual transparent background. First person seen through wielder eyes, no full character. Consistent scale. ROW1 ready on right; pull back right; horizontal slash left; followthrough. ROW2 ready; raise overhead entirely INSIDE square; heavy downslash; lowered finish. ROW3 lower; left hand regrips; guard; ready. Fixed camera, compact motion within each square, 15percent margins even with slash trails, no text/grid/scenery. Same brown flat wooden club with black obsidian on both edges and turquoise wrapped handle."
+  }
+}

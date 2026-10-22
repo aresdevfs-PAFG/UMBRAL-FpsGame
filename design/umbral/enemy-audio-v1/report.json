@@ -1,0 +1,1897 @@
+{
+  "sampleRate": 44100,
+  "channels": 1,
+  "bitrateKbps": 128,
+  "processing": {
+    "removeDc": true,
+    "highpassHz": 35.0,
+    "targetPeak": 0.75,
+    "maximumBoost": 4.0,
+    "oneShotFadesMs": [
+      3,
+      20
+    ],
+    "loops": "Duración conservada y filtrado circular; unión de 25 ms con coseno elevado solo si el salto supera 0.01; sin silencio añadido",
+    "previewGain": 0.72,
+    "previewGapSeconds": 0.65
+  },
+  "clips": [
+    {
+      "id": "macabro-presence",
+      "enemy": "macabro",
+      "label": "Presencia · respiración y gruñido",
+      "sourceFile": "sources/macabro-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/macabro-presence.mp3",
+      "requestedDuration": 2.5,
+      "encoded": {
+        "duration": 1.906939,
+        "peak": 0.709625,
+        "peakDbfs": -2.979,
+        "rms": 0.104763,
+        "rmsDbfs": -19.596,
+        "onset": 0.030045
+      },
+      "source": {
+        "duration": 2.48,
+        "peak": 0.960388,
+        "peakDbfs": -0.351,
+        "rms": 0.124789,
+        "rmsDbfs": -18.076,
+        "onset": 0.009297
+      },
+      "master": {
+        "duration": 1.867778,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.111418,
+        "rmsDbfs": -19.061,
+        "onset": 0.004989
+      },
+      "dcRemoved": 0.000173671,
+      "trimStartSeconds": 0.006871,
+      "trimEndSeconds": 0.605351,
+      "gain": 0.780309,
+      "loop": false
+    },
+    {
+      "id": "macabro-attack",
+      "enemy": "macabro",
+      "label": "Ataque · desgarro y lanzamiento",
+      "sourceFile": "sources/macabro-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/macabro-attack.mp3",
+      "requestedDuration": 1.2,
+      "encoded": {
+        "duration": 1.018776,
+        "peak": 0.708344,
+        "peakDbfs": -2.995,
+        "rms": 0.143223,
+        "rmsDbfs": -16.88,
+        "onset": 0.02483
+      },
+      "source": {
+        "duration": 1.2,
+        "peak": 0.602386,
+        "peakDbfs": -4.402,
+        "rms": 0.112451,
+        "rmsDbfs": -18.981,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.969456,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.155262,
+        "rmsDbfs": -16.179,
+        "onset": 0.000181
+      },
+      "dcRemoved": 9.6174e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.230544,
+      "gain": 1.246172,
+      "loop": false
+    },
+    {
+      "id": "macabro-hurt",
+      "enemy": "macabro",
+      "label": "Daño · quejido breve",
+      "sourceFile": "sources/macabro-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/macabro-hurt.mp3",
+      "requestedDuration": 0.8,
+      "encoded": {
+        "duration": 0.835918,
+        "peak": 0.699554,
+        "peakDbfs": -3.104,
+        "rms": 0.143054,
+        "rmsDbfs": -16.89,
+        "onset": 0.024127
+      },
+      "source": {
+        "duration": 0.8,
+        "peak": 0.958969,
+        "peakDbfs": -0.364,
+        "rms": 0.199414,
+        "rmsDbfs": -14.005,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.8,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.154248,
+        "rmsDbfs": -16.236,
+        "onset": 0.000317
+      },
+      "dcRemoved": -0.000457347,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.0,
+      "gain": 0.784124,
+      "loop": false
+    },
+    {
+      "id": "macabro-death",
+      "enemy": "macabro",
+      "label": "Muerte · caída y huesos",
+      "sourceFile": "sources/macabro-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/macabro-death.mp3",
+      "requestedDuration": 1.8,
+      "encoded": {
+        "duration": 1.567347,
+        "peak": 0.708679,
+        "peakDbfs": -2.991,
+        "rms": 0.144005,
+        "rmsDbfs": -16.832,
+        "onset": 0.026304
+      },
+      "source": {
+        "duration": 1.76,
+        "peak": 0.939194,
+        "peakDbfs": -0.545,
+        "rms": 0.181056,
+        "rmsDbfs": -14.844,
+        "onset": 2.3e-05
+      },
+      "master": {
+        "duration": 1.535488,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.153151,
+        "rmsDbfs": -16.298,
+        "onset": 0.001247
+      },
+      "dcRemoved": -8.2851e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.224512,
+      "gain": 0.79956,
+      "loop": false
+    },
+    {
+      "id": "devorador-presence",
+      "enemy": "devorador",
+      "label": "Presencia · máscara espectral",
+      "sourceFile": "sources/devorador-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/devorador-presence.mp3",
+      "requestedDuration": 2.5,
+      "encoded": {
+        "duration": 2.638367,
+        "peak": 0.635071,
+        "peakDbfs": -3.944,
+        "rms": 0.118084,
+        "rmsDbfs": -18.556,
+        "onset": 0.025079
+      },
+      "source": {
+        "duration": 2.61,
+        "peak": 0.165619,
+        "peakDbfs": -15.618,
+        "rms": 0.031545,
+        "rmsDbfs": -30.021,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.61,
+        "peak": 0.661798,
+        "peakDbfs": -3.585,
+        "rms": 0.125561,
+        "rmsDbfs": -18.023,
+        "onset": 0.0
+      },
+      "dcRemoved": 1.7028e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.0,
+      "gain": 4.0,
+      "loop": true,
+      "loopSeamStep": 0.0,
+      "loopBoundaryProcessing": {
+        "applied": true,
+        "threshold": 0.01,
+        "transitionSeconds": 0.025,
+        "method": "Unión al punto medio con curvas de coseno elevado en ambos extremos",
+        "beforeStep": 0.053810533,
+        "afterStep": 0.0,
+        "encodedBeforeStep": 0.000946045,
+        "encodedAfterStep": 6.1035e-05
+      }
+    },
+    {
+      "id": "devorador-attack",
+      "enemy": "devorador",
+      "label": "Embestida · chillido y mordida",
+      "sourceFile": "sources/devorador-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/devorador-attack.mp3",
+      "requestedDuration": 1.4,
+      "encoded": {
+        "duration": 1.149388,
+        "peak": 0.713348,
+        "peakDbfs": -2.934,
+        "rms": 0.122121,
+        "rmsDbfs": -18.264,
+        "onset": 0.02542
+      },
+      "source": {
+        "duration": 1.36,
+        "peak": 1.0,
+        "peakDbfs": 0.0,
+        "rms": 0.16385,
+        "rmsDbfs": -15.711,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.121973,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.131646,
+        "rmsDbfs": -17.612,
+        "onset": 0.00034
+      },
+      "dcRemoved": -0.000176731,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.238027,
+      "gain": 0.736594,
+      "loop": false
+    },
+    {
+      "id": "devorador-hurt",
+      "enemy": "devorador",
+      "label": "Daño · máscara agrietada",
+      "sourceFile": "sources/devorador-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/devorador-hurt.mp3",
+      "requestedDuration": 0.8,
+      "encoded": {
+        "duration": 0.548571,
+        "peak": 0.715973,
+        "peakDbfs": -2.902,
+        "rms": 0.077019,
+        "rmsDbfs": -22.268,
+        "onset": 0.023696
+      },
+      "source": {
+        "duration": 0.8,
+        "peak": 0.711227,
+        "peakDbfs": -2.96,
+        "rms": 0.065021,
+        "rmsDbfs": -23.739,
+        "onset": 2.3e-05
+      },
+      "master": {
+        "duration": 0.497982,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.086568,
+        "rmsDbfs": -21.253,
+        "onset": 0.000113
+      },
+      "dcRemoved": -0.000244672,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.302018,
+      "gain": 1.052419,
+      "loop": false
+    },
+    {
+      "id": "devorador-death",
+      "enemy": "devorador",
+      "label": "Muerte · ruptura y explosión",
+      "sourceFile": "sources/devorador-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/devorador-death.mp3",
+      "requestedDuration": 1.6,
+      "encoded": {
+        "duration": 1.410612,
+        "peak": 0.707001,
+        "peakDbfs": -3.012,
+        "rms": 0.057689,
+        "rmsDbfs": -24.778,
+        "onset": 0.025079
+      },
+      "source": {
+        "duration": 1.6,
+        "peak": 0.964844,
+        "peakDbfs": -0.311,
+        "rms": 0.10424,
+        "rmsDbfs": -19.639,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.376757,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.060985,
+        "rmsDbfs": -24.296,
+        "onset": 0.000136
+      },
+      "dcRemoved": 0.00213927,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.223243,
+      "gain": 0.762904,
+      "loop": false
+    },
+    {
+      "id": "titan-arrival",
+      "enemy": "titan",
+      "label": "Aparición · rugido del Titán",
+      "sourceFile": "sources/titan-arrival.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-arrival.mp3",
+      "requestedDuration": 3,
+      "encoded": {
+        "duration": 2.35102,
+        "peak": 0.719666,
+        "peakDbfs": -2.857,
+        "rms": 0.117889,
+        "rmsDbfs": -18.571,
+        "onset": 0.02517
+      },
+      "source": {
+        "duration": 3.0,
+        "peak": 0.989594,
+        "peakDbfs": -0.091,
+        "rms": 0.145782,
+        "rmsDbfs": -16.726,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.31229,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.125368,
+        "rmsDbfs": -18.036,
+        "onset": 0.000227
+      },
+      "dcRemoved": 0.000104453,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.68771,
+      "gain": 0.758886,
+      "loop": false
+    },
+    {
+      "id": "titan-step",
+      "enemy": "titan",
+      "label": "Paso · peso y armadura",
+      "sourceFile": "sources/titan-step.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-step.mp3",
+      "requestedDuration": 1.2,
+      "encoded": {
+        "duration": 1.149388,
+        "peak": 0.718475,
+        "peakDbfs": -2.872,
+        "rms": 0.032782,
+        "rmsDbfs": -29.687,
+        "onset": 0.025215
+      },
+      "source": {
+        "duration": 1.2,
+        "peak": 0.767181,
+        "peakDbfs": -2.302,
+        "rms": 0.03913,
+        "rmsDbfs": -28.15,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.099841,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.03596,
+        "rmsDbfs": -28.884,
+        "onset": 0.000181
+      },
+      "dcRemoved": -0.000696809,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.100159,
+      "gain": 0.97602,
+      "loop": false
+    },
+    {
+      "id": "titan-leap",
+      "enemy": "titan",
+      "label": "Salto · impulso",
+      "sourceFile": "sources/titan-leap.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-leap.mp3",
+      "requestedDuration": 1.1,
+      "encoded": {
+        "duration": 1.123265,
+        "peak": 0.712311,
+        "peakDbfs": -2.947,
+        "rms": 0.08129,
+        "rmsDbfs": -21.799,
+        "onset": 0.024195
+      },
+      "source": {
+        "duration": 1.08,
+        "peak": 0.789734,
+        "peakDbfs": -2.05,
+        "rms": 0.103742,
+        "rmsDbfs": -19.681,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.08,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.087207,
+        "rmsDbfs": -21.189,
+        "onset": 4.5e-05
+      },
+      "dcRemoved": -0.000103901,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.0,
+      "gain": 0.892662,
+      "loop": false
+    },
+    {
+      "id": "titan-landing",
+      "enemy": "titan",
+      "label": "Caída · impacto y onda",
+      "sourceFile": "sources/titan-landing.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-landing.mp3",
+      "requestedDuration": 2,
+      "encoded": {
+        "duration": 1.671837,
+        "peak": 0.703674,
+        "peakDbfs": -3.053,
+        "rms": 0.119787,
+        "rmsDbfs": -18.432,
+        "onset": 0.015261
+      },
+      "source": {
+        "duration": 2.0,
+        "peak": 0.427475,
+        "peakDbfs": -7.382,
+        "rms": 0.06955,
+        "rmsDbfs": -23.154,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.64034,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.127775,
+        "rmsDbfs": -17.871,
+        "onset": 4.5e-05
+      },
+      "dcRemoved": 0.000178291,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.35966,
+      "gain": 2.108771,
+      "loop": false
+    },
+    {
+      "id": "titan-hurt",
+      "enemy": "titan",
+      "label": "Daño · rugido corto",
+      "sourceFile": "sources/titan-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-hurt.mp3",
+      "requestedDuration": 1.1,
+      "encoded": {
+        "duration": 0.862041,
+        "peak": 0.715485,
+        "peakDbfs": -2.908,
+        "rms": 0.150311,
+        "rmsDbfs": -16.46,
+        "onset": 0.025125
+      },
+      "source": {
+        "duration": 1.08,
+        "peak": 0.969803,
+        "peakDbfs": -0.266,
+        "rms": 0.184866,
+        "rmsDbfs": -14.663,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.820317,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.162669,
+        "rmsDbfs": -15.774,
+        "onset": 9.1e-05
+      },
+      "dcRemoved": -0.001556075,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.259683,
+      "gain": 0.778218,
+      "loop": false
+    },
+    {
+      "id": "titan-rage",
+      "enemy": "titan",
+      "label": "Fase 2 · escudo roto y furia",
+      "sourceFile": "sources/titan-rage.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-rage.mp3",
+      "requestedDuration": 2.8,
+      "encoded": {
+        "duration": 1.828571,
+        "peak": 0.710358,
+        "peakDbfs": -2.97,
+        "rms": 0.187959,
+        "rmsDbfs": -14.519,
+        "onset": 0.025125
+      },
+      "source": {
+        "duration": 2.76,
+        "peak": 0.975311,
+        "peakDbfs": -0.217,
+        "rms": 0.213573,
+        "rmsDbfs": -13.409,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.779501,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.200499,
+        "rmsDbfs": -13.958,
+        "onset": 4.5e-05
+      },
+      "dcRemoved": -0.00071871,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.980499,
+      "gain": 0.801499,
+      "loop": false
+    },
+    {
+      "id": "titan-skulls",
+      "enemy": "titan",
+      "label": "Calaveras · carga y lanzamiento",
+      "sourceFile": "sources/titan-skulls.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-skulls.mp3",
+      "requestedDuration": 2.2,
+      "encoded": {
+        "duration": 2.115918,
+        "peak": 0.711243,
+        "peakDbfs": -2.96,
+        "rms": 0.114887,
+        "rmsDbfs": -18.795,
+        "onset": 0.026599
+      },
+      "source": {
+        "duration": 2.2,
+        "peak": 0.956116,
+        "peakDbfs": -0.39,
+        "rms": 0.168107,
+        "rmsDbfs": -15.488,
+        "onset": 0.000408
+      },
+      "master": {
+        "duration": 2.088209,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.121815,
+        "rmsDbfs": -18.286,
+        "onset": 0.001542
+      },
+      "dcRemoved": -0.001366043,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.111791,
+      "gain": 0.898166,
+      "loop": false
+    },
+    {
+      "id": "titan-summon",
+      "enemy": "titan",
+      "label": "Invocación · llamado de imps",
+      "sourceFile": "sources/titan-summon.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-summon.mp3",
+      "requestedDuration": 2.5,
+      "encoded": {
+        "duration": 2.272653,
+        "peak": 0.70932,
+        "peakDbfs": -2.983,
+        "rms": 0.144189,
+        "rmsDbfs": -16.821,
+        "onset": 0.030045
+      },
+      "source": {
+        "duration": 2.48,
+        "peak": 0.949036,
+        "peakDbfs": -0.454,
+        "rms": 0.198577,
+        "rmsDbfs": -14.041,
+        "onset": 0.010317
+      },
+      "master": {
+        "duration": 2.245057,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.152568,
+        "rmsDbfs": -16.331,
+        "onset": 0.004989
+      },
+      "dcRemoved": -0.000802369,
+      "trimStartSeconds": 0.005329,
+      "trimEndSeconds": 0.229615,
+      "gain": 0.796454,
+      "loop": false
+    },
+    {
+      "id": "titan-downed",
+      "enemy": "titan",
+      "label": "Vulnerable · agonía y corazón",
+      "sourceFile": "sources/titan-downed.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-downed.mp3",
+      "requestedDuration": 3.5,
+      "encoded": {
+        "duration": 3.526531,
+        "peak": 0.712555,
+        "peakDbfs": -2.944,
+        "rms": 0.068161,
+        "rmsDbfs": -23.329,
+        "onset": 0.026372
+      },
+      "source": {
+        "duration": 3.48,
+        "peak": 0.950378,
+        "peakDbfs": -0.442,
+        "rms": 0.099316,
+        "rmsDbfs": -20.06,
+        "onset": 0.000658
+      },
+      "master": {
+        "duration": 3.48,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.072233,
+        "rmsDbfs": -22.825,
+        "onset": 0.001179
+      },
+      "dcRemoved": -2.0511e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.0,
+      "gain": 0.955832,
+      "loop": true,
+      "loopSeamStep": 0.000552,
+      "loopBoundaryProcessing": {
+        "applied": false,
+        "threshold": 0.01,
+        "transitionSeconds": 0,
+        "method": "Unión al punto medio con curvas de coseno elevado en ambos extremos",
+        "beforeStep": 0.000551806,
+        "afterStep": 0.000551806,
+        "encodedAfterStep": 0.0
+      }
+    },
+    {
+      "id": "titan-death",
+      "enemy": "titan",
+      "label": "Muerte · núcleo roto y derrumbe",
+      "sourceFile": "sources/titan-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/titan-death.mp3",
+      "requestedDuration": 3,
+      "encoded": {
+        "duration": 2.507755,
+        "peak": 0.713226,
+        "peakDbfs": -2.935,
+        "rms": 0.171686,
+        "rmsDbfs": -15.305,
+        "onset": 0.025147
+      },
+      "source": {
+        "duration": 3.0,
+        "peak": 0.993088,
+        "peakDbfs": -0.06,
+        "rms": 0.248999,
+        "rmsDbfs": -12.076,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.474807,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.1821,
+        "rmsDbfs": -14.794,
+        "onset": 6.8e-05
+      },
+      "dcRemoved": -0.000371209,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.525193,
+      "gain": 0.780072,
+      "loop": false
+    },
+    {
+      "id": "abominacion-presence",
+      "enemy": "abominacion",
+      "label": "Presencia · respiración y burbujeo",
+      "sourceFile": "sources/abominacion-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/abominacion-presence.mp3",
+      "requestedDuration": 2.5,
+      "encoded": {
+        "duration": 1.854694,
+        "peak": 0.716339,
+        "peakDbfs": -2.898,
+        "rms": 0.114373,
+        "rmsDbfs": -18.834,
+        "onset": 0.027007
+      },
+      "source": {
+        "duration": 2.48,
+        "peak": 0.814301,
+        "peakDbfs": -1.784,
+        "rms": 0.112879,
+        "rmsDbfs": -18.948,
+        "onset": 0.000136
+      },
+      "master": {
+        "duration": 1.808685,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.121935,
+        "rmsDbfs": -18.277,
+        "onset": 0.001927
+      },
+      "dcRemoved": -0.000377473,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.671315,
+      "gain": 0.990043,
+      "loop": false
+    },
+    {
+      "id": "abominacion-windup",
+      "enemy": "abominacion",
+      "label": "Preparación · presión de ácido",
+      "sourceFile": "sources/abominacion-windup.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/abominacion-windup.mp3",
+      "requestedDuration": 1,
+      "encoded": {
+        "duration": 0.940408,
+        "peak": 0.714172,
+        "peakDbfs": -2.924,
+        "rms": 0.062574,
+        "rmsDbfs": -24.072,
+        "onset": 0.025306
+      },
+      "source": {
+        "duration": 1.0,
+        "peak": 0.999969,
+        "peakDbfs": -0.0,
+        "rms": 0.095063,
+        "rmsDbfs": -20.44,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.897166,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.067547,
+        "rmsDbfs": -23.408,
+        "onset": 0.000272
+      },
+      "dcRemoved": 0.000309823,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.102834,
+      "gain": 0.735757,
+      "loop": false
+    },
+    {
+      "id": "abominacion-attack",
+      "enemy": "abominacion",
+      "label": "Ataque · ráfaga de ácido",
+      "sourceFile": "sources/abominacion-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/abominacion-attack.mp3",
+      "requestedDuration": 1.5,
+      "encoded": {
+        "duration": 0.626939,
+        "peak": 0.730011,
+        "peakDbfs": -2.733,
+        "rms": 0.105841,
+        "rmsDbfs": -19.507,
+        "onset": 0.019705
+      },
+      "source": {
+        "duration": 1.48,
+        "peak": 0.874695,
+        "peakDbfs": -1.163,
+        "rms": 0.091286,
+        "rmsDbfs": -20.792,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.578299,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.116362,
+        "rmsDbfs": -18.684,
+        "onset": 0.000136
+      },
+      "dcRemoved": -0.00084477,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.901701,
+      "gain": 0.920345,
+      "loop": false
+    },
+    {
+      "id": "abominacion-hurt",
+      "enemy": "abominacion",
+      "label": "Daño · bramido húmedo",
+      "sourceFile": "sources/abominacion-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/abominacion-hurt.mp3",
+      "requestedDuration": 0.9,
+      "encoded": {
+        "duration": 0.679184,
+        "peak": 0.724915,
+        "peakDbfs": -2.794,
+        "rms": 0.132707,
+        "rmsDbfs": -17.542,
+        "onset": 0.024444
+      },
+      "source": {
+        "duration": 0.88,
+        "peak": 0.977798,
+        "peakDbfs": -0.195,
+        "rms": 0.186079,
+        "rmsDbfs": -14.606,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.651066,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.142234,
+        "rmsDbfs": -16.94,
+        "onset": 6.8e-05
+      },
+      "dcRemoved": -0.00230733,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.228934,
+      "gain": 0.767933,
+      "loop": false
+    },
+    {
+      "id": "abominacion-death",
+      "enemy": "abominacion",
+      "label": "Muerte · bramido y derrumbe",
+      "sourceFile": "sources/abominacion-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/abominacion-death.mp3",
+      "requestedDuration": 2.5,
+      "encoded": {
+        "duration": 2.246531,
+        "peak": 0.751495,
+        "peakDbfs": -2.481,
+        "rms": 0.118954,
+        "rmsDbfs": -18.492,
+        "onset": 0.025397
+      },
+      "source": {
+        "duration": 2.48,
+        "peak": 0.95166,
+        "peakDbfs": -0.43,
+        "rms": 0.151899,
+        "rmsDbfs": -16.369,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.214308,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.126007,
+        "rmsDbfs": -17.992,
+        "onset": 0.000295
+      },
+      "dcRemoved": -0.000195211,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.265692,
+      "gain": 0.796594,
+      "loop": false
+    },
+    {
+      "id": "centinela-presence",
+      "enemy": "centinela",
+      "label": "Presencia · rugido del Centinela",
+      "sourceFile": "sources/centinela-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-presence.mp3",
+      "requestedDuration": 2.8,
+      "encoded": {
+        "duration": 2.403265,
+        "peak": 0.704102,
+        "peakDbfs": -3.047,
+        "rms": 0.102873,
+        "rmsDbfs": -19.754,
+        "onset": 0.025329
+      },
+      "source": {
+        "duration": 2.76,
+        "peak": 0.914398,
+        "peakDbfs": -0.777,
+        "rms": 0.123208,
+        "rmsDbfs": -18.187,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.351179,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.109895,
+        "rmsDbfs": -19.18,
+        "onset": 0.000249
+      },
+      "dcRemoved": 1.5786e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.408821,
+      "gain": 0.826776,
+      "loop": false
+    },
+    {
+      "id": "centinela-windup",
+      "enemy": "centinela",
+      "label": "Preparación · rugido de ataque",
+      "sourceFile": "sources/centinela-windup.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-windup.mp3",
+      "requestedDuration": 1.2,
+      "encoded": {
+        "duration": 1.17551,
+        "peak": 0.712738,
+        "peakDbfs": -2.941,
+        "rms": 0.130648,
+        "rmsDbfs": -17.678,
+        "onset": 0.025918
+      },
+      "source": {
+        "duration": 1.2,
+        "peak": 0.855255,
+        "peakDbfs": -1.358,
+        "rms": 0.155453,
+        "rmsDbfs": -16.168,
+        "onset": 0.000159
+      },
+      "master": {
+        "duration": 1.13966,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.139752,
+        "rmsDbfs": -17.093,
+        "onset": 0.00102
+      },
+      "dcRemoved": -0.000297647,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.06034,
+      "gain": 0.877488,
+      "loop": false
+    },
+    {
+      "id": "centinela-attack",
+      "enemy": "centinela",
+      "label": "Ataque · esferas de plasma",
+      "sourceFile": "sources/centinela-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-attack.mp3",
+      "requestedDuration": 1.4,
+      "encoded": {
+        "duration": 0.705306,
+        "peak": 0.712067,
+        "peakDbfs": -2.95,
+        "rms": 0.14057,
+        "rmsDbfs": -17.042,
+        "onset": 0.024308
+      },
+      "source": {
+        "duration": 1.36,
+        "peak": 0.318832,
+        "peakDbfs": -9.929,
+        "rms": 0.051345,
+        "rmsDbfs": -25.79,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.677438,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.151005,
+        "rmsDbfs": -16.42,
+        "onset": 0.000159
+      },
+      "dcRemoved": 5.3812e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.682562,
+      "gain": 2.702299,
+      "loop": false
+    },
+    {
+      "id": "centinela-slam",
+      "enemy": "centinela",
+      "label": "Ataque · mazos y onda",
+      "sourceFile": "sources/centinela-slam.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-slam.mp3",
+      "requestedDuration": 1.5,
+      "encoded": {
+        "duration": 0.679184,
+        "peak": 0.725769,
+        "peakDbfs": -2.784,
+        "rms": 0.091938,
+        "rmsDbfs": -20.73,
+        "onset": 0.019773
+      },
+      "source": {
+        "duration": 1.48,
+        "peak": 0.506866,
+        "peakDbfs": -5.902,
+        "rms": 0.046997,
+        "rmsDbfs": -26.559,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.631497,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.10037,
+        "rmsDbfs": -19.968,
+        "onset": 6.8e-05
+      },
+      "dcRemoved": -7.0502e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.848503,
+      "gain": 1.719579,
+      "loop": false
+    },
+    {
+      "id": "centinela-hurt",
+      "enemy": "centinela",
+      "label": "Daño · gruñido furioso",
+      "sourceFile": "sources/centinela-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-hurt.mp3",
+      "requestedDuration": 0.9,
+      "encoded": {
+        "duration": 0.705306,
+        "peak": 0.717407,
+        "peakDbfs": -2.885,
+        "rms": 0.155945,
+        "rmsDbfs": -16.141,
+        "onset": 0.025147
+      },
+      "source": {
+        "duration": 0.88,
+        "peak": 0.556122,
+        "peakDbfs": -5.097,
+        "rms": 0.109261,
+        "rmsDbfs": -19.231,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.657166,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.170007,
+        "rmsDbfs": -15.391,
+        "onset": 9.1e-05
+      },
+      "dcRemoved": 0.001280186,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.222834,
+      "gain": 1.38998,
+      "loop": false
+    },
+    {
+      "id": "centinela-death",
+      "enemy": "centinela",
+      "label": "Muerte · rugido y colapso",
+      "sourceFile": "sources/centinela-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/centinela-death.mp3",
+      "requestedDuration": 2.4,
+      "encoded": {
+        "duration": 2.194286,
+        "peak": 0.724457,
+        "peakDbfs": -2.8,
+        "rms": 0.10573,
+        "rmsDbfs": -19.516,
+        "onset": 0.025238
+      },
+      "source": {
+        "duration": 2.4,
+        "peak": 0.665558,
+        "peakDbfs": -3.536,
+        "rms": 0.096578,
+        "rmsDbfs": -20.302,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.163492,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.112092,
+        "rmsDbfs": -19.009,
+        "onset": 0.000181
+      },
+      "dcRemoved": -7.0116e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.236508,
+      "gain": 1.117052,
+      "loop": false
+    },
+    {
+      "id": "empalador-presence",
+      "enemy": "empalador",
+      "label": "Presencia · fragmentos de obsidiana",
+      "sourceFile": "sources/empalador-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/empalador-presence.mp3",
+      "requestedDuration": 2.2,
+      "encoded": {
+        "duration": 2.037551,
+        "peak": 0.729706,
+        "peakDbfs": -2.737,
+        "rms": 0.101835,
+        "rmsDbfs": -19.842,
+        "onset": 0.026735
+      },
+      "source": {
+        "duration": 2.2,
+        "peak": 0.531052,
+        "peakDbfs": -5.497,
+        "rms": 0.07387,
+        "rmsDbfs": -22.631,
+        "onset": 9.1e-05
+      },
+      "master": {
+        "duration": 1.994649,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.109516,
+        "rmsDbfs": -19.21,
+        "onset": 0.001678
+      },
+      "dcRemoved": -6.7655e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.205351,
+      "gain": 1.411812,
+      "loop": false
+    },
+    {
+      "id": "empalador-windup",
+      "enemy": "empalador",
+      "label": "Preparación · cuchillas contra el suelo",
+      "sourceFile": "sources/empalador-windup.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/empalador-windup.mp3",
+      "requestedDuration": 1,
+      "encoded": {
+        "duration": 0.705306,
+        "peak": 0.67691,
+        "peakDbfs": -3.389,
+        "rms": 0.121895,
+        "rmsDbfs": -18.28,
+        "onset": 0.025261
+      },
+      "source": {
+        "duration": 1.0,
+        "peak": 0.823196,
+        "peakDbfs": -1.69,
+        "rms": 0.118275,
+        "rmsDbfs": -18.542,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.673039,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.131598,
+        "rmsDbfs": -17.615,
+        "onset": 0.000431
+      },
+      "dcRemoved": 4.6294e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.326961,
+      "gain": 0.913,
+      "loop": false
+    },
+    {
+      "id": "empalador-attack",
+      "enemy": "empalador",
+      "label": "Ataque · estacas de cristal",
+      "sourceFile": "sources/empalador-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/empalador-attack.mp3",
+      "requestedDuration": 1.25,
+      "encoded": {
+        "duration": 0.835918,
+        "peak": 0.710785,
+        "peakDbfs": -2.965,
+        "rms": 0.089292,
+        "rmsDbfs": -20.984,
+        "onset": 0.025556
+      },
+      "source": {
+        "duration": 1.24,
+        "peak": 0.773758,
+        "peakDbfs": -2.228,
+        "rms": 0.092098,
+        "rmsDbfs": -20.715,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.793356,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.096734,
+        "rmsDbfs": -20.288,
+        "onset": 0.000635
+      },
+      "dcRemoved": -0.000746749,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.446644,
+      "gain": 1.045481,
+      "loop": false
+    },
+    {
+      "id": "empalador-hurt",
+      "enemy": "empalador",
+      "label": "Daño · cristal agrietado",
+      "sourceFile": "sources/empalador-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/empalador-hurt.mp3",
+      "requestedDuration": 0.75,
+      "encoded": {
+        "duration": 0.600816,
+        "peak": 0.708649,
+        "peakDbfs": -2.991,
+        "rms": 0.031775,
+        "rmsDbfs": -29.958,
+        "onset": 0.025329
+      },
+      "source": {
+        "duration": 0.72,
+        "peak": 0.949158,
+        "peakDbfs": -0.453,
+        "rms": 0.038675,
+        "rmsDbfs": -28.251,
+        "onset": 2.3e-05
+      },
+      "master": {
+        "duration": 0.551247,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.034818,
+        "rmsDbfs": -29.164,
+        "onset": 0.000272
+      },
+      "dcRemoved": 4.0317e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.168753,
+      "gain": 0.79025,
+      "loop": false
+    },
+    {
+      "id": "empalador-death",
+      "enemy": "empalador",
+      "label": "Muerte · derrumbe de obsidiana",
+      "sourceFile": "sources/empalador-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/empalador-death.mp3",
+      "requestedDuration": 1.9,
+      "encoded": {
+        "duration": 1.358367,
+        "peak": 0.739868,
+        "peakDbfs": -2.617,
+        "rms": 0.116501,
+        "rmsDbfs": -18.673,
+        "onset": 0.014512
+      },
+      "source": {
+        "duration": 1.88,
+        "peak": 1.0,
+        "peakDbfs": 0.0,
+        "rms": 0.151813,
+        "rmsDbfs": -16.374,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.316327,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.126252,
+        "rmsDbfs": -17.975,
+        "onset": 9.1e-05
+      },
+      "dcRemoved": -0.000314545,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.563673,
+      "gain": 0.733084,
+      "loop": false
+    },
+    {
+      "id": "tejedor-presence",
+      "enemy": "tejedor",
+      "label": "Presencia · aliento de ceniza",
+      "sourceFile": "sources/tejedor-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-presence.mp3",
+      "requestedDuration": 2.3,
+      "encoded": {
+        "duration": 2.298776,
+        "peak": 0.709351,
+        "peakDbfs": -2.983,
+        "rms": 0.107426,
+        "rmsDbfs": -19.378,
+        "onset": 0.023356
+      },
+      "source": {
+        "duration": 2.28,
+        "peak": 0.528442,
+        "peakDbfs": -5.54,
+        "rms": 0.080229,
+        "rmsDbfs": -21.913,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.257415,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.114571,
+        "rmsDbfs": -18.819,
+        "onset": 9.1e-05
+      },
+      "dcRemoved": -5.1453e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.022585,
+      "gain": 1.421876,
+      "loop": false
+    },
+    {
+      "id": "tejedor-windup",
+      "enemy": "tejedor",
+      "label": "Preparación · hilos tensándose",
+      "sourceFile": "sources/tejedor-windup.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-windup.mp3",
+      "requestedDuration": 1.1,
+      "encoded": {
+        "duration": 0.757551,
+        "peak": 0.720642,
+        "peakDbfs": -2.846,
+        "rms": 0.040906,
+        "rmsDbfs": -27.764,
+        "onset": 0.030045
+      },
+      "source": {
+        "duration": 1.08,
+        "peak": 1.0,
+        "peakDbfs": 0.0,
+        "rms": 0.048039,
+        "rmsDbfs": -26.368,
+        "onset": 0.052381
+      },
+      "master": {
+        "duration": 0.730975,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.043777,
+        "rmsDbfs": -27.175,
+        "onset": 0.004989
+      },
+      "dcRemoved": -4.3582e-05,
+      "trimStartSeconds": 0.047392,
+      "trimEndSeconds": 0.301633,
+      "gain": 0.750711,
+      "loop": false
+    },
+    {
+      "id": "tejedor-attack",
+      "enemy": "tejedor",
+      "label": "Ataque · abanico de energía",
+      "sourceFile": "sources/tejedor-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-attack.mp3",
+      "requestedDuration": 1.1,
+      "encoded": {
+        "duration": 0.679184,
+        "peak": 0.735107,
+        "peakDbfs": -2.673,
+        "rms": 0.033977,
+        "rmsDbfs": -29.376,
+        "onset": 0.030113
+      },
+      "source": {
+        "duration": 1.08,
+        "peak": 0.999969,
+        "peakDbfs": -0.0,
+        "rms": 0.038701,
+        "rmsDbfs": -28.246,
+        "onset": 0.03517
+      },
+      "master": {
+        "duration": 0.627914,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.03721,
+        "rmsDbfs": -28.587,
+        "onset": 0.004989
+      },
+      "dcRemoved": -0.000415596,
+      "trimStartSeconds": 0.030181,
+      "trimEndSeconds": 0.421905,
+      "gain": 0.747511,
+      "loop": false
+    },
+    {
+      "id": "tejedor-channel",
+      "enemy": "tejedor",
+      "label": "Canalización · tejido protector",
+      "sourceFile": "sources/tejedor-channel.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-channel.mp3",
+      "requestedDuration": 2.6,
+      "encoded": {
+        "duration": 2.716735,
+        "peak": 0.711609,
+        "peakDbfs": -2.955,
+        "rms": 0.063706,
+        "rmsDbfs": -23.916,
+        "onset": 0.025193
+      },
+      "source": {
+        "duration": 2.67,
+        "peak": 0.512848,
+        "peakDbfs": -5.8,
+        "rms": 0.046826,
+        "rmsDbfs": -26.59,
+        "onset": 6.8e-05
+      },
+      "master": {
+        "duration": 2.67,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.068337,
+        "rmsDbfs": -23.307,
+        "onset": 0.000136
+      },
+      "dcRemoved": 5.5209e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.0,
+      "gain": 1.46024,
+      "loop": true,
+      "loopSeamStep": 0.00018,
+      "loopBoundaryProcessing": {
+        "applied": false,
+        "threshold": 0.01,
+        "transitionSeconds": 0,
+        "method": "Unión al punto medio con curvas de coseno elevado en ambos extremos",
+        "beforeStep": 0.000180237,
+        "afterStep": 0.000180237,
+        "encodedAfterStep": 0.0
+      }
+    },
+    {
+      "id": "tejedor-hurt",
+      "enemy": "tejedor",
+      "label": "Daño · fibras rotas",
+      "sourceFile": "sources/tejedor-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-hurt.mp3",
+      "requestedDuration": 0.75,
+      "encoded": {
+        "duration": 0.731429,
+        "peak": 0.735291,
+        "peakDbfs": -2.671,
+        "rms": 0.119598,
+        "rmsDbfs": -18.446,
+        "onset": 0.023605
+      },
+      "source": {
+        "duration": 0.72,
+        "peak": 0.679581,
+        "peakDbfs": -3.355,
+        "rms": 0.114796,
+        "rmsDbfs": -18.801,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.695079,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.128555,
+        "rmsDbfs": -17.818,
+        "onset": 0.000227
+      },
+      "dcRemoved": 1.9317e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.024921,
+      "gain": 1.10104,
+      "loop": false
+    },
+    {
+      "id": "tejedor-death",
+      "enemy": "tejedor",
+      "label": "Muerte · huesos y ceniza",
+      "sourceFile": "sources/tejedor-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/tejedor-death.mp3",
+      "requestedDuration": 1.9,
+      "encoded": {
+        "duration": 1.48898,
+        "peak": 0.712097,
+        "peakDbfs": -2.949,
+        "rms": 0.027097,
+        "rmsDbfs": -31.341,
+        "onset": 0.025737
+      },
+      "source": {
+        "duration": 1.88,
+        "peak": 0.635452,
+        "peakDbfs": -3.938,
+        "rms": 0.021653,
+        "rmsDbfs": -33.29,
+        "onset": 2.3e-05
+      },
+      "master": {
+        "duration": 1.462222,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.028872,
+        "rmsDbfs": -30.79,
+        "onset": 0.00068
+      },
+      "dcRemoved": 7.4819e-05,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.417778,
+      "gain": 1.177615,
+      "loop": false
+    },
+    {
+      "id": "acechador-presence",
+      "enemy": "acechador",
+      "label": "Presencia · gruñido de basalto",
+      "sourceFile": "sources/acechador-presence.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-presence.mp3",
+      "requestedDuration": 2.1,
+      "encoded": {
+        "duration": 2.089796,
+        "peak": 0.709229,
+        "peakDbfs": -2.984,
+        "rms": 0.101416,
+        "rmsDbfs": -19.878,
+        "onset": 0.02542
+      },
+      "source": {
+        "duration": 2.08,
+        "peak": 0.544907,
+        "peakDbfs": -5.274,
+        "rms": 0.078347,
+        "rmsDbfs": -22.12,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 2.043628,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.108078,
+        "rmsDbfs": -19.325,
+        "onset": 0.00034
+      },
+      "dcRemoved": 0.000390265,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.036372,
+      "gain": 1.430795,
+      "loop": false
+    },
+    {
+      "id": "acechador-windup",
+      "enemy": "acechador",
+      "label": "Preparación · acecho y tensión",
+      "sourceFile": "sources/acechador-windup.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-windup.mp3",
+      "requestedDuration": 0.9,
+      "encoded": {
+        "duration": 0.809796,
+        "peak": 0.696716,
+        "peakDbfs": -3.139,
+        "rms": 0.060994,
+        "rmsDbfs": -24.294,
+        "onset": 0.026939
+      },
+      "source": {
+        "duration": 0.88,
+        "peak": 0.9431,
+        "peakDbfs": -0.509,
+        "rms": 0.080229,
+        "rmsDbfs": -21.913,
+        "onset": 0.000204
+      },
+      "master": {
+        "duration": 0.774558,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.065501,
+        "rmsDbfs": -23.675,
+        "onset": 0.001882
+      },
+      "dcRemoved": -0.000272857,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.105442,
+      "gain": 0.792007,
+      "loop": false
+    },
+    {
+      "id": "acechador-attack",
+      "enemy": "acechador",
+      "label": "Ataque · salto y zarpazo",
+      "sourceFile": "sources/acechador-attack.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-attack.mp3",
+      "requestedDuration": 1.1,
+      "encoded": {
+        "duration": 0.679184,
+        "peak": 0.770844,
+        "peakDbfs": -2.261,
+        "rms": 0.089778,
+        "rmsDbfs": -20.937,
+        "onset": 0.030159
+      },
+      "source": {
+        "duration": 1.08,
+        "peak": 0.88002,
+        "peakDbfs": -1.11,
+        "rms": 0.096158,
+        "rmsDbfs": -20.34,
+        "onset": 0.072313
+      },
+      "master": {
+        "duration": 0.629274,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.096978,
+        "rmsDbfs": -20.267,
+        "onset": 0.004989
+      },
+      "dcRemoved": 0.00404767,
+      "trimStartSeconds": 0.060658,
+      "trimEndSeconds": 0.390068,
+      "gain": 0.826805,
+      "loop": false
+    },
+    {
+      "id": "acechador-landing",
+      "enemy": "acechador",
+      "label": "Aterrizaje · garras sobre piedra",
+      "sourceFile": "sources/acechador-landing.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-landing.mp3",
+      "requestedDuration": 0.85,
+      "encoded": {
+        "duration": 0.783673,
+        "peak": 0.71698,
+        "peakDbfs": -2.89,
+        "rms": 0.085545,
+        "rmsDbfs": -21.356,
+        "onset": 0.024195
+      },
+      "source": {
+        "duration": 0.84,
+        "peak": 0.260849,
+        "peakDbfs": -11.672,
+        "rms": 0.030584,
+        "rmsDbfs": -30.29,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.736032,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.093646,
+        "rmsDbfs": -20.57,
+        "onset": 0.000227
+      },
+      "dcRemoved": 2.34e-06,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.103968,
+      "gain": 2.872935,
+      "loop": false
+    },
+    {
+      "id": "acechador-hurt",
+      "enemy": "acechador",
+      "label": "Daño · gruñido y placa rota",
+      "sourceFile": "sources/acechador-hurt.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-hurt.mp3",
+      "requestedDuration": 0.75,
+      "encoded": {
+        "duration": 0.653061,
+        "peak": 0.711884,
+        "peakDbfs": -2.952,
+        "rms": 0.157192,
+        "rmsDbfs": -16.071,
+        "onset": 0.025125
+      },
+      "source": {
+        "duration": 0.72,
+        "peak": 0.392471,
+        "peakDbfs": -8.124,
+        "rms": 0.084491,
+        "rmsDbfs": -21.464,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 0.608707,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.171754,
+        "rmsDbfs": -15.302,
+        "onset": 6.8e-05
+      },
+      "dcRemoved": -0.000148212,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.111293,
+      "gain": 1.977277,
+      "loop": false
+    },
+    {
+      "id": "acechador-death",
+      "enemy": "acechador",
+      "label": "Muerte · caída de basalto",
+      "sourceFile": "sources/acechador-death.mp3",
+      "runtimeFile": "public/assets/audio/umbral/enemies/acechador-death.mp3",
+      "requestedDuration": 1.9,
+      "encoded": {
+        "duration": 1.123265,
+        "peak": 0.712402,
+        "peakDbfs": -2.945,
+        "rms": 0.167479,
+        "rmsDbfs": -15.521,
+        "onset": 0.025147
+      },
+      "source": {
+        "duration": 1.88,
+        "peak": 0.953079,
+        "peakDbfs": -0.417,
+        "rms": 0.197248,
+        "rmsDbfs": -14.1,
+        "onset": 0.0
+      },
+      "master": {
+        "duration": 1.09034,
+        "peak": 0.75,
+        "peakDbfs": -2.499,
+        "rms": 0.178974,
+        "rmsDbfs": -14.944,
+        "onset": 9.1e-05
+      },
+      "dcRemoved": -0.004544713,
+      "trimStartSeconds": 0.0,
+      "trimEndSeconds": 0.78966,
+      "gain": 0.990948,
+      "loop": false
+    }
+  ],
+  "previews": [
+    {
+      "enemy": "macabro",
+      "file": "preview-macabro.mp3",
+      "sequence": [
+        "macabro-presence",
+        "macabro-attack",
+        "macabro-hurt",
+        "macabro-death"
+      ],
+      "duration": 7.157551,
+      "peak": 0.5177,
+      "peakDbfs": -5.718,
+      "rms": 0.081492,
+      "rmsDbfs": -21.778,
+      "onset": 0.030045
+    },
+    {
+      "enemy": "devorador",
+      "file": "preview-devorador.mp3",
+      "sequence": [
+        "devorador-presence",
+        "devorador-attack",
+        "devorador-hurt",
+        "devorador-death"
+      ],
+      "duration": 7.601633,
+      "peak": 0.539368,
+      "peakDbfs": -5.362,
+      "rms": 0.065212,
+      "rmsDbfs": -23.713,
+      "onset": 0.025057
+    },
+    {
+      "enemy": "titan",
+      "file": "preview-titan.mp3",
+      "sequence": [
+        "titan-arrival",
+        "titan-step",
+        "titan-leap",
+        "titan-landing",
+        "titan-hurt",
+        "titan-rage",
+        "titan-skulls",
+        "titan-summon",
+        "titan-downed",
+        "titan-death"
+      ],
+      "duration": 24.920816,
+      "peak": 0.526917,
+      "peakDbfs": -5.565,
+      "rms": 0.080956,
+      "rmsDbfs": -21.835,
+      "onset": 0.025306
+    },
+    {
+      "enemy": "abominacion",
+      "file": "preview-abominacion.mp3",
+      "sequence": [
+        "abominacion-presence",
+        "abominacion-windup",
+        "abominacion-attack",
+        "abominacion-hurt",
+        "abominacion-death"
+      ],
+      "duration": 8.777143,
+      "peak": 0.519989,
+      "peakDbfs": -5.68,
+      "rms": 0.068164,
+      "rmsDbfs": -23.329,
+      "onset": 0.026984
+    },
+    {
+      "enemy": "centinela",
+      "file": "preview-centinela.mp3",
+      "sequence": [
+        "centinela-presence",
+        "centinela-windup",
+        "centinela-attack",
+        "centinela-slam",
+        "centinela-hurt",
+        "centinela-death"
+      ],
+      "duration": 10.919184,
+      "peak": 0.523804,
+      "peakDbfs": -5.617,
+      "rms": 0.071365,
+      "rmsDbfs": -22.93,
+      "onset": 0.025351
+    },
+    {
+      "enemy": "empalador",
+      "file": "preview-empalador.mp3",
+      "sequence": [
+        "empalador-presence",
+        "empalador-windup",
+        "empalador-attack",
+        "empalador-hurt",
+        "empalador-death"
+      ],
+      "duration": 7.967347,
+      "peak": 0.595001,
+      "peakDbfs": -4.51,
+      "rms": 0.061419,
+      "rmsDbfs": -24.234,
+      "onset": 0.026735
+    },
+    {
+      "enemy": "tejedor",
+      "file": "preview-tejedor.mp3",
+      "sequence": [
+        "tejedor-presence",
+        "tejedor-windup",
+        "tejedor-attack",
+        "tejedor-channel",
+        "tejedor-hurt",
+        "tejedor-death"
+      ],
+      "duration": 11.72898,
+      "peak": 0.526154,
+      "peakDbfs": -5.578,
+      "rms": 0.047628,
+      "rmsDbfs": -26.443,
+      "onset": 0.023356
+    },
+    {
+      "enemy": "acechador",
+      "file": "preview-acechador.mp3",
+      "sequence": [
+        "acechador-presence",
+        "acechador-windup",
+        "acechador-attack",
+        "acechador-landing",
+        "acechador-hurt",
+        "acechador-death"
+      ],
+      "duration": 9.16898,
+      "peak": 0.517761,
+      "peakDbfs": -5.717,
+      "rms": 0.068707,
+      "rmsDbfs": -23.26,
+      "onset": 0.025397
+    }
+  ]
+}

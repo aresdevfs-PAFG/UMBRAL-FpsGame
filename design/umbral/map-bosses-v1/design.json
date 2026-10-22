@@ -1,0 +1,244 @@
+{
+  "title": "UMBRAL — jefes de Corona del Viento y Río de las Ánimas",
+  "stage": "Desollador y Madre del Ahogo integrados; pruebas directas disponibles",
+  "method": "Generación de imágenes integrada (image_gen)",
+  "bosses": [
+    {
+      "id": "desollador-vendaval",
+      "map": "corona",
+      "name": "El Desollador del Vendaval",
+      "silhouette": "Ejecutor esquelético aéreo; máscara alargada, brazos de obsidiana y manto de plumas.",
+      "palette": [
+        "hueso",
+        "basalto",
+        "turquesa",
+        "cian"
+      ],
+      "poses": [
+        "reposo flotante",
+        "cuchillas de aire",
+        "picado",
+        "succión",
+        "daño"
+      ],
+      "death": "Se deshace en plumas y fragmentos de hueso; sin remate obligatorio.",
+      "heightMetres": 13.34,
+      "scale": "45% más grande respecto al diseño anterior: altura 13.34, ancho 14.5; conserva proporciones y ajusta el volumen de impacto y la llegada al combo.",
+      "status": "Integrado en Corona del Viento, horda 10",
+      "health": 18000,
+      "shield": 0,
+      "runtimeAssets": "design/umbral/desollador-v1/manifest.json",
+      "audio": "8 sonidos originales con mezcla espacial",
+      "attacks": [
+        "Cuchillas de viento: 3 proyectiles; 5 desde el 50% de vida.",
+        "Picado: destino fijo anunciado. Al aterrizar permanece inmóvil y encadena tajos blancos radiales durante 5.5 s. Cada corte hace 40 de daño, primero al escudo. A 9,000 de vida o menos hace 50, y aumenta un 30% la velocidad y la frecuencia de los tajos. Después tiene 3.2 s de recuperación. Los cortes chocan con paredes, no persiguen y desaparecen en 2 s; como máximo hay 50 activos.",
+        "Tajo cercano: aviso de 0.65 s; cada impacto causa 50 de daño, primero al escudo y luego a la vida restante.",
+        "Vórtice: aviso de 1.3 s y traslado de 1.6 s al centro del vacío. Eleva al jugador durante 1.2 s y lo lleva en una espiral de 1.5 vueltas durante 5.8 s; la cámara acompaña el giro y conserva la puntería manual y todas las armas.",
+        "Una barra cian independiente de 700 puntos recibe el daño directo de las armas. Vaciarla interrumpe el vórtice y devuelve al jugador a una plataforma segura en 1.6 s.",
+        "Si el jugador llega al jefe sin romper el canal, hay 0.7 s de aviso antes de un combo de 4 segundos: ocho tajos alternados que suman 70 puntos, primero al escudo y después a la vida. Durante el combo se cierra la mini barra, pero se puede seguir dañando al jefe y F cargado puede interrumpir. Después vuelve a una plataforma segura.",
+        "Tornado 3D turquesa: espirales desde la pista hasta el jefe, animación en GPU y una sola llamada de dibujo. Usa 6720 vértices en alta, 4800 en media y 2880 en baja; sin luces, sombras ni nuevas texturas.",
+        "Los saltadores terminan su vuelo antes de una captura; el regreso no causa daño de caída."
+      ]
+    },
+    {
+      "id": "madre-ahogo",
+      "map": "rio",
+      "name": "La Madre del Ahogo",
+      "reference": "La Llorona",
+      "silhouette": "Aparición femenina de vestido blanco desgarrado, cabello negro mojado, rostro humano cadavérico y estela violeta.",
+      "poses": [
+        "cabeza asomada entre el agua",
+        "emergencia vertical",
+        "vuelo sobre el río",
+        "oleada de ánimas",
+        "manos del río y arrastre",
+        "inmersión",
+        "daño"
+      ],
+      "death": {
+        "durationSeconds": 6.4,
+        "loop": false,
+        "sequence": [
+          {
+            "time": 0,
+            "action": "Se encoge; cabello sobre el rostro."
+          },
+          {
+            "time": 0.4,
+            "action": "Emite solo el alarido aprobado; aparece DESPIERTA en letras desgastadas color hueso."
+          },
+          {
+            "time": 1.2,
+            "action": "Asciende con brazos abiertos; la parte inferior de las letras comienza a derretirse."
+          },
+          {
+            "time": 4.6,
+            "action": "La Madre se desvanece hacia arriba; DESPIERTA sigue derritiéndose."
+          },
+          {
+            "time": 6.4,
+            "action": "Desaparecen la Madre y el mensaje; puede continuar la horda 11."
+          }
+        ],
+        "audio": {
+          "line": null,
+          "status": "Integrado: madre-death.mp3 v7; solo el grito libre aprobado, sin palabras. Duración del audio 2.899592 s; comienza a los 0.4 s.",
+          "direction": "Conservar el grito aprobado sin regenerarlo; eliminar todas las tomas y mezclas con las frases descartadas."
+        },
+        "screenText": {
+          "text": "DESPIERTA",
+          "style": "Mayúsculas serif gruesas, color hueso/piedra, textura desgastada y grietas. Parte inferior se estira en tiras y gotea.",
+          "motion": "Basada en tiempo de simulación; se oculta al pausar y se reanuda en el mismo punto. Sin deformación con movimiento reducido."
+        }
+      },
+      "scale": "Gigante: 9 unidades de altura, sprite de 10 unidades",
+      "implementation": {
+        "kind": "madre",
+        "map": "rio",
+        "wave": 10,
+        "health": 12000,
+        "shield": 0,
+        "demo": "/?demo=madre",
+        "runtime": "public/assets/js/umbral-madre.mjs",
+        "assets": "design/umbral/madre-ahogo-v1/manifest.json",
+        "audio": "design/umbral/madre-ahogo-v1/audio-report.json",
+        "damage": {
+          "wave": 25,
+          "hands": 28,
+          "riverBitesPerSecond": 8,
+          "dragBreakHealth": 700,
+          "captureHealth": 60
+        },
+        "death": {
+          "duration": 6.4,
+          "ascensionAt": 1.2,
+          "line": null,
+          "wave11Waits": true,
+          "screamAt": 0.4,
+          "screenText": "DESPIERTA",
+          "audioDuration": 2.899592,
+          "screenEffect": "umbral-madre-farewell.mjs"
+        },
+        "riverRuntime": "public/assets/js/umbral-madre-river.mjs",
+        "waterCombat": {
+          "submergedDepth": 7.25,
+          "headBottom": 0.08,
+          "headTop": 1.45,
+          "headRadius": 0.78,
+          "riseSeconds": 0.8,
+          "airborneSeconds": 10,
+          "sinkSeconds": 0.8,
+          "hoverHeight": 0.6,
+          "waterLevel": 5,
+          "dragWarning": 1.1,
+          "dragDuration": 3,
+          "dragSpeed": 4.8,
+          "dragHealth": 700,
+          "dragCooldown": 12,
+          "pauseFreezes": true,
+          "waveCount": 3,
+          "centralWaveExactAim": true,
+          "captureRush": 0.45,
+          "captureEmbrace": 1,
+          "captureHealthDamage": 60,
+          "captureCooldown": 2,
+          "guardianInterceptionsPerCycle": 8,
+          "guardianArrival": 0.09,
+          "guardianShatter": 0.2,
+          "guardianPerTrigger": true
+        },
+        "guardiansRuntime": "public/assets/js/umbral-madre-guardians.mjs"
+      },
+      "combatDesign": {
+        "status": "Combate acuático integrado; reemplaza la oscuridad y el contraataque obligatorio con F.",
+        "arena": "El Río de las Ánimas; jefe exclusivo de horda 10.",
+        "identity": "La Llorona habita el río: la cabeza sobre el agua provoca la emergencia y el combate se desarrolla sobre canales abiertos.",
+        "river": "Desde el aviso de aparición del jefe, el río permanece al ras de las plataformas (altura 5), morado y peligroso. Conserva ese nivel durante la despedida y luego vuelve a su ciclo normal.",
+        "sequence": [
+          "La Madre comienza sumergida con la cabeza descubierta sobre el agua. El cuerpo oculto no recibe daño; las calaveras no permanecen visibles alrededor de ella.",
+          "Cada disparo que alcanzaría la cabeza hace llegar una calavera que lo intercepta y se rompe. La reserva es de ocho interceptaciones por inmersión. Agotada la protección, el noveno disparo válido alcanza la cabeza e inicia una subida de 0.8 s; luego la Madre flota sobre la misma zona de agua durante unos 10 s.",
+          "Mientras está fuera del agua alterna sus oleadas y manos de ánimas, con avisos de 1.15 s. Cada descarga tiene tres oleadas, con una central dirigida exactamente al jugador; la forma completa visible recibe disparos.",
+          "Durante esa ventana intenta arrastrar al jugador desde las pasarelas hacia el agua. Las armas, el movimiento y la cámara siguen disponibles.",
+          "Al terminar la ventana se hunde durante 0.8 s y reaparece como cabeza en otro punto validado de agua, listo para repetir el ciclo.",
+          "Si el jugador cae al agua con la Madre viva, ella se abalanza y lo abraza durante una secuencia breve con el grito existente. Al final recibe 60 de daño directo a la vida y, si sobrevive, vuelve a una plataforma segura."
+        ],
+        "drag": {
+          "warningSeconds": 1.1,
+          "durationSeconds": 3,
+          "pullSpeed": 4.8,
+          "breakDamage": 700,
+          "cooldownSeconds": 12,
+          "counterplay": "Disparar a la Madre vacía una barra independiente de 700 puntos e interrumpe el arrastre. También se puede resistir con movimiento o escapar mediante una plataforma de salto.",
+          "waterConsequence": "Al caer al agua con la Madre viva comienza la captura: embestida de 0.45 s, abrazo de 1 s con grito, 60 de daño directo a la vida al final y regreso seguro solo si el jugador sobrevive. Las mordidas ordinarias quedan suspendidas durante esa secuencia.",
+          "safety": "Durante el arrastre se conservan las colisiones, la gravedad, la cámara y el uso de armas. La captura al entrar al agua es una secuencia separada con bloqueo breve de controles. Muerte, reinicio y derrota del jefe cancelan el arrastre; la pausa congela su avance."
+        },
+        "rage": {
+          "threshold": 0.25,
+          "actions": [
+            "Las tres oleadas se abren más hacia los lados; la central sigue apuntando exactamente al jugador.",
+            "Manos en tres posiciones en vez de una.",
+            "Intervalo entre ataques de 2.2 s en vez de 3.2 s; conserva avisos."
+          ]
+        },
+        "melee": "El macuahuitl y el cuchillo no dañan a la Madre. La respuesta al arrastre se realiza con disparos; ya no existe un duelo de oscuridad con golpe de F.",
+        "omens": {
+          "waves": [
+            1,
+            9
+          ],
+          "intervalSeconds": [
+            18,
+            30
+          ],
+          "visibleSeconds": 4.5,
+          "hideSeconds": 0.15,
+          "behavior": "De vez en cuando asoma la cabeza en agua visible y fuera de la mira. Al mirarla directamente se hunde de inmediato; la dirección vertical y la oclusión del escenario cuentan.",
+          "rules": "Presagios visuales sin vida, ID de enemigo, bajas, botín ni puntaje; ninguna arma puede acertarlos. No aparecen en tutoriales ni demos de jefe. Desaparecen al morir, reiniciar o comenzar la horda 10; la pausa congela el estado y oculta su visual.",
+          "performance": "Una sola aparición reutilizada; selección acotada entre 23 puntos de agua y generador aleatorio independiente del combate."
+        },
+        "death": {
+          "line": null,
+          "delivery": "Solo el grito libre aprobado, sin palabras.",
+          "sequence": "Alarido, ascenso al cielo y DESPIERTA con letras que se derriten; después puede continuar la horda 11."
+        },
+        "guardians": {
+          "interceptionsPerCycle": 8,
+          "arrivalSeconds": 0.09,
+          "shatterSeconds": 0.2,
+          "behavior": "Defensa reactiva: la cabeza permanece descubierta en reposo. Solo cuando un tiro va a alcanzarla llega una calavera desde el agua, se interpone y se destruye con ese impacto.",
+          "shotRules": "Consume una protección por disparo o activación del gatillo, no por perdigón. Todos los perdigones de ese mismo disparo quedan interceptados, incluso si se acaba de gastar la última protección. Fallar, golpear una pared o alcanzar primero a otro enemigo no consume la reserva.",
+          "blocking": "La intercepción detiene el disparo antes de la cabeza, incluido francotirador, cañón solar y ambos tiros del arco. La perforación no atraviesa esa defensa; la explosión no daña el cuerpo sumergido.",
+          "depletion": "Las primeras ocho activaciones válidas se interceptan. El siguiente disparo válido alcanza la cabeza y hace emerger a la Madre. La reserva no se recupera mientras continúa la misma inmersión.",
+          "lifecycle": "Las interceptaciones no causan bajas, botín ni daño al jefe. Al comenzar otra inmersión, incluida la posterior a una captura, vuelve a disponer de ocho. Pausa congela los efectos; emerger, capturar o morir los limpia.",
+          "performance": "Máximo de ocho efectos transitorios por ciclo; desaparecen tras 0.29 s. No son enemigos ni blancos independientes y no consumen el generador aleatorio del combate."
+        },
+        "capture": {
+          "trigger": "Entrar en el agua con la Madre viva; sustituye las mordidas ordinarias durante la captura.",
+          "rushSeconds": 0.45,
+          "embraceSeconds": 1,
+          "damageToHealth": 60,
+          "bypassesShield": true,
+          "cooldownSeconds": 2,
+          "sequence": [
+            "La Madre se abalanza desde el río hacia el jugador durante 0.45 s.",
+            "Lo abraza durante 1 s y reproduce el grito ya integrado, sin generar nuevas voces.",
+            "Al terminar el abrazo aplica exactamente 60 de daño directo a la vida; durante la secuencia no se acumulan mordidas u otros daños.",
+            "Si sobrevive, el jugador regresa a la última superficie segura o una plataforma validada, y la Madre vuelve a sumergirse en el río."
+          ],
+          "controls": "La captura bloquea temporalmente el desplazamiento, los disparos y los poderes. Al liberarse recupera el control; el escudo no absorbe los 60 puntos.",
+          "lifecycle": "El golpe letal se aplica al terminar el abrazo y deja al jugador muerto, sin revivirlo ni regresarlo a una plataforma. La pausa congela la secuencia; muerte, reinicio y derrota del jefe limpian la captura."
+        }
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "file": "desollador-concept-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: polished enemy design board for UMBRAL, a browser retro first-person shooter. Create an original boss named EL DESOLLADOR DEL VENDAVAL for the map LA CORONA DEL VIENTO. Landscape design sheet, restrained dark charcoal background, precise readable Spanish headings. Main left half: large complete front-three-quarter full body sprite of a tall lean skeletal aerial executioner, elongated ritual bone mask with narrow cyan eyes, exposed rib cage, dark basalt torso armor, aged turquoise accents, long arms ending in curved obsidian cutting blades, ragged cape of black feathers blowing upwards, floating tattered lower body. Anatomical gritty hand-painted pixel sprite aesthetic like 1990s Doom/Hexen monsters, chunky discrete pixels, limited shading, crisp silhouettes; NOT smooth modern concept painting, NOT cute/cartoon, NOT the stock Doom monster. Right upper: smaller side and rear views with matching identity. Right lower: three readable small action silhouettes labelled CUCHILLAS, PICADO, SUCCIÓN, cyan air slashes, dive, coiling wind respectively. Small far-background vignette of high broken Mesoamerican stone walkways above an abyss, avoiding fantasy European castles. Palette: bone ivory, weathered charcoal, muted turquoise, bright icy cyan effects. Carefully composed professional sprite development board with generous separation; hero must be clearly legible at game resolution. Title UMBRAL / EL DESOLLADOR DEL VENDAVAL and subtitle CORONA DEL VIENTO. No health bars or gameplay UI. Do not depict a muscular giant, guns, magma, purple skull projectiles, or borrowed character designs."
+    },
+    {
+      "file": "madre-ahogo-concept-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: polished enemy design board for UMBRAL, retro first-person shooter, landscape sheet on restrained dark charcoal background. Original boss LA MADRE DEL AHOGO, explicit visual inspiration from Mexican La Llorona folklore, for EL RÍO DE LAS ÁNIMAS. Main left half large complete front-three-quarter full body: horrifying sorrowful adult female apparition, unmistakable woman in a long ragged antique ivory-white burial dress, long soaked straight black hair, thin pale grey corpse face with black tear trails and sunken eyes with tiny violet lights, visibly human tragic face rather than skull mask, long skeletal hands, dress lower hem dissolves into purple water and wisps containing faint anguished faces. No children depicted. She floats slightly, shoulders bent forward, hands reaching for player. Tasteful minimal old tarnished silver and turquoise details, no fancy crown. Gritty Doom/Hexen 1990s hand-painted pixel sprite aesthetic: deliberate chunky discrete pixel clusters, crisp readable silhouettes, textured fabric and bone shading, no smooth digital painting or anime. Right upper smaller same-character side and rear views. Right lower horizontal four-pose death storyboard labelled MUERTE · ASCENSO: first slumps with hair forward, next throws head upward with open screaming mouth, next arms extended lifts toward sky trailing white fabric and violet soul ribbons, last only high vanishing translucent silhouette and departing wisps. Include small caption exactly '¡Ay, mis hijos!' beneath death storyboard, as future audio cue, not speech bubble. Palette ivory dress, black hair, cadaver grey, violet spectral effects. Faint background vignette purple river with low stone bridges. Title UMBRAL / LA MADRE DEL AHOGO, subtitle RÍO DE LAS ÁNIMAS. Keep readable clear identity consistent across every pose, nonsexual fully clothed, no watermarks, no giant brute anatomy. This is character design and animation intent, not playable UI."
+    }
+  ]
+}

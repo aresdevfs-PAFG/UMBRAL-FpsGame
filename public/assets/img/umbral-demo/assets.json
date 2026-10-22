@@ -1,0 +1,2067 @@
+{
+  "version": 7,
+  "perspective": "first-person-centered",
+  "reload": false,
+  "artSource": "Imagegen artwork: original arsenal and centered-perspective redraws.",
+  "coordinateConventions": {
+    "anchorPx": "Pixels from the frame top-left. Anchor is the game object position.",
+    "anchorNormalized": "Normalized [x,y] from the frame top-left.",
+    "threeSpriteCenter": "Normalized [x,y] from bottom-left, suitable for THREE.Sprite.center.",
+    "suggestedWorldSize": "Optional [width,height] for the complete sprite canvas, including transparent padding."
+  },
+  "weapons": [
+    {
+      "id": "coaiztlactli",
+      "name": "Coaiztlactli",
+      "key": 1,
+      "layout": "square",
+      "ready": "weapons/coaiztlactli-ready.png",
+      "primary": {
+        "file": "weapons/coaiztlactli-primary.png",
+        "frames": 4,
+        "durations": [
+          100,
+          80,
+          90,
+          180
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/coaiztlactli-secondary.png",
+        "frames": 4,
+        "durations": [
+          160,
+          220,
+          80,
+          260
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      }
+    },
+    {
+      "id": "escopeta",
+      "name": "Escopeta de obsidiana",
+      "key": 2,
+      "layout": "square",
+      "ready": "weapons/escopeta-ready.png",
+      "primary": {
+        "file": "weapons/escopeta-primary.png",
+        "frames": 4,
+        "durations": [
+          80,
+          60,
+          100,
+          200
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/escopeta-secondary.png",
+        "frames": 4,
+        "durations": [
+          160,
+          220,
+          80,
+          260
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "cycle": {
+        "file": "weapons/escopeta-cycle.png",
+        "frames": 8,
+        "durations": [
+          100,
+          130,
+          130,
+          170,
+          180,
+          170,
+          140,
+          130
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false,
+        "returnTo": "ready",
+        "durationMs": 1150,
+        "automatic": true,
+        "ammoPolicy": "Cosmetic chamber cycle; reserve ammo is consumed by shots only."
+      }
+    },
+    {
+      "id": "canon-solar",
+      "name": "CaÃ±Ã³n Gauss",
+      "key": 3,
+      "ready": "weapons/canon-solar-ready.png",
+      "fire": "weapons/canon-solar-fire.png",
+      "layout": "square",
+      "primary": {
+        "file": "weapons/canon-solar-attack.png",
+        "frames": 3,
+        "durations": [
+          100,
+          100,
+          160
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/canon-solar-attack.png",
+        "frames": 3,
+        "durations": [
+          100,
+          100,
+          160
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "artNotes": "Centered classic DOOM viewmodel; authored fire/recoil keyframes with fixed wrist baseline. No reload."
+    },
+    {
+      "id": "clavadora",
+      "name": "Clavadora de Itztepec",
+      "key": 4,
+      "ready": "weapons/clavadora-centered-ready.png",
+      "layout": "square",
+      "viewHeight": 0.7,
+      "artNotes": "Centered classic DOOM viewmodel; six authored poses, fixed wrist baseline, no reload.",
+      "primary": {
+        "file": "weapons/clavadora-centered-primary.png",
+        "frames": 3,
+        "durations": [
+          40,
+          40,
+          40
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/clavadora-centered-secondary.png",
+        "frames": 3,
+        "durations": [
+          60,
+          60,
+          78
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      }
+    },
+    {
+      "id": "arco-jaguar",
+      "name": "Arco del Jaguar",
+      "key": 5,
+      "layout": "square",
+      "viewHeight": 0.8,
+      "ready": "weapons/arco-jaguar-ready.png",
+      "artNotes": "Imagegen jaguar bow. Release, nock and draw in 320 ms; shared large ammunition.",
+      "primary": {
+        "file": "weapons/arco-jaguar-primary.png",
+        "frames": 3,
+        "durations": [
+          70,
+          170,
+          80
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/arco-jaguar-secondary.png",
+        "frames": 3,
+        "durations": [
+          70,
+          170,
+          80
+        ],
+        "frameSize": [
+          384,
+          384
+        ],
+        "loop": false
+      }
+    },
+    {
+      "id": "espinario",
+      "name": "Espinario · Subfusil",
+      "key": 6,
+      "ready": "weapons/espinario-sheet-v1.png",
+      "readyColumns": 2,
+      "readyRows": 2,
+      "layout": "square",
+      "viewHeight": 0.62,
+      "primary": {
+        "file": "weapons/espinario-sheet-v1.png",
+        "frames": 4,
+        "columns": 2,
+        "rows": 2,
+        "durations": [
+          10,
+          20,
+          20,
+          20
+        ],
+        "loop": false
+      },
+      "secondary": {
+        "file": "weapons/espinario-sheet-v1.png",
+        "frames": 4,
+        "columns": 2,
+        "rows": 2,
+        "durations": [
+          10,
+          20,
+          20,
+          20
+        ],
+        "loop": false
+      },
+      "artNotes": "Original organic thorn SMG. Centered viewmodel, wood, bone, jade venom reservoir. Four generated poses.",
+      "dual": {
+        "file": "weapons/espinario-dual-v2.png",
+        "columns": 2,
+        "rows": 2,
+        "frames": 4,
+        "viewHeight": 0.78,
+        "poses": [
+          "ready",
+          "left-shot",
+          "right-shot",
+          "recover"
+        ],
+        "animation": "authored-pair"
+      }
+    }
+  ],
+  "enemies": {
+    "macabro": {
+      "name": "Macabro-Sanguinolento",
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          2.0,
+          2.0
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ]
+      },
+      "states": {
+        "move": {
+          "file": "enemies/macabro-move.png",
+          "frames": 4,
+          "durations": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": true,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "attack": {
+          "file": "enemies/macabro-attack.png",
+          "frames": 4,
+          "durations": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 2,
+              "event": "spawn_blood_projectile"
+            }
+          ],
+          "holdLastFrame": false
+        },
+        "hurt": {
+          "file": "enemies/macabro-hurt.png",
+          "frames": 4,
+          "durations": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "death": {
+          "file": "enemies/macabro-death.png",
+          "frames": 4,
+          "durations": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": true
+        }
+      }
+    },
+    "devorador": {
+      "name": "Devorador de Rostros",
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          1.25,
+          1.25
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ]
+      },
+      "states": {
+        "move": {
+          "file": "enemies/devorador-move.png",
+          "frames": 4,
+          "durations": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": true,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "attack": {
+          "file": "enemies/devorador-attack.png",
+          "frames": 4,
+          "durations": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 1,
+              "event": "lock_charge_direction"
+            },
+            {
+              "frame": 2,
+              "event": "start_charge"
+            }
+          ],
+          "holdLastFrame": false
+        },
+        "hurt": {
+          "file": "enemies/devorador-hurt.png",
+          "frames": 4,
+          "durations": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "death": {
+          "file": "enemies/devorador-death.png",
+          "frames": 4,
+          "durations": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": true
+        }
+      }
+    },
+    "empalador": {
+      "name": "Empalador de Itztepec",
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          2.8,
+          2.8
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ]
+      },
+      "states": {
+        "move": {
+          "file": "enemies/empalador-move.png",
+          "frames": 4,
+          "durations": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": true,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "attack": {
+          "file": "enemies/empalador-attack.png",
+          "frames": 4,
+          "durations": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 0,
+              "event": "mark_ground_target"
+            },
+            {
+              "frame": 2,
+              "event": "raise_obsidian_spikes"
+            }
+          ],
+          "holdLastFrame": false
+        },
+        "hurt": {
+          "file": "enemies/empalador-hurt.png",
+          "frames": 4,
+          "durations": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "death": {
+          "file": "enemies/empalador-death.png",
+          "frames": 4,
+          "durations": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": true
+        }
+      }
+    },
+    "abominacion": {
+      "name": "AbominaciÃ³n Ctonia",
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          3.05,
+          3.05
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ]
+      },
+      "states": {
+        "move": {
+          "file": "enemies/abominacion-move.png",
+          "frames": 4,
+          "durations": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": true,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "attack": {
+          "file": "enemies/abominacion-attack.png",
+          "frames": 4,
+          "durations": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 1,
+              "event": "acid_triple_left"
+            },
+            {
+              "frame": 2,
+              "event": "acid_triple_right"
+            }
+          ],
+          "holdLastFrame": false
+        },
+        "hurt": {
+          "file": "enemies/abominacion-hurt.png",
+          "frames": 4,
+          "durations": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "death": {
+          "file": "enemies/abominacion-death.png",
+          "frames": 4,
+          "durations": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 2,
+              "event": "spawn_devoradores",
+              "count": [
+                2,
+                3
+              ]
+            }
+          ],
+          "holdLastFrame": true
+        }
+      }
+    },
+    "centinela": {
+      "name": "Centinela de Mictlantecuhtli",
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          3.4,
+          3.4
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ]
+      },
+      "states": {
+        "move": {
+          "file": "enemies/centinela-move.png",
+          "frames": 4,
+          "durations": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": true,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "attack": {
+          "file": "enemies/centinela-attack.png",
+          "frames": 4,
+          "durations": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 2,
+              "event": "plasma_pair"
+            }
+          ],
+          "holdLastFrame": false
+        },
+        "hurt": {
+          "file": "enemies/centinela-hurt.png",
+          "frames": 4,
+          "durations": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": false
+        },
+        "death": {
+          "file": "enemies/centinela-death.png",
+          "frames": 4,
+          "durations": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [],
+          "holdLastFrame": true
+        },
+        "mace": {
+          "file": "enemies/centinela-mace.png",
+          "frames": 4,
+          "durations": [
+            240,
+            180,
+            100,
+            240
+          ],
+          "frameSize": [
+            320,
+            320
+          ],
+          "loop": false,
+          "anchorPx": [
+            160,
+            300
+          ],
+          "events": [
+            {
+              "frame": 2,
+              "event": "ground_shockwave"
+            }
+          ],
+          "holdLastFrame": false
+        }
+      }
+    },
+    "acechador": {
+      "name": "Acechador de Basalto",
+      "anchor": [
+        0.5,
+        0.12
+      ],
+      "states": {
+        "move": {
+          "file": "enemies/acechador-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 0,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ]
+        },
+        "attack": {
+          "file": "enemies/acechador-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 1,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        },
+        "hurt": {
+          "file": "enemies/acechador-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 2,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        },
+        "death": {
+          "file": "enemies/acechador-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 3,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        }
+      }
+    },
+    "tejedor": {
+      "name": "Tejedor de Ceniza",
+      "anchor": [
+        0.5,
+        0.12
+      ],
+      "states": {
+        "move": {
+          "file": "enemies/tejedor-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 0,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ]
+        },
+        "attack": {
+          "file": "enemies/tejedor-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 1,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        },
+        "hurt": {
+          "file": "enemies/tejedor-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 2,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        },
+        "death": {
+          "file": "enemies/tejedor-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 3,
+          "durations": [
+            170,
+            170,
+            170,
+            240
+          ]
+        }
+      }
+    },
+    "titan": {
+      "name": "Titán de Obsidiana",
+      "anchor": [
+        0.5,
+        0.05
+      ],
+      "states": {
+        "move": {
+          "file": "enemies/titan-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 0,
+          "durations": [
+            180,
+            180,
+            180,
+            180
+          ],
+          "loop": true
+        },
+        "attack": {
+          "file": "enemies/titan-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 1,
+          "durations": [
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": false
+        },
+        "rage": {
+          "file": "enemies/titan-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 2,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "loop": true
+        },
+        "hurt": {
+          "file": "enemies/titan-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 2,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "loop": false
+        },
+        "death": {
+          "file": "enemies/titan-atlas.png",
+          "frames": 4,
+          "rows": 4,
+          "row": 3,
+          "durations": [
+            180,
+            240,
+            300,
+            1200
+          ],
+          "loop": false
+        },
+        "sky": {
+          "file": "enemies/titan-actions-v2.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 2,
+          "row": 0,
+          "durations": [
+            160,
+            160,
+            160,
+            160
+          ],
+          "viewScale": 1.23
+        },
+        "ritual": {
+          "file": "enemies/titan-actions-v2.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 2,
+          "row": 1,
+          "durations": [
+            160,
+            160,
+            160,
+            160
+          ],
+          "viewScale": 1.23
+        },
+        "finisher": {
+          "file": "enemies/titan-finisher-v1.png",
+          "frames": 8,
+          "columns": 4,
+          "rows": 2,
+          "durations": [
+            350,
+            350,
+            350,
+            350,
+            350,
+            350,
+            350,
+            350
+          ],
+          "viewScale": 0.72,
+          "heartHeight": 2.2
+        }
+      }
+    },
+    "desollador": {
+      "name": "El Desollador del Vendaval",
+      "states": {
+        "move": {
+          "file": "enemies/desollador-move.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            150,
+            150,
+            150,
+            150
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "attack": {
+          "file": "enemies/desollador-attack.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            200,
+            180,
+            120,
+            250
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        },
+        "dive": {
+          "file": "enemies/desollador-dive.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            200,
+            180,
+            120,
+            250
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        },
+        "suction": {
+          "file": "enemies/desollador-suction.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            150,
+            150,
+            150,
+            150
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "hurt": {
+          "file": "enemies/desollador-hurt.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            90,
+            90,
+            90,
+            90
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        },
+        "death": {
+          "file": "enemies/desollador-death.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            180,
+            240,
+            350,
+            800
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        }
+      }
+    },
+    "madre": {
+      "name": "La Madre del Ahogo",
+      "states": {
+        "move": {
+          "file": "enemies/madre-move.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            180,
+            180,
+            180,
+            180
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "wave": {
+          "file": "enemies/madre-wave.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            180,
+            180,
+            180,
+            180
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "hands": {
+          "file": "enemies/madre-hands.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            180,
+            180,
+            180,
+            180
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "darkness": {
+          "file": "enemies/madre-darkness.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            180,
+            180,
+            180,
+            180
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "rush": {
+          "file": "enemies/madre-rush.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": true
+        },
+        "hurt": {
+          "file": "enemies/madre-hurt.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        },
+        "death": {
+          "file": "enemies/madre-death.png",
+          "frames": 4,
+          "columns": 4,
+          "rows": 1,
+          "durations": [
+            400,
+            800,
+            3400,
+            1800
+          ],
+          "frameSize": [
+            256,
+            256
+          ],
+          "loop": false
+        }
+      }
+    }
+  },
+  "effects": {
+    "blood-projectile": {
+      "name": "Proyectil de sangre",
+      "file": "effects/blood-projectile-centered.png",
+      "frames": 4,
+      "durations": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "frameSize": [
+        320,
+        320
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "anchorPx": [
+        160,
+        160
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "contentBoundsPx": [
+        [
+          43,
+          94,
+          277,
+          225
+        ],
+        [
+          29,
+          94,
+          290,
+          225
+        ],
+        [
+          16,
+          92,
+          304,
+          228
+        ],
+        [
+          40,
+          95,
+          280,
+          224
+        ]
+      ],
+      "sourceContentBoundsPx": [
+        [
+          31,
+          169,
+          265,
+          300
+        ],
+        [
+          26,
+          169,
+          287,
+          300
+        ],
+        [
+          17,
+          164,
+          305,
+          300
+        ],
+        [
+          59,
+          171,
+          299,
+          300
+        ]
+      ],
+      "gutterPx": 16,
+      "render": {
+        "orientation": "camera-facing",
+        "suggestedWorldSize": [
+          0.85,
+          0.85
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.5
+        ],
+        "groundOffset": 0
+      },
+      "packing": "Per-frame alpha bounds translated to canvas center; original pixel scale and alpha preserved.",
+      "notes": ""
+    },
+    "acid-projectile": {
+      "name": "Lodo Ã¡cido",
+      "file": "effects/acid-projectile-centered.png",
+      "frames": 4,
+      "durations": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "frameSize": [
+        320,
+        320
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "anchorPx": [
+        160,
+        160
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "contentBoundsPx": [
+        [
+          44,
+          83,
+          275,
+          237
+        ],
+        [
+          22,
+          82,
+          298,
+          237
+        ],
+        [
+          16,
+          85,
+          304,
+          234
+        ],
+        [
+          44,
+          88,
+          275,
+          231
+        ]
+      ],
+      "sourceContentBoundsPx": [
+        [
+          40,
+          146,
+          271,
+          300
+        ],
+        [
+          30,
+          145,
+          306,
+          300
+        ],
+        [
+          27,
+          151,
+          315,
+          300
+        ],
+        [
+          62,
+          157,
+          293,
+          300
+        ]
+      ],
+      "gutterPx": 16,
+      "render": {
+        "orientation": "camera-facing",
+        "suggestedWorldSize": [
+          1.05,
+          1.05
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.5
+        ],
+        "groundOffset": 0
+      },
+      "packing": "Per-frame alpha bounds translated to canvas center; original pixel scale and alpha preserved.",
+      "notes": ""
+    },
+    "plasma-projectile": {
+      "name": "Plasma verde",
+      "file": "effects/plasma-projectile-centered.png",
+      "frames": 4,
+      "durations": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "frameSize": [
+        320,
+        320
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "anchorPx": [
+        160,
+        160
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "contentBoundsPx": [
+        [
+          41,
+          30,
+          279,
+          289
+        ],
+        [
+          42,
+          24,
+          278,
+          296
+        ],
+        [
+          33,
+          25,
+          286,
+          294
+        ],
+        [
+          42,
+          30,
+          278,
+          290
+        ]
+      ],
+      "sourceContentBoundsPx": [
+        [
+          39,
+          41,
+          277,
+          300
+        ],
+        [
+          46,
+          28,
+          282,
+          300
+        ],
+        [
+          45,
+          31,
+          298,
+          300
+        ],
+        [
+          63,
+          40,
+          299,
+          300
+        ]
+      ],
+      "gutterPx": 16,
+      "render": {
+        "orientation": "camera-facing",
+        "suggestedWorldSize": [
+          0.85,
+          0.85
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.5
+        ],
+        "groundOffset": 0
+      },
+      "packing": "Per-frame alpha bounds translated to canvas center; original pixel scale and alpha preserved.",
+      "notes": ""
+    },
+    "obsidian-spikes": {
+      "name": "Estacas de obsidiana",
+      "file": "effects/obsidian-spikes.png",
+      "frames": 4,
+      "durations": [
+        100,
+        100,
+        100,
+        200
+      ],
+      "frameSize": [
+        320,
+        320
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "contentBoundsPx": [
+        [
+          68,
+          169,
+          240,
+          300
+        ],
+        [
+          69,
+          92,
+          258,
+          300
+        ],
+        [
+          63,
+          28,
+          276,
+          300
+        ],
+        [
+          66,
+          80,
+          273,
+          300
+        ]
+      ],
+      "sourceContentBoundsPx": [
+        [
+          68,
+          169,
+          240,
+          300
+        ],
+        [
+          69,
+          92,
+          258,
+          300
+        ],
+        [
+          63,
+          28,
+          276,
+          300
+        ],
+        [
+          66,
+          80,
+          273,
+          300
+        ]
+      ],
+      "gutterPx": null,
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          2.1,
+          2.1
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ],
+        "groundOffset": 0.015
+      },
+      "packing": "Original authored ground baseline and pixel scale preserved.",
+      "notes": ""
+    },
+    "ground-shockwave": {
+      "name": "Onda de choque",
+      "file": "effects/ground-shockwave.png",
+      "frames": 4,
+      "durations": [
+        100,
+        100,
+        100,
+        200
+      ],
+      "frameSize": [
+        320,
+        320
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "anchorPx": [
+        160,
+        300
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.9375
+      ],
+      "contentBoundsPx": [
+        [
+          90,
+          252,
+          226,
+          300
+        ],
+        [
+          52,
+          238,
+          260,
+          300
+        ],
+        [
+          18,
+          185,
+          306,
+          300
+        ],
+        [
+          49,
+          239,
+          281,
+          300
+        ]
+      ],
+      "sourceContentBoundsPx": [
+        [
+          90,
+          252,
+          226,
+          300
+        ],
+        [
+          52,
+          238,
+          260,
+          300
+        ],
+        [
+          18,
+          185,
+          306,
+          300
+        ],
+        [
+          49,
+          239,
+          281,
+          300
+        ]
+      ],
+      "gutterPx": null,
+      "render": {
+        "orientation": "camera-facing-upright",
+        "suggestedWorldSize": [
+          5.0,
+          5.0
+        ],
+        "threeSpriteCenter": [
+          0.5,
+          0.0625
+        ],
+        "groundOffset": 0.015
+      },
+      "packing": "Original authored ground baseline and pixel scale preserved.",
+      "notes": "Already rendered as a perspective ellipse; use an upright billboard at floor level, not a second projection onto a horizontal plane."
+    },
+    "ritual-flame": {
+      "file": "effects/ritual-flame-v2.png",
+      "columns": 2,
+      "rows": 2,
+      "frames": 4,
+      "durations": [
+        83,
+        83,
+        83,
+        83
+      ],
+      "loop": true
+    },
+    "titan-skull": {
+      "file": "effects/titan-skull.png",
+      "frames": 4,
+      "columns": 2,
+      "rows": 2,
+      "durations": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true
+    },
+    "titan-charge-aura": {
+      "name": "Aura de embestida morada",
+      "file": "effects/titan-charge-aura.png",
+      "frames": 8,
+      "columns": 4,
+      "rows": 2,
+      "durations": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true
+    },
+    "titan-plasma": {
+      "name": "Plasma morado del Titán",
+      "file": "effects/titan-plasma.png",
+      "frames": 4,
+      "columns": 2,
+      "rows": 2,
+      "durations": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true
+    },
+    "river-soul-bite": {
+      "name": "Ánima: mordida",
+      "file": "effects/river-soul-bite.png",
+      "frames": 8,
+      "fps": 12.5,
+      "columns": 4,
+      "rows": 2,
+      "durations": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true
+    },
+    "river-soul-swarm": {
+      "name": "Ánima: enjambre",
+      "file": "effects/river-soul-swarm.png",
+      "frames": 8,
+      "fps": 12.5,
+      "columns": 4,
+      "rows": 2,
+      "durations": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true
+    },
+    "wind-blade": {
+      "file": "effects/wind-blade.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "wind-vortex": {
+      "file": "effects/wind-vortex.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "madre-hands": {
+      "file": "effects/madre-hands.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "madre-wave": {
+      "file": "effects/madre-wave.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "madre-screamer": {
+      "file": "effects/madre-screamer.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": false
+    }
+  },
+  "environment": {
+    "bloodfall": {
+      "file": "environment/bloodfall.png",
+      "preview": "environment/bloodfall.gif",
+      "previewFrames": 16,
+      "previewFrameSize": [
+        512,
+        512
+      ],
+      "previewDurations": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "previewLoop": true,
+      "animation": "Vertical wrap of authored texture, 32px per frame. No artwork changes.",
+      "runtime": "Use the original PNG with continuous vertical UV scrolling; GIF is the review/export version."
+    }
+  },
+  "abilities": {
+    "titanFinisher": {
+      "file": "weapons/titan-finisher-hands-v1.png",
+      "columns": 4,
+      "rows": 2,
+      "frames": 8,
+      "viewHeight": 0.94,
+      "poses": [
+        "draw",
+        "windup",
+        "thrust",
+        "embedded",
+        "raise",
+        "hammer",
+        "follow-through",
+        "withdraw"
+      ],
+      "animation": "authored-coordinated-pair"
+    },
+    "macuahuitl": {
+      "key": "F",
+      "ready": "weapons/macuahuitl-ready.png",
+      "animation": "left-right-overhead-combo"
+    },
+    "flames": {
+      "key": "R",
+      "file": "weapons/flame-hands-v2.png",
+      "columns": 2,
+      "rows": 2,
+      "frames": 4,
+      "viewHeight": 0.69,
+      "poses": [
+        "ignite",
+        "jet-a",
+        "jet-b",
+        "extinguish"
+      ],
+      "animation": "authored-pair"
+    }
+  }
+}

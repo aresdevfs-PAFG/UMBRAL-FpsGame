@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "macabro",
+    "name": "Macabro-Sanguinolento",
+    "combat": "reference:exec-7897333d-172b-4474-807a-20502a317fed.png",
+    "angles": "reference:exec-85652bde-9dff-4a70-a6ad-0806d3a49fb0.png"
+  },
+  {
+    "slug": "devorador",
+    "name": "Devorador de Rostros",
+    "combat": "reference:exec-5f04f0d2-a595-441e-8ba2-f599ea3c2369.png",
+    "angles": "reference:exec-9aa2aa63-cf63-44bf-a6e6-c56e708977af.png"
+  },
+  {
+    "slug": "empalador",
+    "name": "Empalador de Itztepec",
+    "combat": "reference:exec-40dca127-bd97-4cea-8ba0-99ab098f9cb6.png",
+    "angles": "reference:exec-0b2d2913-a137-44e3-8692-fc2f1f70f7ad.png"
+  },
+  {
+    "slug": "abominacion",
+    "name": "Abominación Ctonia",
+    "combat": "reference:exec-a9eebcb9-cc19-47e2-9e26-1fdd98163073.png",
+    "angles": "reference:exec-abba465e-b8b1-4fef-92b8-18ea2611e1c7.png"
+  },
+  {
+    "slug": "centinela",
+    "name": "Centinela de Mictlantecuhtli",
+    "combat": "reference:exec-b28ec18c-c461-4661-9c1e-0595bd75f959.png",
+    "angles": "reference:exec-634caa31-abce-423a-b27b-2bc73c710db2.png"
+  }
+]

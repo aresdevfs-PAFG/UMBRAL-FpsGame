@@ -1,0 +1,329 @@
+{
+  "madre-arrival": {
+    "source": {
+      "duration": 3.0,
+      "peak": 0.776108,
+      "peakDbfs": -2.202,
+      "rms": 0.164656,
+      "rmsDbfs": -15.668,
+      "onset": 0.028254
+    },
+    "master": {
+      "duration": 2.488163,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.174242,
+      "rmsDbfs": -15.177,
+      "onset": 0.004989
+    },
+    "dcRemoved": -5.7429e-05,
+    "trimStartSeconds": 0.023265,
+    "trimEndSeconds": 0.488571,
+    "gain": 0.967257,
+    "loop": false,
+    "encoded": {
+      "duration": 2.533878,
+      "peak": 0.714355,
+      "peakDbfs": -2.922,
+      "rms": 0.163857,
+      "rmsDbfs": -15.711,
+      "onset": 0.043152
+    }
+  },
+  "madre-presence": {
+    "source": {
+      "duration": 3.171088,
+      "peak": 0.675486,
+      "peakDbfs": -3.408,
+      "rms": 0.150198,
+      "rmsDbfs": -16.467,
+      "onset": 0.004989
+    },
+    "master": {
+      "duration": 2.873447,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.175094,
+      "rmsDbfs": -15.135,
+      "onset": 0.004989
+    },
+    "dcRemoved": -0.000147109,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.297642,
+    "gain": 1.11006,
+    "loop": false,
+    "effect": "Harsh high-register black-metal direction; controlled saturation; quiet spectral doubles and filtered echoes",
+    "spokenWords": false,
+    "sourceFile": "sources/madre-presence.mp3",
+    "sourceSha256": "e5c63104b859a249e2e16ee82447daff60745855ce83e2fe0cd158ccc72f31d5",
+    "encoded": {
+      "duration": 2.899592,
+      "peak": 0.706573,
+      "peakDbfs": -3.017,
+      "rms": 0.165555,
+      "rmsDbfs": -15.621,
+      "onset": 0.030045
+    }
+  },
+  "madre-windup": {
+    "source": {
+      "duration": 1.0,
+      "peak": 0.886475,
+      "peakDbfs": -1.047,
+      "rms": 0.108009,
+      "rmsDbfs": -19.331,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 0.825624,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.100304,
+      "rmsDbfs": -19.974,
+      "onset": 0.000249
+    },
+    "dcRemoved": -3.1621e-05,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.174376,
+    "gain": 0.846502,
+    "loop": false,
+    "encoded": {
+      "duration": 0.862041,
+      "peak": 0.697784,
+      "peakDbfs": -3.126,
+      "rms": 0.092982,
+      "rmsDbfs": -20.632,
+      "onset": 0.01424
+    }
+  },
+  "madre-wave": {
+    "source": {
+      "duration": 1.48,
+      "peak": 1.0,
+      "peakDbfs": 0.0,
+      "rms": 0.125631,
+      "rmsDbfs": -18.018,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 1.067664,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.100994,
+      "rmsDbfs": -19.914,
+      "onset": 9.1e-05
+    },
+    "dcRemoved": -0.000769259,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.412336,
+    "gain": 0.749219,
+    "loop": false,
+    "encoded": {
+      "duration": 1.097143,
+      "peak": 0.697296,
+      "peakDbfs": -3.132,
+      "rms": 0.093868,
+      "rmsDbfs": -20.55,
+      "onset": 0.024331
+    }
+  },
+  "madre-hands": {
+    "source": {
+      "duration": 1.2,
+      "peak": 0.129135,
+      "peakDbfs": -17.779,
+      "rms": 0.002313,
+      "rmsDbfs": -52.717,
+      "onset": 0.012268
+    },
+    "master": {
+      "duration": 1.094059,
+      "peak": 0.516736,
+      "peakDbfs": -5.735,
+      "rms": 0.009686,
+      "rmsDbfs": -40.277,
+      "onset": 0.004989
+    },
+    "dcRemoved": -1.5636e-05,
+    "trimStartSeconds": 0.007619,
+    "trimEndSeconds": 0.098322,
+    "gain": 4.0,
+    "loop": false,
+    "encoded": {
+      "duration": 1.123265,
+      "peak": 0.489532,
+      "peakDbfs": -6.204,
+      "rms": 0.009118,
+      "rmsDbfs": -40.802,
+      "onset": 0.028707
+    }
+  },
+  "madre-darkness": {
+    "source": {
+      "duration": 3.0,
+      "peak": 0.575394,
+      "peakDbfs": -4.801,
+      "rms": 0.146958,
+      "rmsDbfs": -16.656,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 3.0,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.180385,
+      "rmsDbfs": -14.876,
+      "onset": 0.0
+    },
+    "dcRemoved": 0.001392611,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.0,
+    "gain": 1.945781,
+    "loop": true,
+    "loopSeamStep": 0.002417,
+    "loopBoundaryProcessing": {
+      "applied": false,
+      "threshold": 0.01,
+      "transitionSeconds": 0,
+      "method": "Unión al punto medio con curvas de coseno elevado en ambos extremos",
+      "beforeStep": 0.002417476,
+      "afterStep": 0.002417476
+    },
+    "encoded": {
+      "duration": 3.030204,
+      "peak": 0.710968,
+      "peakDbfs": -2.963,
+      "rms": 0.170294,
+      "rmsDbfs": -15.376,
+      "onset": 0.019025
+    }
+  },
+  "madre-screamer": {
+    "source": {
+      "duration": 1.2,
+      "peak": 0.993515,
+      "peakDbfs": -0.057,
+      "rms": 0.34025,
+      "rmsDbfs": -9.364,
+      "onset": 2.3e-05
+    },
+    "master": {
+      "duration": 1.167596,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.259619,
+      "rmsDbfs": -11.713,
+      "onset": 0.001406
+    },
+    "dcRemoved": -0.001013219,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.032404,
+    "gain": 0.752926,
+    "loop": false,
+    "encoded": {
+      "duration": 1.201633,
+      "peak": 0.714508,
+      "peakDbfs": -2.92,
+      "rms": 0.243356,
+      "rmsDbfs": -12.275,
+      "onset": 0.026463
+    }
+  },
+  "madre-hurt": {
+    "source": {
+      "duration": 0.88,
+      "peak": 0.222778,
+      "peakDbfs": -13.043,
+      "rms": 0.056477,
+      "rmsDbfs": -24.963,
+      "onset": 2.3e-05
+    },
+    "master": {
+      "duration": 0.860975,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.192224,
+      "rmsDbfs": -14.324,
+      "onset": 0.000317
+    },
+    "dcRemoved": -3.9284e-05,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.019025,
+    "gain": 3.368369,
+    "loop": false,
+    "encoded": {
+      "duration": 0.888163,
+      "peak": 0.701324,
+      "peakDbfs": -3.082,
+      "rms": 0.179928,
+      "rmsDbfs": -14.898,
+      "onset": 0.025374
+    }
+  },
+  "madre-parry": {
+    "source": {
+      "duration": 1.08,
+      "peak": 0.999969,
+      "peakDbfs": -0.0,
+      "rms": 0.141561,
+      "rmsDbfs": -16.981,
+      "onset": 0.0
+    },
+    "master": {
+      "duration": 1.08,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.097721,
+      "rmsDbfs": -20.2,
+      "onset": 0.000227
+    },
+    "dcRemoved": -0.001157128,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.0,
+    "gain": 0.729006,
+    "loop": false,
+    "encoded": {
+      "duration": 1.123265,
+      "peak": 0.719513,
+      "peakDbfs": -2.859,
+      "rms": 0.092058,
+      "rmsDbfs": -20.719,
+      "onset": 0.013107
+    }
+  },
+  "madre-death": {
+    "source": {
+      "duration": 3.171088,
+      "peak": 0.675486,
+      "peakDbfs": -3.408,
+      "rms": 0.150198,
+      "rmsDbfs": -16.467,
+      "onset": 0.004989
+    },
+    "master": {
+      "duration": 2.873447,
+      "peak": 0.75,
+      "peakDbfs": -2.499,
+      "rms": 0.175094,
+      "rmsDbfs": -15.135,
+      "onset": 0.004989
+    },
+    "dcRemoved": -0.000147109,
+    "trimStartSeconds": 0.0,
+    "trimEndSeconds": 0.297642,
+    "gain": 1.11006,
+    "loop": false,
+    "effect": "Harsh high-register black-metal direction; controlled saturation; quiet spectral doubles and filtered echoes",
+    "spokenWords": false,
+    "sourceFile": "sources/madre-presence.mp3",
+    "sourceSha256": "e5c63104b859a249e2e16ee82447daff60745855ce83e2fe0cd158ccc72f31d5",
+    "encoded": {
+      "duration": 2.899592,
+      "peak": 0.706573,
+      "peakDbfs": -3.017,
+      "rms": 0.165555,
+      "rmsDbfs": -15.621,
+      "onset": 0.030045
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "file": "weapons/escopeta-cycle.png",
+  "frames": 8,
+  "durations": [
+    100,
+    130,
+    130,
+    170,
+    180,
+    170,
+    140,
+    130
+  ],
+  "frameSize": [
+    384,
+    384
+  ],
+  "loop": false,
+  "returnTo": "ready",
+  "durationMs": 1150,
+  "automatic": true,
+  "ammoPolicy": "Cosmetic chamber cycle; reserve ammo is consumed by shots only."
+}

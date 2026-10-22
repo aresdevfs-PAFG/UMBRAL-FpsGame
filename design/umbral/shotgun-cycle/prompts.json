@@ -1,0 +1,20 @@
+{
+  "tool": "imagegen integrada",
+  "useCase": "identity-preserve",
+  "purpose": "Automatic cosmetic break-action cycle for the centered double-barrel shotgun; ammo remains a pooled reserve.",
+  "references": [
+    "public/assets/img/umbral-demo/weapons/escopeta-ready.png",
+    "public/assets/img/umbral-demo/weapons/escopeta-primary.png"
+  ],
+  "source": "reference:exec-f2512cf2-3de8-43c8-ad38-9da8fd1f4cab.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "rowCuts": [
+      0,
+      447,
+      887
+    ]
+  },
+  "prompt": "Use case: identity-preserve.\nAsset type: FIRST-PERSON VIEWMODEL sprite sheet for UMBRAL, a pixel-art classic DOOM-style FPS.\nInput image 1 is the EXACT existing shotgun READY viewmodel, the identity and materials reference. Input image 2 is its current firing animation, style and perspective reference. Preserve this SAME shotgun: two side-by-side parallel short worn gunmetal barrels, carved dark walnut stock, silver steel receiver curves, small turquoise oval inlays, two medium-brown human hands in frayed charcoal sleeves. Do NOT invent a new weapon.\nPrimary request: an automatic break-action DOUBLE-BARREL SHOTGUN CHAMBERING animation after both barrels have fired. The weapon must stay CENTERED, viewed from its wielder's eyes. Only his hands and weapon. No third person, no inventory icon, no side-on profile.\nComposition: ONE transparent landscape sprite sheet EXACTLY 4 COLUMNS × 2 ROWS, EIGHT equal SQUARE cells. Each cell contains one complete animation pose. Read left-to-right, then second row left-to-right. Fixed viewpoint and scale in all eight cells. Receiver center stays x50%; wrists end on y96%; ready muzzle at x50%,y35%, weapon recedes AWAY from viewer. Full hands and weapon inside each cell; 4% transparent outer padding, at least 5% between neighboring silhouettes. Keep alpha gutters empty. Opening the breech naturally exposes the TWO rear chambers towards camera while barrels hinge DOWN and forward; that is not a forward-facing muzzle.\nEight distinct chronological poses:\n1) Right hand keeps grip, thumb releases the top lever. Barrel pair starts hinging down, opening a small gap in the centered receiver.\n2) Fully broken open: barrel pair tipped down and forward, TWO circular rear chamber mouths clearly visible; left hand supports fore-end.\n3) Two SHORT spent brass shotgun hulls eject upward from the TWO chambers, slight pale smoke; right hand holds gun steady, left hand reaching away to retrieve new shells.\n4) Left hand brings TWO fresh SHORT dark-red shotgun shells with brass bases together above the two empty rear chambers. Exactly two hands total, right hand still holding grip.\n5) Left thumb seats the two fresh shells into the breech, brass bases flush, gun still broken open.\n6) Left hand swings fore-end and barrel pair upward to close the central hinge; receiver halfway closed, no exposed extra shells.\n7) Receiver snaps completely shut, hands resume original support and trigger grips, muzzle rises towards aim.\n8) Settled READY pose MATCHING reference image 1, centered barrel pair and original turquoise inlays. No muzzle flash.\nStyle: crisp coarse hand-dithered 1990s game pixel art, limited warm browns/charcoal/gunmetal/turquoise palette, sharp blocky edges. Preserve original chunky pixel scale. No smooth 3D render, no painted backdrop, no diffuse halo around hands. Actual fully transparent RGBA background. NO text, numbers, grid lines, boxes, labels, shadows, floor, scenery, HUD or watermark.\nAnatomy: exactly TWO hands only in each frame; plausible gripping fingers, no third arm. Keep same wood shape, engraved steel receiver, turquoise details and two barrels across all eight poses."
+}

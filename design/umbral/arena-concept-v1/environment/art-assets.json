@@ -1,0 +1,20 @@
+{
+  "tool": "Built-in imagegen",
+  "runtime": "Panoramic PNG and alpha blood PNG animated on the GPU; shotgun uses an 8-frame atlas. GIFs are review exports.",
+  "assets": [
+    {
+      "file": "public/assets/img/umbral-demo/environment/mictlan-panorama.png",
+      "prompt": "Use case: stylized-concept. Asset type: game-ready 2D panoramic background texture for a 1990s DOOM-style first-person shooter. Reference image role: visual style and landscape reference ONLY. Generate a NEW standalone horizontal 2:1 landscape panoramic matte painting of the distant environment visible behind the arena in the reference: a vast infernal Mictlan canyon with dense jagged black basalt rock cliffs, glossy sharp obsidian spires, remote ancient stepped stone Mexican-inspired temples with narrow glowing orange stairways and windows, deep chasms with a few long thin dark crimson blood waterfalls. Crimson burgundy cloudy twilight sky in upper 42 percent. Dense cragged cliff texture and rocky silhouettes, worn old dark stone. Limited charcoal, bone gray, burnt sienna, dark blood red, violet-black palette; small amber fires. MATCH the reference's detailed gritty retro game texture style, use visible pixelated dithered texture shading, not flat low-poly mountains. Horizon midway, broad open sky above, deep abyss at bottom. The image will wrap around a cylindrical background, so left/right edge lighting and cliff silhouettes should be compatible. NO foreground arena, no close buildings, no weapons, no characters, no skull facade centerpiece, no interface, no text, no labels, no watermark. Camera level toward distant horizon; straight panorama without fisheye or framed panels. Landscape fills the whole canvas. Output resolution as high as available, wide aspect 2:1."
+    },
+    {
+      "file": "public/assets/img/umbral-demo/environment/bloodfall.png",
+      "preview": "public/assets/img/umbral-demo/environment/bloodfall.gif",
+      "prompt": "Use case: stylized-concept. Asset type: an actual seamless game TEXTURE for a thin blood waterfall running down a stone pillar in a dark DOOM-style retro first person game. Square image, full frame texture. Only stylized crimson blood streams, no stone, no architecture, no characters, no organs. Liquid vertical rivulets and strands flowing from the very top edge through the bottom edge, longer darker burgundy broad streaks with narrow glossy scarlet and dark red highlights, small irregular gaps between thin blood rivulets genuinely TRANSPARENT. Entire left and right edge feather to transparency, center about 65 percent occupied by parallel uneven flowing ribbons. Connect top and bottom to tile smoothly vertically for continuous downward scrolling. Pixel-painted 1990s sprite texture with rich dithering and sharp texels, limited deep burgundy, crimson red, scarlet and muted pink highlight palette. No orange, no lava, no fire, no text, no border. Neutral flat texture lighting with painted liquid highlights. Straight orthographic face-on texture, NOT a scene. Transparent background."
+    },
+    {
+      "file": "public/assets/img/umbral-demo/weapons/escopeta-cycle.png",
+      "preview": "design/umbral/shotgun-cycle/escopeta-cycle.gif",
+      "promptFile": "design/umbral/shotgun-cycle/prompts.json"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "project": "UMBRAL",
+  "feature": "Demo del Titán de Obsidiana y remate obligatorio",
+  "date": "2026-10-14",
+  "access": "/?demo=titan",
+  "arena": "Patio del Titán",
+  "ranking": false,
+  "playerStart": {
+    "health": 100,
+    "shield": 100,
+    "wave": 10,
+    "allWeapons": true
+  },
+  "boss": {
+    "totalDurability": 12500,
+    "shield": 6250,
+    "health": 6250,
+    "shieldRegenerates": false,
+    "phase1": [
+      "salto alto",
+      "embestida",
+      "onda de choque"
+    ],
+    "phase2Trigger": "Escudo agotado",
+    "phase2DamageMultiplier": 1.5,
+    "phase2AdditionalAttacks": [
+      "7 calaveras moradas perseguidoras",
+      "invocación de imps"
+    ],
+    "summons": {
+      "kind": "macabro",
+      "maxAlive": 4,
+      "maxTotal": 24
+    },
+    "normalEnemiesInWave10": false
+  },
+  "finisher": {
+    "trigger": "F cerca del Titán de rodillas, mirando hacia él",
+    "reach": 3.2,
+    "durationSeconds": 3,
+    "sequence": [
+      "cuchillo de obsidiana en el corazón",
+      "martillazo de macuahuitl",
+      "colapso"
+    ],
+    "stabAt": 0.85,
+    "hammerAt": 1.7,
+    "requiresPowerCharge": false,
+    "playerProtectedDuringSequence": true,
+    "pauseSupported": true,
+    "disappearingSummonsGrantKills": false,
+    "airborneOrWaterDefeat": "Regreso visible a suelo seco accesible antes de permitir el remate",
+    "completion": "Una baja, horda 10 superada; repetir o continuar a horda 11 sin ranked",
+    "artStage": "Sprites propios de prototipo; ritmo, grito y sonido definitivo pendientes de revisión",
+    "hammerSound": "Impacto explosivo existente del macuahuitl"
+  },
+  "artPrompts": "art-prompts.json"
+}

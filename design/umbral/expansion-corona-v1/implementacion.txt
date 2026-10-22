@@ -1,0 +1,66 @@
+UMBRAL · Corona del Viento y movilidad vertical
+11 de octubre de 2026
+
+INTEGRADO
+Dos arenas: Cuenca de Obsidiana y La Corona del Viento. Al cargar la demo
+se sortea una arena; cada reinicio o nueva partida vuelve a sortearla.
+Continuar una pausa conserva mapa, partida, física y temporizadores.
+
+MOVILIDAD
+Espacio: un salto por pulsación, impulso 7 m/s, gravedad 20 m/s²,
+altura aproximada 1,225 m. Tolerancia de borde 100 ms y anticipación 120 ms.
+WASD y todas las armas/poderes siguen disponibles en el aire.
+Cuatro Sellos de Ascenso por arena: emisores circulares cian, flechas,
+partículas y destinos cuadrados separados. Corrección aérea limitada a
+0,5 m por eje para mantener las llegadas dentro de zonas seguras.
+La caída al vacío resta 15 de vida y devuelve al último suelo seguro.
+Se comprueban colisiones laterales, techos de puentes y piso durante el vuelo.
+
+CUENCA
+Conserva plaza, cuatro cascadas de sangre, coronas de aparición enemiga,
+terrazas de 3 m y puente de 6 m. Dos sellos suben desde plaza a terrazas;
+otros dos conectan las terrazas con los extremos del puente. Dos losas de
+0,75 m permiten practicar salto. UV independientes en caras de rampas
+eliminan las texturas estiradas en sus muros laterales.
+
+CORONA
+Anillo inferior alrededor de un vacío, terrazas laterales de 3 m,
+santuario norte de 6 m y rampas continuas para enemigos terrestres.
+Cuatro sellos recorren sur -> oeste -> cima -> este -> sur.
+Dos ráfagas laterales: ciclo de 12 s, aviso de polvo ámbar 1 s, empuje
+de 2 m/s durante 3 s. Quedan fuera de los destinos de los sellos.
+Panorama propio: eclipse violeta, templos y agujas suspendidas;
+nubes, ceniza y luces animadas. El terreno usa la misma definición que
+las colisiones, rayos, navegación, suministros y apariciones.
+
+ACECHADOR DE BASALTO
+150 de vida; cuadrúpedo de roca volcánica con grietas encendidas.
+Persecución 4,5 m/s. Salto anunciado durante 0,7 s, destino fijo y
+marcador naranja. Impacto de 18 de daño una vez por salto, recuperación
+de 0,45 s. Puede utilizar conexiones de los sellos y seguir por rampas.
+Máximo tres vivos/pendientes y dos saltos o preparaciones simultáneos.
+F cancela su preparación o vuelo y aplica el aturdimiento existente.
+
+TEJEDOR DE CENIZA
+210 de vida; máscara de hueso, cuatro brazos y ceniza violeta.
+Protege hasta tres aliados a menos de 12 m y con línea de visión.
+Reducción del 35 %, sin acumulación entre tejedores; él sigue vulnerable.
+Canaliza durante 4 de cada 7 s; no camina ni dispara mientras protege.
+Cobertura, aturdimiento, daño que lo interrumpe y muerte rompen vínculos.
+Disparo: abanico de tres proyectiles animados de ceniza, 6 m/s,
+7 de daño cada uno, sin seguimiento. Máximo dos vivos/pendientes.
+F mantiene su ejecución directa; la marca de R conserva el botín.
+
+ARTE
+Dos atlas RGBA de 4 columnas × 4 filas; desplazamiento, ataque, daño y muerte.
+Frames leídos mediante UV, sin cargar GIF separados ni imágenes por frame.
+Fuentes generadas con image_gen integrado; brief en prompts.json.
+Assets de producción en public/assets/img/umbral-demo/enemies/ y environment/.
+
+VERIFICACIÓN
+tests/umbral-expansion.test.mjs cubre las dos geometrías, selección aleatoria,
+saltos, tolerancias, pausa, techos, caída, los ocho sellos a 20/60/120 Hz,
+rutas continuas de gigantes, escudos, ataques nuevos, F y botín de R.
+Se conservan las regresiones existentes de armas, poderes, colisiones y audio.
+Prueba manual local con teclado, reinicio, ambos mapas y revisión de consola.
+El HUD registró 60 FPS durante la prueba; no implica garantía en todos los equipos.

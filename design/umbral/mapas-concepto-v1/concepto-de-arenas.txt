@@ -1,0 +1,202 @@
+UMBRAL — CUATRO ARENAS / MOVILIDAD VERTICAL
+Propuesta conceptual v1 · 11 de octubre de 2026
+
+ENTREGA
+Cuatro láminas originales generadas con image_gen (herramienta integrada),
+referenciadas en prompts.json. Incluyen vista ambiental y esquema de circulación.
+Son ilustraciones de intención espacial: las cotas, flechas y detalles dibujados
+deberán resolverse en una futura maqueta. Este documento establece las reglas
+jugables propuestas. Esta entrega agrega únicamente material conceptual.
+
+OBJETIVO COMÚN
+Hordas en primera persona, armas centradas, materiales pixelados y geometría
+simple. El terreno se recorre con movimiento continuo, salto y disparo simultáneo.
+La arquitectura da identidad, orientación, cobertura y rutas de escape.
+El fondo monumental puede ser 2D animado; el terreno jugable tiene volumen real.
+Las criaturas siguen siendo sprites animados, con colisión y ataques a su altura.
+
+LENGUAJE VISUAL
+Ámbar y flechas continuas: rutas terrestres en el esquema.
+Cian, círculo y partículas ascendentes: Sellos de Ascenso.
+Arcos discontinuos: trayectorias de impulso propuestas.
+Cuadro claro: zona de llegada, distinta físicamente del sello emisor.
+Trama roja: peligro anunciado. Estas marcas pertenecen al plano conceptual.
+Dentro del juego las rutas se explican mediante materiales, luz y arquitectura.
+El emisor y el destino deben distinguirse aunque coincidan en una misma terraza.
+Se separan los portales enemigos de los lugares de llegada y de los suministros.
+
+MOVILIDAD — VALORES INICIALES PARA VALIDAR
+Espacio: salto de alrededor de 1,2 m y 0,7 s de vuelo. Una pulsación por salto.
+Conserva velocidad horizontal y permite corrección moderada durante el vuelo.
+Disparo, selección de arma y poderes disponibles durante el salto.
+Tolerancia aproximada de 100 ms al salir del borde y al anticipar el aterrizaje.
+Saltos comunes conectan desniveles bajos; los sellos conectan cotas de 3–6 m.
+Distancias de salto se calculan después de validar velocidad y gravedad juntos.
+Salto de ejemplo: a 7,4 m/s y 0,7 s de vuelo, recorrido teórico cercano a 5,2 m;
+los huecos normales iniciales serán bastante menores, alrededor de 2–3 m.
+Sellos: activación al entrar, impulso dirigido, control aéreo moderado y disparo
+libre; requieren abandonar el área antes de poder activarse de nuevo.
+Llegadas: objetivo inicial de 4 x 4 m útiles, con dos salidas y cobertura lateral.
+Pasos principales: objetivo de 5–6 m de anchura, revisado con enemigos grandes.
+Las trayectorias deben librar dinteles, techos y el volumen entero del jugador.
+Las caídas previstas entre niveles permiten continuar inmediatamente; el vacío
+exterior devuelve al último sector seguro con una penalización por definir.
+Los enemigos terrestres mantienen rutas por rampas a todas las zonas principales.
+El Acechador puede usar conexiones específicas de salto con aviso visible.
+El jugador debe poder deslizarse y retirarse al contactar paredes durante el vuelo
+y aterrizaje. Las superficies decorativas no forman pequeñas trampas de colisión.
+
+01 — CUENCA DE OBSIDIANA / ADAPTACIÓN VERTICAL
+Archivo: 01-cuenca-obsidiana-adaptada.png
+Función: arena de referencia para aprender la movilidad nueva.
+
+Base real que se conserva:
+- Huella de 70 x 60 m, acceso sur y umbral que restaura 100 de vida una vez.
+- Plaza a 0 m, terrazas a +3 m, puente transversal a +6 m.
+- Cuatro pilares independientes de sangre con coronas a +6,4 m.
+- Cuatro rampas inferiores, accesos al puente por sus extremos y paso inferior.
+- Portada de cráneo al norte, crestas negras, cielo rojo y cascadas animadas.
+
+Propuesta de intervención:
+A. Sello junto a rampa suroeste: plaza -> terraza oeste, llegada lateral despejada.
+B. Sello junto a rampa sureste: plaza -> terraza este, llegada lateral despejada.
+C. Sello en terraza noroeste: terraza -> extremo oeste del puente.
+D. Sello en terraza noreste: terraza -> extremo este del puente.
+El centro del puente queda transitable; cada llegada permite cruzarlo o bajar
+por su rampa. Todos los impulsos terminan fuera del volumen de los pilares.
+La plaza permite un circuito alrededor de los cuatro pilares y cruces centrales.
+La lámina expresa estos recorridos; la posición precisa de C/D se ajustará para
+que el ascenso desde +3 a +6 m sea inequívoco en la maqueta.
+
+Salto normal:
+Losas bajas de 0,6–0,9 m y pasos laterales cortos ofrecen atajos voluntarios.
+La entrada y las rutas a los suministros básicos se conservan accesibles a pie.
+Las caras de los pilares siguen siendo cobertura; sus coronas siguen alojando
+apariciones enemigas. Si un salto alcanza una corona, sigue expuesta a ataques
+y a las conexiones del Acechador; no recibe recursos exclusivos para acampar.
+
+Recursos y enemigos:
+Munición chica en rutas bajas; grande en cruces expuestos; obsidiana en terrazas
+y algún punto bajo alternativo. Las categorías mantienen sus reservas actuales.
+Acechadores salen por laterales y presionan las terrazas.
+Tejedor aparece inicialmente de uno en uno en el sector posterior; sus vínculos
+se interrumpen al rodear los pilares o pasar debajo del puente.
+Las ondas de suelo se pueden saltar; los proyectiles aéreos conservan peligro.
+Escena de combate: quemar un grupo en plaza, usar A para escapar, rematar desde
+la terraza y volver al suelo por otra ruta para recoger la munición.
+
+02 — LAS FAUCES DE PIEDRA / ARENA DE TRITURACIÓN
+Archivo: 02-fauces-de-piedra.png
+Identidad: basalto gris, barro oxidado, dientes de obsidiana y polvo cálido.
+Fondo animado: montañas que se aproximan, choques lejanos y polvo suspendido.
+
+Topología:
+Dos patios a 0 m separados por una espina rocosa.
+Tres pasos conectan los patios; un circuito exterior permite rodear el conjunto.
+Galería a +4 m con paso inferior, rampas en extremos y dos sellos, uno por patio.
+Los dos sellos impulsan a llegadas separadas sobre la galería.
+
+Trampa principal:
+Un paso contiene mandíbulas de piedra. Aviso aproximado de 2 s mediante sonido,
+grietas iluminadas y una franja delimitada; después se produce el cierre.
+El cierre afecta a jugador y enemigos dentro del volumen anunciado.
+El perímetro y los otros pasos permanecen transitables durante el ciclo.
+El salto normal evita escombros bajos; la galería cruza sobre la trituradora.
+Los enemigos eliminados por una trampa se registran como bajas ambientales,
+con una regla única y explícita para la atribución del puntaje futuro.
+
+Encuentros:
+Acechador por perímetro y bordes de patio; su salto se prepara antes de fijar destino.
+Tejedor detrás de columnas: exige cambiar de patio o subir para romper su cobertura.
+Recursos separados entre patios, con una recompensa opcional cerca del paso activo.
+Escena de combate: atraer al grupo, escapar por el sello y ver cerrarse las mandíbulas.
+
+03 — EL RÍO DE LAS ÁNIMAS / ARENA DE CRECIDAS
+Archivo: 03-rio-de-las-animas.png
+Identidad: piedra húmeda, agua casi negra, pátina turquesa y antorchas ámbar.
+Fondo animado: cascadas lejanas, lluvia y reflejos de agua de baja intensidad.
+
+Topología:
+Isla central con altar y tres sectores exteriores.
+Tres radios unen los sectores con la isla y un anillo exterior une los sectores.
+Puentes anchos a +3 m y caminos de ribera bajos a 0 m conectados mediante rampas.
+La lámina explora tres pares de sellos entre sectores: hasta seis emisores, cada
+uno dirigido a una llegada vecina separada, para recorrer el triángulo por el aire.
+Se verificará en maqueta cuántos de esos enlaces aportan decisiones diferentes.
+
+Crecida:
+Aviso visible en las paredes y aumento gradual de espuma/sonido antes de la subida.
+Solo los caminos bajos se inundan; los puentes y las plazas altas permanecen secos.
+El agua peligrosa produce daño gradual y ofrece salidas mediante rampas visibles.
+Los sellos cruzan el agua; los puentes permiten tomar la misma decisión a pie.
+Los recursos esenciales también aparecen en zonas secas. Las riberas ofrecen una
+recompensa adicional, evitando que toda la obsidiana dependa de una única crecida.
+
+Encuentros:
+Acechador recorre bancos exteriores y salta hacia cabeceras de puente.
+Tejedor conecta enemigos de un sector; estatuas y cambios de altura permiten
+romper las líneas. Las apariciones se mantienen lejos de las zonas de llegada.
+Escena de combate: recoger una piedra en ribera, subir al aviso de crecida y
+cruzar con un sello mientras se dispara hacia el puente ocupado.
+
+04 — LA CORONA DEL VIENTO / ARENA DE ASCENSO
+Archivo: 04-corona-del-viento.png
+Identidad: basalto azul grisáceo, cielo violeta, telas rotas y grandes fragmentos
+de obsidiana suspendidos en el fondo. El escenario distante no es terreno jugable.
+
+Topología:
+Anillo inferior ancho a 0 m; terrazas laterales a +3 m; santuario posterior a +6 m.
+Rampas conectan las tres cotas y el anillo recoge caídas desde las terrazas.
+Cuatro emisores como base de la propuesta, representados en la lámina:
+- Anillo sur -> terraza oeste.
+- Terraza oeste -> santuario posterior.
+- Santuario posterior -> terraza este.
+- Terraza este -> anillo sur.
+Los arcos del dibujo son orientativos. Cada emisor tendrá dirección fija, con
+una llegada separada del siguiente sello para evitar cadenas automáticas.
+Desde el santuario se puede salir por ambos lados; su altura lo vuelve expuesto.
+
+Viento:
+Dos corredores opcionales reciben ráfagas laterales claramente anunciadas por
+partículas, telas y sonido. Las llegadas y las rampas principales quedan resguardadas.
+El impulso es limitado y se puede compensar con movimiento durante el salto.
+Las superficies principales son amplias; los huecos cortos ofrecen atajos normales.
+
+Encuentros:
+Acechadores cambian de terraza mediante saltos anunciados y obligan a reubicarse.
+Tejedor alterna posiciones con cobertura parcial; nunca domina visualmente las tres
+cotas a la vez. Enemigos de proyectil hacen peligroso repetir la misma trayectoria.
+Escena de combate: subir con un sello, lanzar un ataque explosivo en vuelo,
+aterrizar junto a cobertura y cambiar de nivel cuando llega el perseguidor.
+
+REGLAS DE COMBATE Y RECURSOS COMPARTIDAS
+- Espacio añade movilidad; R sigue siendo llamas (1 s de uso, 15 s de enfriamiento).
+- F conserva tajo letal al objetivo cercano y aturdimiento de 2 s a vecinos;
+  enfriamiento de 13 s. Estar arriba no amplía su alcance ni atraviesa pisos.
+- Los enemigos quemados mantienen sus recompensas de munición chica y grande.
+- Chica: escopeta. Grande: Gauss y Arco del Jaguar. Obsidiana: rifle.
+- Piedras de obsidiana: 10–18 unidades, con aparición aleatoria en ubicaciones válidas.
+- La obtención de vida por sacrificio y sus animaciones siguen como trabajo futuro;
+  el diseño de rutas usa la salud disponible y no presupone esa mecánica terminada.
+- El salto no otorga invulnerabilidad. Proyectiles, rayos y golpes respetan altura,
+  paredes, puentes y el volumen visible del jugador.
+- El Tejedor reduce daño de aliados, sigue vulnerable y conserva la marca de llamas.
+- Las apariciones avisan, respetan espacio libre y se posponen si la llegada está
+  ocupada. Las rutas de abastecimiento y los aterrizajes no son puntos de aparición.
+- Se limita la coincidencia de saltos enemigos y trampas en una misma llegada.
+- Las secuencias ambientales serán previsibles. El puntaje futuro se comparará
+  por mapa y versión de reglas; las condiciones aleatorias deberán ser reproducibles.
+
+ARTE, ANIMACIÓN Y RENDIMIENTO
+Construcción modular: suelo, rampa, puente, bloque de cobertura y sello reutilizables.
+Planos lejanos 2D animados, láminas de cascadas y atlas de sprites sincronizados.
+La sangre, el agua y el polvo pueden sugerir movimiento sin simulación de fluidos.
+Los puentes y alturas de combate sí necesitan geometría y colisiones coherentes.
+El objetivo sigue siendo 60 FPS; su cumplimiento se medirá con hordas y efectos
+activos en dispositivos representativos. La lámina no demuestra rendimiento.
+
+SIGUIENTE VALIDACIÓN PROPUESTA
+Primero adaptar Cuenca de Obsidiana en una maqueta sencilla: conserva una base
+conocida para validar salto, cuatro sellos, alcance de F/R, colisiones de caída y
+persecución entre alturas. Después usar Corona del Viento para exigir más a esa
+movilidad, y desarrollar las trampas de Fauces y las crecidas del Río.

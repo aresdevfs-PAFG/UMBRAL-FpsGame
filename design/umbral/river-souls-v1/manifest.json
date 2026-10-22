@@ -1,0 +1,29 @@
+{
+  "generator": "Built-in image_gen; lossless frame packing and GIF export",
+  "assets": [
+    {
+      "effect": "river-soul-bite",
+      "frames": 8,
+      "atlas": "public/assets/img/umbral-demo/effects/river-soul-bite.png",
+      "preview": "river-soul-bite.gif",
+      "runtimeBytes": 881770,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "frameSize": 256
+    },
+    {
+      "effect": "river-soul-swarm",
+      "frames": 8,
+      "atlas": "public/assets/img/umbral-demo/effects/river-soul-swarm.png",
+      "preview": "river-soul-swarm.gif",
+      "runtimeBytes": 748161,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "frameSize": 256
+    }
+  ]
+}

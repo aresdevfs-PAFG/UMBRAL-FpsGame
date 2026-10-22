@@ -1,0 +1,971 @@
+{
+  "title": "UMBRAL · Bestiario / movimiento y combate",
+  "version": 2,
+  "status": "art-review-not-gameplay-integrated",
+  "gifPolicy": "Los GIF repiten para revisión; usar loop y eventos del manifiesto al integrar.",
+  "directionCoverage": "Ocho vistas estáticas. Animaciones de combate y desplazamiento en vista frontal; ciclos laterales y traseros pendientes.",
+  "gloryKillsEnabled": false,
+  "executionWeapon": "Coaiztlactli",
+  "enemies": [
+    {
+      "id": "macabro",
+      "name": "Macabro-Sanguinolento",
+      "animations": {
+        "move": {
+          "atlas": "atlas/macabro-move.png",
+          "gif": "gif/macabro-move.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "attack": {
+          "atlas": "atlas/macabro-attack.png",
+          "gif": "gif/macabro-attack.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 2,
+              "event": "spawn_blood_projectile"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "hurt": {
+          "atlas": "atlas/macabro-hurt.png",
+          "gif": "gif/macabro-hurt.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "stagger": {
+          "atlas": "atlas/macabro-stagger.png",
+          "gif": "gif/macabro-stagger.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            220,
+            220,
+            220,
+            220
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "death": {
+          "atlas": "atlas/macabro-death.png",
+          "gif": "gif/macabro-death.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "directions": {
+          "atlas": "atlas/macabro-directions.png",
+          "gif": "gif/macabro-directions.gif",
+          "frameCount": 8,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        }
+      },
+      "directionOrder": [
+        "front",
+        "front-right",
+        "right",
+        "rear-right",
+        "rear",
+        "rear-left",
+        "left",
+        "front-left"
+      ],
+      "directionsAnimated": false
+    },
+    {
+      "id": "devorador",
+      "name": "Devorador de Rostros",
+      "animations": {
+        "move": {
+          "atlas": "atlas/devorador-move.png",
+          "gif": "gif/devorador-move.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "attack": {
+          "atlas": "atlas/devorador-attack.png",
+          "gif": "gif/devorador-attack.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 1,
+              "event": "lock_charge_direction"
+            },
+            {
+              "frame": 2,
+              "event": "start_charge"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "hurt": {
+          "atlas": "atlas/devorador-hurt.png",
+          "gif": "gif/devorador-hurt.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "stagger": {
+          "atlas": "atlas/devorador-stagger.png",
+          "gif": "gif/devorador-stagger.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            220,
+            220,
+            220,
+            220
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "death": {
+          "atlas": "atlas/devorador-death.png",
+          "gif": "gif/devorador-death.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "directions": {
+          "atlas": "atlas/devorador-directions.png",
+          "gif": "gif/devorador-directions.gif",
+          "frameCount": 8,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        }
+      },
+      "directionOrder": [
+        "front",
+        "front-right",
+        "right",
+        "rear-right",
+        "rear",
+        "rear-left",
+        "left",
+        "front-left"
+      ],
+      "directionsAnimated": false
+    },
+    {
+      "id": "empalador",
+      "name": "Empalador de Itztepec",
+      "animations": {
+        "move": {
+          "atlas": "atlas/empalador-move.png",
+          "gif": "gif/empalador-move.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "attack": {
+          "atlas": "atlas/empalador-attack.png",
+          "gif": "gif/empalador-attack.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 0,
+              "event": "mark_ground_target"
+            },
+            {
+              "frame": 2,
+              "event": "raise_obsidian_spikes"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "hurt": {
+          "atlas": "atlas/empalador-hurt.png",
+          "gif": "gif/empalador-hurt.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "stagger": {
+          "atlas": "atlas/empalador-stagger.png",
+          "gif": "gif/empalador-stagger.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            220,
+            220,
+            220,
+            220
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "death": {
+          "atlas": "atlas/empalador-death.png",
+          "gif": "gif/empalador-death.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "directions": {
+          "atlas": "atlas/empalador-directions.png",
+          "gif": "gif/empalador-directions.gif",
+          "frameCount": 8,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        }
+      },
+      "directionOrder": [
+        "front",
+        "front-right",
+        "right",
+        "rear-right",
+        "rear",
+        "rear-left",
+        "left",
+        "front-left"
+      ],
+      "directionsAnimated": false
+    },
+    {
+      "id": "abominacion",
+      "name": "Abominación Ctonia",
+      "animations": {
+        "move": {
+          "atlas": "atlas/abominacion-move.png",
+          "gif": "gif/abominacion-move.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "attack": {
+          "atlas": "atlas/abominacion-attack.png",
+          "gif": "gif/abominacion-attack.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 1,
+              "event": "acid_triple_left"
+            },
+            {
+              "frame": 2,
+              "event": "acid_triple_right"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "hurt": {
+          "atlas": "atlas/abominacion-hurt.png",
+          "gif": "gif/abominacion-hurt.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "stagger": {
+          "atlas": "atlas/abominacion-stagger.png",
+          "gif": "gif/abominacion-stagger.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            220,
+            220,
+            220,
+            220
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "death": {
+          "atlas": "atlas/abominacion-death.png",
+          "gif": "gif/abominacion-death.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 2,
+              "event": "spawn_devoradores",
+              "count": [
+                2,
+                3
+              ]
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "directions": {
+          "atlas": "atlas/abominacion-directions.png",
+          "gif": "gif/abominacion-directions.gif",
+          "frameCount": 8,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        }
+      },
+      "directionOrder": [
+        "front",
+        "front-right",
+        "right",
+        "rear-right",
+        "rear",
+        "rear-left",
+        "left",
+        "front-left"
+      ],
+      "directionsAnimated": false
+    },
+    {
+      "id": "centinela",
+      "name": "Centinela de Mictlantecuhtli",
+      "animations": {
+        "move": {
+          "atlas": "atlas/centinela-move.png",
+          "gif": "gif/centinela-move.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            130,
+            130,
+            130,
+            130
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "attack": {
+          "atlas": "atlas/centinela-attack.png",
+          "gif": "gif/centinela-attack.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            200,
+            160,
+            100,
+            180
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 2,
+              "event": "plasma_pair"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "hurt": {
+          "atlas": "atlas/centinela-hurt.png",
+          "gif": "gif/centinela-hurt.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            80,
+            100,
+            100,
+            140
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "stagger": {
+          "atlas": "atlas/centinela-stagger.png",
+          "gif": "gif/centinela-stagger.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            220,
+            220,
+            220,
+            220
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "death": {
+          "atlas": "atlas/centinela-death.png",
+          "gif": "gif/centinela-death.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            160,
+            120,
+            180,
+            1000
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "mace": {
+          "atlas": "atlas/centinela-mace.png",
+          "gif": "gif/centinela-mace.gif",
+          "frameCount": 4,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            240,
+            180,
+            100,
+            240
+          ],
+          "loop": false,
+          "holdLastFrame": true,
+          "events": [
+            {
+              "frame": 2,
+              "event": "ground_shockwave"
+            }
+          ],
+          "anchorPx": [
+            160,
+            300
+          ]
+        },
+        "directions": {
+          "atlas": "atlas/centinela-directions.png",
+          "gif": "gif/centinela-directions.gif",
+          "frameCount": 8,
+          "frameSize": [
+            320,
+            320
+          ],
+          "durationMs": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "loop": true,
+          "holdLastFrame": false,
+          "events": [],
+          "anchorPx": [
+            160,
+            300
+          ]
+        }
+      },
+      "directionOrder": [
+        "front",
+        "front-right",
+        "right",
+        "rear-right",
+        "rear",
+        "rear-left",
+        "left",
+        "front-left"
+      ],
+      "directionsAnimated": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "blood-projectile",
+      "name": "Proyectil de sangre",
+      "atlas": "atlas/fx-blood-projectile.png",
+      "gif": "gif/fx-blood-projectile.gif",
+      "frameCount": 4,
+      "frameSize": [
+        320,
+        320
+      ],
+      "durationMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "events": [],
+      "anchorPx": [
+        160,
+        300
+      ]
+    },
+    {
+      "id": "acid-projectile",
+      "name": "Lodo ácido",
+      "atlas": "atlas/fx-acid-projectile.png",
+      "gif": "gif/fx-acid-projectile.gif",
+      "frameCount": 4,
+      "frameSize": [
+        320,
+        320
+      ],
+      "durationMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "events": [],
+      "anchorPx": [
+        160,
+        300
+      ]
+    },
+    {
+      "id": "plasma-projectile",
+      "name": "Plasma verde",
+      "atlas": "atlas/fx-plasma-projectile.png",
+      "gif": "gif/fx-plasma-projectile.gif",
+      "frameCount": 4,
+      "frameSize": [
+        320,
+        320
+      ],
+      "durationMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "events": [],
+      "anchorPx": [
+        160,
+        300
+      ]
+    },
+    {
+      "id": "obsidian-spikes",
+      "name": "Estacas de obsidiana",
+      "atlas": "atlas/fx-obsidian-spikes.png",
+      "gif": "gif/fx-obsidian-spikes.gif",
+      "frameCount": 4,
+      "frameSize": [
+        320,
+        320
+      ],
+      "durationMs": [
+        100,
+        100,
+        100,
+        200
+      ],
+      "loop": false,
+      "holdLastFrame": true,
+      "events": [],
+      "anchorPx": [
+        160,
+        300
+      ]
+    },
+    {
+      "id": "ground-shockwave",
+      "name": "Onda de choque",
+      "atlas": "atlas/fx-ground-shockwave.png",
+      "gif": "gif/fx-ground-shockwave.gif",
+      "frameCount": 4,
+      "frameSize": [
+        320,
+        320
+      ],
+      "durationMs": [
+        100,
+        100,
+        100,
+        200
+      ],
+      "loop": false,
+      "holdLastFrame": true,
+      "events": [],
+      "anchorPx": [
+        160,
+        300
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "umbral-fps-game",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FPS de hordas en el Mictlán, independiente y jugable en local.",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node tools/check.mjs"
+  },
+  "engines": {"node": ">=22"}
+}

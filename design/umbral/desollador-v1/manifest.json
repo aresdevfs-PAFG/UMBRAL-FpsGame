@@ -1,0 +1,159 @@
+{
+  "enemy": {
+    "name": "El Desollador del Vendaval",
+    "states": {
+      "move": {
+        "file": "enemies/desollador-move.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          150,
+          150,
+          150,
+          150
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "attack": {
+        "file": "enemies/desollador-attack.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          200,
+          180,
+          120,
+          250
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      },
+      "dive": {
+        "file": "enemies/desollador-dive.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          200,
+          180,
+          120,
+          250
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      },
+      "suction": {
+        "file": "enemies/desollador-suction.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          150,
+          150,
+          150,
+          150
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": true
+      },
+      "hurt": {
+        "file": "enemies/desollador-hurt.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          90,
+          90,
+          90,
+          90
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      },
+      "death": {
+        "file": "enemies/desollador-death.png",
+        "frames": 4,
+        "columns": 4,
+        "rows": 1,
+        "durations": [
+          180,
+          240,
+          350,
+          800
+        ],
+        "frameSize": [
+          256,
+          256
+        ],
+        "loop": false
+      }
+    }
+  },
+  "effects": {
+    "wind-blade": {
+      "file": "effects/wind-blade.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    },
+    "wind-vortex": {
+      "file": "effects/wind-vortex.png",
+      "frames": 4,
+      "columns": 4,
+      "rows": 1,
+      "durations": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "loop": true
+    }
+  },
+  "integration": {
+    "map": "corona",
+    "wave": 10,
+    "health": 10000,
+    "height": 8,
+    "audioFolder": "public/assets/audio/umbral/enemies",
+    "audioPrefix": "desollador-",
+    "motherImplementation": "Pendiente por instrucción del usuario"
+  },
+  "validation": {
+    "automatedTestsPassed": 117,
+    "browser": "Vista local aislada; aparición, succión y muerte verificadas sin errores de consola",
+    "screenshot": "in-game-preview.png"
+  }
+}

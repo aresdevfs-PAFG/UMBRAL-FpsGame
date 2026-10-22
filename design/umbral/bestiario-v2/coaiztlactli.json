@@ -1,0 +1,21 @@
+{
+  "id": "coaiztlactli",
+  "name": "Coaiztlactli",
+  "subtitle": "Veneno de la serpiente",
+  "language": "Náhuatl histórico, forma documentada por Alonso de Molina (1571)",
+  "attestedGloss": "ponzoña de biuoras",
+  "source": "https://nahuatl.wired-humanities.org/content/coaiztlactli",
+  "sourceDetail": "Molina, Vocabulario, parte 2, folio 23r, columna 1",
+  "type": "Cuchillo de obsidiana",
+  "designProposal": "Hoja negra tallada como colmillo; reflejos violáceos; empuñadura con serpiente tallada y un pequeño acento verde.",
+  "executionStatus": "Diferido por indicación del usuario",
+  "gloryKillsEnabled": false,
+  "preparedEnemyState": "stagger",
+  "futureRequirements": [
+    "Distancia y orientación válidas",
+    "Transición sincronizada entre manos y enemigo",
+    "Cancelación segura",
+    "Recompensas al confirmar muerte",
+    "Evitar duplicar recompensas o eventos de muerte"
+  ]
+}

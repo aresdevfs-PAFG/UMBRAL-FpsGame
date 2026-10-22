@@ -1,0 +1,14 @@
+{
+  "generator": "image_gen.imagegen (built-in)",
+  "created": "2026-10-14",
+  "assets": [
+    {
+      "kind": "aura",
+      "prompt": "Use case: stylized-concept. Production ANIMATED SPRITE ATLAS for UMBRAL, a gritty 1990s Doom/Hexen first-person shooter. TRUE transparent alpha background. Exactly FOUR columns by TWO rows of equally sized square cells, 8 consecutive looping frames. Each cell: the SAME towering flame aura surrounding an invisible broad muscular humanoid giant, viewed frontally. Only the purple flames are visible, NO character, skull, face, body, armor, weapon or scenery. Vertical oval silhouette flame mantle: violet burning tongues rise from feet around sides and shoulders, violet wisps crown the head, a few translucent purple flame ribbons cross the torso while central inner area remains largely transparent so the existing monster sprite beneath stays readable. Strong deep purple bases, vivid violet midtones, pale lavender hot tips, sparse white-violet sparks. Distinct smooth sequential changes: flame tongues stretch, curl, split and drift upward, final frame cycles naturally to frame one. Identical scale and position, baseline 90% cell, aura occupies 84% cell height and 72% width; leave at least 6% transparent margin in EVERY cell, all fire entirely inside each cell. Very crisp coarse hand-dithered PIXEL ART, no blur, no soft airbrush or vector. No labels, no grid borders, no background, no checkerboard painted into pixels. Eight frames total, one complete effect per cell."
+    },
+    {
+      "kind": "plasma",
+      "prompt": "Use case: stylized-concept. Create a production game projectile ANIMATION ATLAS for UMBRAL, gritty detailed 1990s Doom/Hexen pixel art. Genuinely transparent alpha background. Exactly TWO columns by TWO rows of equal square cells, FOUR consecutive looping frames of one spherical PURPLE PLASMA BALL fired by a giant obsidian cannon. Round dense lavender-white luminous central orb with vivid violet churning plasma, a compact dark-purple scalloped flame corona and a few violet sparks. A BALL, not a skull, arrow, beam, meteor or character. Mostly circular silhouette centered at50%50% in every cell, occupies65% cell diameter, all sparks entirely inside each cell with10%clear transparent margin. Frame1 compact charged sphere; frame2 turbulent flame surface curls clockwise; frame3 slight energized pulse; frame4 plasma curls returning to first frame. Identical scale, no explosive expansion or death. Strong readable center, richly shaded coarse pixels and hand dithering, no photographic realism, vector, gradients, motion blur, soft glow clouds or scenery. No text, labels, panel borders or painted checkerboard."
+    }
+  ]
+}

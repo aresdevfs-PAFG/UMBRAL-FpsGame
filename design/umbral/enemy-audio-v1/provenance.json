@@ -1,0 +1,329 @@
+{
+  "created": "2026-10-14",
+  "generator": "Runway sound effects",
+  "original": true,
+  "clips": [
+    {
+      "id": "macabro-presence",
+      "prompt": "Undead humanoid creature breathes and gives one short throaty growl. Wet raspy chest rattle, irregular inhalation, fleshy texture, dry close foley in a stone courtyard with a very short natural tail. Menacing organic monster, clear low-mid body. Isolated sound effect, no words, music, singing, electronic tones or footsteps.",
+      "taskId": "6b36a24f-1db3-4d77-b878-624337c3b9a2",
+      "durationRequested": 2.5,
+      "loop": false
+    },
+    {
+      "id": "macabro-attack",
+      "prompt": "Undead creature tears a hardened piece from its own body then throws it: one abrupt wet fibrous rip, brittle bone snap, a fast thick liquid whoosh. Immediate readable attack with a short dry tail, close creature foley for a fast FPS. No music, words, singing, beeps or repeated attacks.",
+      "taskId": "2a896534-29d4-4a39-9e47-5d3bc1314fe2",
+      "durationRequested": 1.2,
+      "loop": false
+    },
+    {
+      "id": "macabro-hurt",
+      "prompt": "One short wounded undead creature grunt, coarse guttural exhalation with a wet throat rasp and subtle bone crack. Immediate compact impact reaction, organic deep-mid voice, clear and dry, no long scream or lingering echo. Isolated monster sound effect, no speech, music, singing or electronic effects.",
+      "taskId": "3b7d6c97-bf33-4d25-b7bd-7de6535c9eea",
+      "durationRequested": 0.8,
+      "loop": false
+    },
+    {
+      "id": "macabro-death",
+      "prompt": "Undead creature dies with one ragged throaty growl breaking into a wet exhalation, then a fleshy body drops on stone with brittle bone cracks. One concise death event, grounded heavy foley, brief dry decay. Isolated original monster effect, no speech, music, singing, electronic tones or repeated impacts.",
+      "taskId": "0613316d-8646-49b1-a86c-57225d00b98d",
+      "durationRequested": 1.8,
+      "loop": false
+    },
+    {
+      "id": "devorador-presence",
+      "prompt": "A hovering bone and turquoise monster mask emits a low airy spectral rasp with gentle irregular jaw clicks. Smooth sustained wind-like breath, tense and organic, dry close foley with restrained cavern resonance. Quiet ambient creature bed, seamless loop. No words, chanting, music, melodic tones, electronic beeps or wing beats.",
+      "taskId": "fb624b8e-2289-48f2-ae8d-3d149d0a8102",
+      "durationRequested": 2.5,
+      "loop": true
+    },
+    {
+      "id": "devorador-attack",
+      "prompt": "A floating predatory skull mask charges: a brief sharp non-human screech rises into a fast rushing-air swoop, ending in one hard jaw snap. Immediate clear warning then aggressive attack, compact dry acoustics, organic spectral creature. No words, music, singing, lasers, electronic beeps or repeated attacks.",
+      "taskId": "93b76d0a-9570-458c-a8c7-d8d1a5b96b39",
+      "durationRequested": 1.4,
+      "loop": false
+    },
+    {
+      "id": "devorador-hurt",
+      "prompt": "One turquoise and bone monster mask takes a hit: tight brittle ceramic crack, teeth chatter and a short rasping angry hiss. Dry sharp close foley, clear immediate reaction, very short tail. Isolated original creature sound effect, no speech, music, singing, beeps or explosions.",
+      "taskId": "e85c157e-8526-4c35-ad14-b929413545d5",
+      "durationRequested": 0.8,
+      "loop": false
+    },
+    {
+      "id": "devorador-death",
+      "prompt": "Floating bone and turquoise monster mask shatters and bursts: one crunchy bone and ceramic fracture, tight supernatural pressure pop, small fragments falling, brief airy smoke hiss. Powerful compact death explosion with controlled bass and treble. No speech, music, singing, electronic beeps or multiple detonations.",
+      "taskId": "33587703-c2d5-4110-84da-b83bc032397d",
+      "durationRequested": 1.6,
+      "loop": false
+    },
+    {
+      "id": "titan-arrival",
+      "prompt": "Giant obsidian-armored skeletal monster gives one enormous deep animalistic roar. Layered chest resonance, rough guttural growl, heavy stone scraping and a subtle chain rattle. Starts immediately, swells then decays in a large open stone courtyard with restrained natural echo. Powerful organic boss entrance. No speech, chanting, music, singing or electronic tones.",
+      "taskId": "4e426c33-31ab-480c-a574-88e391a1af0c",
+      "durationRequested": 3,
+      "loop": false
+    },
+    {
+      "id": "titan-step",
+      "prompt": "One enormous armored creature footstep on a solid stone courtyard: deep tight pressure thud, crunchy basalt grit, jagged glass armor scraping and a small chain rattle. Immediate impact, short grounded decay, strong low-mid weight that works on laptop speakers. Exactly one step. No voice, music, electronic tones or repeated footsteps.",
+      "taskId": "7731bb89-bec5-4f62-b81d-19611432b42c",
+      "durationRequested": 1.2,
+      "loop": false
+    },
+    {
+      "id": "titan-leap",
+      "prompt": "Huge stone-armored monster launches upward with one short forceful guttural effort grunt, heavy obsidian plates clacking and a broad rising air rush. Clear compact windup for a boss jump, explosive takeoff with a brief dry tail. No landing sound, speech, music, singing, chanting or electronic beeps.",
+      "taskId": "2b9b9566-c344-467c-af0e-635e0ef3a227",
+      "durationRequested": 1.1,
+      "loop": false
+    },
+    {
+      "id": "titan-landing",
+      "prompt": "Enormous obsidian-armored monster crashes onto a stone courtyard: one thunderous tight bass impact, stone slabs cracking, jagged volcanic glass debris and a brief outward pressure wave. Fast aggressive onset, dense low-mid body, controlled two-second decay and restrained outdoor reflection. No voice, music, electronic tones or additional impacts.",
+      "taskId": "e82066e5-a724-4791-b72f-fe9595f1a5ca",
+      "durationRequested": 2,
+      "loop": false
+    },
+    {
+      "id": "titan-hurt",
+      "prompt": "One huge skeletal armored monster reacts to pain with a short deep guttural snarl and a hard cracked-stone rattle. Coarse organic low-mid timbre, immediate compact attack, very brief natural resonance, suitable for frequent boss hit reactions. No long scream, speech, music, chanting or electronic tones.",
+      "taskId": "5c682d1e-6b92-4b70-a294-105c567c8b6b",
+      "durationRequested": 1.1,
+      "loop": false
+    },
+    {
+      "id": "titan-rage",
+      "prompt": "Giant monster's obsidian armor shield breaks with a violent layered volcanic-glass fracture, immediately followed by one furious deep guttural roar and grinding stone. A distinct powerful boss phase-change cue, dense organic body and controlled treble, short open courtyard reverb. No speech, music, singing, chanting or electronic beeps.",
+      "taskId": "180e3f74-2a1c-4e8c-9717-e94dc6700e1f",
+      "durationRequested": 2.8,
+      "loop": false
+    },
+    {
+      "id": "titan-skulls",
+      "prompt": "Giant skeletal monster charges spectral energy with a low breathy pressure swell then fires seven fast predatory skulls upward in a tight volley: sharp airy hissing whistles and rough bony snaps. Clear charge then seven distinct short releases, dry restrained cavern tail. Original dark magic sound effect, no music, words, chanting, singing, electronic beeps or laser sounds.",
+      "taskId": "0646fa80-52d0-4778-9062-bf29ad28b5b7",
+      "durationRequested": 2.2,
+      "loop": false
+    },
+    {
+      "id": "titan-summon",
+      "prompt": "Huge skeletal monster calls its minions with one guttural rumbling bellow; nearby stone seams grind open with a hot fire whoosh and ember hiss. Clear ominous boss summoning cue, raw throat and rock textures, short restrained natural echo. No intelligible words, chanting, singing, music or electronic tones.",
+      "taskId": "e28147c3-25c4-402b-ad69-6ef1ef61dbc6",
+      "durationRequested": 2.5,
+      "loop": false
+    },
+    {
+      "id": "titan-downed",
+      "prompt": "Wounded giant skeletal creature kneels with chest exposed: ragged exhausted guttural breathing, a strained upward non-human groan, heavy slow organic heart pulses and faint ember crackle. Tense close boss vulnerability sound, full low-mid detail and very little echo, seamless loop. No speech, chanting, music, singing or electronic tones.",
+      "taskId": "3a928d3d-75fd-4b08-b870-9cf5b2283c18",
+      "durationRequested": 3.5,
+      "loop": true
+    },
+    {
+      "id": "titan-death",
+      "prompt": "Giant obsidian skeletal creature's molten chest core fractures with one heavy crunchy burst; a deep dying animalistic exhalation ends as the huge body collapses into stone, bones and volcanic glass rubble. Powerful single boss death event with diminishing debris and a short grounded courtyard tail. No speech, chanting, music, singing or electronic tones.",
+      "taskId": "6afe75f2-ec09-44da-8acb-dcad3fe3e59b",
+      "durationRequested": 3,
+      "loop": false
+    },
+    {
+      "id": "abominacion-presence",
+      "prompt": "Huge bloated clay and flesh monster breathes with deep labored chest rumble, wet belly gurgles and sewn mouths rattling. One guttural bubbling exhalation, heavy organic low-mid body, dry stone courtyard acoustics. Menacing tank creature presence. No music, words, chanting, singing, electronic tones or comedic belches.",
+      "taskId": "c55059b3-b057-4288-b344-2f9b86708372",
+      "durationRequested": 2.5,
+      "loop": false
+    },
+    {
+      "id": "abominacion-windup",
+      "prompt": "Grotesque heavy flesh creature builds pressure inside bone arm cannons: a short rising thick liquid gurgle, tense chest grunt and dry bone joint creak. Distinct compact attack warning that ends just before release. Organic close foley, controlled treble. No firing, music, speech, chanting or electronic tones.",
+      "taskId": "003e1717-d524-4506-a9a2-fe4cb2746eec",
+      "durationRequested": 1,
+      "loop": false
+    },
+    {
+      "id": "abominacion-attack",
+      "prompt": "Huge grotesque monster fires a triple volley of boiling acidic sludge from bone cannons: three fast thick wet pressure blasts with gritty bone recoil clicks and hot liquid hiss. Strong immediate low-mid punch, concise dry stone courtyard tail. Exactly one three-shot burst. No speech, music, singing or electronic tones.",
+      "taskId": "90a75841-495e-47a6-8f43-150c72fcf24c",
+      "durationRequested": 1.5,
+      "loop": false
+    },
+    {
+      "id": "abominacion-hurt",
+      "prompt": "Huge bloated creature takes a hit and gives one brief wounded guttural bellow, heavy chest rasp and wet belly slosh. Deep organic low-mid texture with a sharp clear onset and short dry tail. Isolated monster hurt reaction. No words, music, chanting, singing, electronic tones or long scream.",
+      "taskId": "b90919ca-be99-4b9f-abea-cdd8355efde0",
+      "durationRequested": 0.9,
+      "loop": false
+    },
+    {
+      "id": "abominacion-death",
+      "prompt": "A massive fantasy clay creature lets out one final deep breathy bellow, then crumbles into clay chunks, old bone armor and heavy stone rubble. Strong low-mid rumble, brittle clay fractures and diminishing debris on a stone courtyard, compact natural decay. One isolated original game creature collapse effect. No words, music, singing, chanting, blood sounds or electronic tones.",
+      "taskId": "d85db118-488b-4c8b-9c74-aa1b5c6e520a",
+      "durationRequested": 2.5,
+      "loop": false
+    },
+    {
+      "id": "centinela-presence",
+      "prompt": "Enormous four-armed skeletal guardian gives one fierce primal roar, a deep resonant animalistic bellow with coarse throat rasp and grinding bone undertones. Start immediately, swell with intimidation, then decay in an open stone courtyard. Full low-mid body and controlled treble, less cavernous than a giant boss. No words, whispers, chanting, singing, music or electronic tones.",
+      "taskId": "3fbfffbd-1b93-4f7a-a0a0-bb9f29214304",
+      "durationRequested": 2.8,
+      "loop": false
+    },
+    {
+      "id": "centinela-windup",
+      "prompt": "Huge skeletal guardian prepares to attack with one abrupt aggressive guttural roar, sharp chest bark rising into a rough bellow, obsidian and stone arm joints creaking underneath. Immediate readable short warning, raw animalistic low-mid voice, dry close courtyard reflection. No attack impact, speech, whispering, music, chanting or electronic tones.",
+      "taskId": "03fa4b2a-eab0-4df5-8571-1b1398776cd6",
+      "durationRequested": 1.2,
+      "loop": false
+    },
+    {
+      "id": "centinela-attack",
+      "prompt": "Four-armed skeletal guardian releases two heavy dark-magic plasma spheres from bone hands: two tight fiery pressure blasts with rough spectral air rush and dry bone cracks, under a brief guttural exertion growl. Aggressive compact organic sound, controlled short tail. No lasers, beeps, music, words, chanting or singing.",
+      "taskId": "f5be93f1-6b0a-4479-9e3f-9e6f6991fe64",
+      "durationRequested": 1.4,
+      "loop": false
+    },
+    {
+      "id": "centinela-slam",
+      "prompt": "Huge skeletal guardian slams two heavy stone maces into a stone courtyard almost together: one forceful guttural grunt, a dense double rock impact, cracking slabs and a short outward air pressure wave. Brutal fast low-mid weight, restrained debris tail. No music, speech, chanting, singing or electronic tones.",
+      "taskId": "e3015e9f-e49d-4544-8c4d-fe7bb1970334",
+      "durationRequested": 1.5,
+      "loop": false
+    },
+    {
+      "id": "centinela-hurt",
+      "prompt": "Enormous skeletal guardian takes a hit and responds with one short furious animalistic snarl, deep chest bark, coarse throat growl and a few dry bone cracks. Strong immediate reaction with controlled short tail and full low-mid body. No long scream, words, whispering, music, chanting, singing or electronic tones.",
+      "taskId": "a261ef94-558a-4c15-88a7-3cdbafdf736d",
+      "durationRequested": 0.9,
+      "loop": false
+    },
+    {
+      "id": "centinela-death",
+      "prompt": "Huge four-armed skeletal guardian gives one final raw dying roar that breaks into a low breath, then its armor and stone maces collapse onto stone with bone fractures and heavy debris. Intense organic bellow, fast identifiable death event with a restrained natural tail. No words, music, chanting, singing or electronic tones.",
+      "taskId": "34c6657d-7635-421c-ab64-157c449d36de",
+      "durationRequested": 2.4,
+      "loop": false
+    },
+    {
+      "id": "empalador-presence",
+      "prompt": "A tall creature made of floating obsidian shards slowly shifts: sharp glass rubbing, low stone friction and a restrained hollow resonant rasp. Dark natural crystal texture, tense and sparse, close dry foley with a short stone-room tail. Original creature effect, no words, music, singing, footsteps or electronic beeps.",
+      "taskId": "7086b38e-d30c-4558-a57c-b078e18b0864",
+      "durationRequested": 2.2,
+      "loop": false
+    },
+    {
+      "id": "empalador-windup",
+      "prompt": "Obsidian blade creature braces to strike: two quick knife-like crystal scrapes tighten into a brief low grinding tension. Clear immediate warning, sharp brittle edges over rough stone, short dry tail. Single isolated attack preparation, no explosion, music, words, singing or electronic tones.",
+      "taskId": "4c445fcf-be8b-4cc3-bd9a-9778666d3631",
+      "durationRequested": 1,
+      "loop": false
+    },
+    {
+      "id": "empalador-attack",
+      "prompt": "A cluster of huge obsidian spikes suddenly erupts from stone: one tight low rock impact with multiple overlapping sharp glass fractures and gritty debris. Abrupt readable onset, powerful compact natural foley, controlled treble, short dry tail. No voice, music, electronic lasers or repeated explosions.",
+      "taskId": "d46eadc8-9678-4ab5-8163-7aa46fc72ccf",
+      "durationRequested": 1.25,
+      "loop": false
+    },
+    {
+      "id": "empalador-hurt",
+      "prompt": "One obsidian creature is struck: a compact sharp crystal crack followed by a low strained hollow grinding rasp. Crisp immediate reaction, small chips pattering, dry natural rock and glass texture with no long echo. One isolated creature hurt effect, no words, music, singing or beeps.",
+      "taskId": "9e7c9259-98ea-448a-9b6b-8cddc2e8ecd1",
+      "durationRequested": 0.75,
+      "loop": false
+    },
+    {
+      "id": "empalador-death",
+      "prompt": "A tall floating obsidian creature collapses: resonant crystalline groan breaks into a heavy angular glass and stone shatter, fragments hit the floor then settle. One compact original death effect, controlled highs and solid low body, short dry cavern tail. No words, music, singing or electronic sounds.",
+      "taskId": "d634cd14-ed6d-49de-991d-76b478b90ca9",
+      "durationRequested": 1.9,
+      "loop": false
+    },
+    {
+      "id": "tejedor-presence",
+      "prompt": "A skeletal four-armed ash creature exhales a dry non-human whispery hiss. Fine ash swirls, tiny bone clicks and frayed fiber rustle, ominous midrange breath without recognizable syllables. Close original creature foley, restrained short cavern tail. No speech, words, chanting, music, singing or electronic beeps.",
+      "taskId": "0d6c31d2-0bac-4883-b169-a73336a698c5",
+      "durationRequested": 2.3,
+      "loop": false
+    },
+    {
+      "id": "tejedor-windup",
+      "prompt": "A skeletal ash creature stretches supernatural threads between four hands: dry fibers pull taut, bone fingers click, a narrow rushing-air hiss rises quickly. Clear short warning with a tense natural texture and tiny cavern tail. Original isolated effect, no words, chanting, music, singing or electronic beeps.",
+      "taskId": "4ec949d0-d0c5-492e-9e8d-006cf1f74022",
+      "durationRequested": 1.1,
+      "loop": false
+    },
+    {
+      "id": "tejedor-attack",
+      "prompt": "Three spectral ash threads snap outward in one fast attack: tight fibrous snaps merge into a forceful airy whip whoosh and short granular crackle. Punchy immediate onset, original supernatural foley, controlled treble, brief dry decay. No speech, chanting, music, singing, electronic beeps or repeated volleys.",
+      "taskId": "86ae1e2a-3abe-4da4-badc-66a6f2baa4b3",
+      "durationRequested": 1.1,
+      "loop": false
+    },
+    {
+      "id": "tejedor-channel",
+      "prompt": "An ash sorcerer sustains a protective web: soft tense fiber friction, swirling dusty breath and tiny sparse bone clicks. Steady organic airy texture, low-mid body, no rhythmic pulses or melody. Seamless quiet creature channel loop, dry close foley. No speech, whispers with syllables, chanting, music, singing or electronic beeps.",
+      "taskId": "627b7333-68a0-4f3e-acef-7ce2ec7243fa",
+      "durationRequested": 2.6,
+      "loop": true
+    },
+    {
+      "id": "tejedor-hurt",
+      "prompt": "A skeletal ash creature takes one hit: short dry rasping non-human hiss, taut fibers tear and two small bone clicks. Immediate compact organic reaction, no extended scream, short natural tail. Original monster foley, no words, speech, chanting, music, singing or electronic effects.",
+      "taskId": "570132e8-f759-4eaf-b14c-5d0d1b1f3e5b",
+      "durationRequested": 0.75,
+      "loop": false
+    },
+    {
+      "id": "tejedor-death",
+      "prompt": "An ash creature collapses: one dry breathy rasp fades as its bone frame drops, brittle small bones clatter on stone and ash softly rushes outward. Single concise original monster death, natural dusty texture, controlled high frequencies, short cavern tail. No words, speech, chanting, music, singing or electronic sounds.",
+      "taskId": "976ff8ee-b6c1-414a-900e-7ceae7e581df",
+      "durationRequested": 1.9,
+      "loop": false
+    },
+    {
+      "id": "acechador-presence",
+      "prompt": "A large predatory feline made of basalt breathes then gives one restrained deep jaguar-like growl. Rough stony chest resonance, subtle volcanic plate friction, organic animal menace, close dry foley. One original creature presence cue, no words, music, singing, electronic tones or footsteps.",
+      "taskId": "e3321dcf-ca62-46be-b437-80ef21dfb467",
+      "durationRequested": 2.1,
+      "loop": false
+    },
+    {
+      "id": "acechador-windup",
+      "prompt": "A basalt feline crouches to pounce: brief low predatory snarl with claw scrape on stone and heavy rocky plates tightening. Immediate readable warning, compact dry organic animal and rock foley. One isolated preparation cue, no full leap impact, words, music, singing or electronic beeps.",
+      "taskId": "7761576e-62c0-40cb-93a3-921c001ef12b",
+      "durationRequested": 0.9,
+      "loop": false
+    },
+    {
+      "id": "acechador-attack",
+      "prompt": "A basalt jaguar creature leaps and strikes: one sharp aggressive animal bark into a fast air rush and slicing claw swish. Crisp immediate attack, stony chest resonance, compact dry foley, no landing impact or long tail. Original creature effect, no words, music, singing or electronic beeps.",
+      "taskId": "463bc5b5-e885-46ab-a150-27f8f3e307f0",
+      "durationRequested": 1.1,
+      "loop": false
+    },
+    {
+      "id": "acechador-landing",
+      "prompt": "A heavy basalt feline lands on four claws: one solid low stone thud, short claw scrape, small rocky chips scatter. Tight immediate natural foley, weighty but compact, controlled bass and short dry decay. Single landing effect, no roar, speech, music, singing, beeps or repeated footsteps.",
+      "taskId": "9097af1f-a7ad-42d0-a335-8fb8bda5e161",
+      "durationRequested": 0.85,
+      "loop": false
+    },
+    {
+      "id": "acechador-hurt",
+      "prompt": "A predatory basalt feline takes one hit: a short jaguar-like angry grunt with one brittle rock plate crack. Compact immediate organic reaction, low-mid animal texture, dry close foley, restrained short tail. Original creature effect, no words, music, singing, electronic tones or long scream.",
+      "taskId": "cf179db9-1f83-4c68-9311-f866e621fb4b",
+      "durationRequested": 0.75,
+      "loop": false
+    },
+    {
+      "id": "acechador-death",
+      "prompt": "A basalt feline dies: one rough low animal growl fades as its heavy rocky body collapses on stone, armor plates crack and fragments settle. One compact original creature death with weight and clear natural texture, short dry tail. No words, music, singing, electronic tones or repeated impacts.",
+      "taskId": "2777a685-ad01-4501-9a42-bc0e62314b1a",
+      "durationRequested": 1.9,
+      "loop": false
+    }
+  ]
+}

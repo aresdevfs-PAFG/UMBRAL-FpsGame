@@ -1,0 +1,14 @@
+{
+  "speech": {
+    "text": "[furious] [screaming] ¡AY MI HIJOOO!",
+    "voice": "Ella",
+    "model": "eleven_v3",
+    "languageCode": "es",
+    "speed": 1.12,
+    "name": "UMBRAL Madre — AY MI HIJOOO furia v6",
+    "rationale": "Corregir una frase que sonaba gemida: la nueva interpretación debe ser gritada con furia y ataque brusco, sin dolor ni sollozos. Conservar el grito inicial ya aprobado."
+  },
+  "taskId": "a3c96e92-9b9b-4ce0-b902-5c876b177f50",
+  "preservedOpening": "sources/madre-presence.mp3",
+  "openingSha256": "E5C63104B859A249E2E16EE82447DAFF60745855CE83E2FE0CD158CCC72F31D5"
+}
